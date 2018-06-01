@@ -24,8 +24,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.apporio.demotaxiappdriver.BuildConfig;
-import com.apporio.demotaxiappdriver.R;
+import com.apporio.billiondriver.BuildConfig;
+import com.apporio.billiondriver.R;
 import com.google.gag.annotation.disclaimer.SafeForSpeedsNotExceeding;
 import com.google.gag.annotation.enforceable.CantTouchThis;
 import com.google.gag.annotation.remark.PleaseDontShowUpOn;

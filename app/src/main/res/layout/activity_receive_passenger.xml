@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/icon_8_muted_black"
-    tools:context="com.apporio.demotaxiappdriver.TrialReceivePassengerActivity">
+    tools:context="com.apporio.billiondriver.TrialReceivePassengerActivity">
 
     cancel button
     <LinearLayout
@@ -272,7 +272,7 @@
             android:gravity="center">
 
 
-            <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+            <com.apporio.billiondriver.typeface.TypefaceTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ACTIVITY_TRIAL_RECEIVE_PASSENGER_ok"

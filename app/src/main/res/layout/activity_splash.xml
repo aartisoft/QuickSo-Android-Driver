@@ -40,7 +40,7 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="140dp"
-                    android:src="@drawable/app_logo_100" />
+                    android:src="@drawable/billion_icon" />
 
 
                 <TextView
@@ -70,8 +70,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="gone">  /// need to hide
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -90,7 +88,7 @@
                     android:background="@color/colorPrimary"
                     android:gravity="center">
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/register"
@@ -113,7 +111,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/login"
@@ -128,8 +126,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:id="@+id/demo_login">
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    android:id="@+id/demo_login"
+                    android:visibility="gone"
+                    >
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="DEMO DRIVER"

@@ -3,7 +3,7 @@
     <string name="google_map_key">AIzaSyCTAg2TXt8AiswL_Ro6k76c_p1bisIWxEU</string>
 
 
-    <string name="app_name">Apporio Taxi Driver</string>
+    <string name="app_name">Billion Driver</string>
     <string name="closeDrawer">Close</string>
     <string name="openDrawer">open</string>
 
@@ -226,6 +226,7 @@
     <string name="MAIN_ACTIVITY__my_rides">Your trips</string>
     <string name="MAIN_ACTIVITY__upcoming_rides">Upcoming trips</string>
     <string name="MAIN_ACTIVITY__earnings">Earnings</string>
+    <string name="MAIN_ACTIVITY__wallet">Wallet</string>
     <string name="MAIN_ACTIVITY__customer_support">Customer Support</string>
     <string name="MAIN_ACTIVITY__terms_and_condition">Terms and Conditions</string>
     <string name="MAIN_ACTIVITY__about_us">ABOUT US</string>
@@ -553,7 +554,6 @@
     <string name="MAIN_ACTIVITY__notifications">Promotions</string>
 
 
-
     //// SETTINGS_ACTIVITY ////////
 
     <dimen name="menu_settings_text_size">14dp</dimen>
@@ -652,6 +652,13 @@
     <string name="your_ride_is_expired">Your Ride is Expired</string>
     <string name="time_is_unexpectedlyshort">Time is Unexpectedly short to accept</string>
     <string name="ride_cancel">RIDE EXPIRE</string>
+
+    /// Wallet Activity
+    <string name="WALLET_ACTIVITY_header_text">Wallet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallet_balance">Wallet Balance</string>
 
 
 </resources>

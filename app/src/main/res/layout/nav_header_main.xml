@@ -104,7 +104,6 @@
                             android:layout_width="@dimen/icon_width"
                             android:layout_height="@dimen/icon_height"
                             android:layout_marginRight="10dp"
-                            android:tint="@color/color_menu_icon"
                             android:src="@drawable/ic_profile_circular"/>
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
                             android:layout_width="fill_parent"
@@ -129,7 +128,7 @@
                             android:layout_height="@dimen/icon_height"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/ic_trips"
-                            android:tint="@color/color_menu_icon" />
+                             />
 
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
                             android:layout_width="fill_parent"
@@ -157,13 +156,39 @@
                             android:layout_height="@dimen/icon_height"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/ic_trips"
-                            android:tint="@color/color_menu_icon" />
+                             />
 
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
                             android:layout_width="fill_parent"
                             android:textSize="@dimen/menu_text_size"
                             android:layout_height="fill_parent"
                             android:text="@string/MAIN_ACTIVITY__my_rides"
+                            android:textColor="@color/color_menu_text"
+                            android:gravity="center|left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:id="@+id/my_wallet_button"
+                        android:background="@color/pure_white">
+
+                        <ImageView
+                            android:id="@+id/imageViewWallet"
+                            android:layout_width="@dimen/icon_width"
+                            android:layout_height="@dimen/icon_height"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_wallet"
+                             />
+
+                        <customviews.typefacesviews.TypeFaceTextMonixRegular
+                            android:layout_width="fill_parent"
+                            android:textSize="@dimen/menu_text_size"
+                            android:layout_height="fill_parent"
+                            android:text="@string/MAIN_ACTIVITY__wallet"
                             android:textColor="@color/color_menu_text"
                             android:gravity="center|left"/>
                     </LinearLayout>
@@ -180,8 +205,8 @@
                         <ImageView
                             android:layout_width="@dimen/icon_width"
                             android:layout_height="@dimen/icon_height"
-                            android:tint="@color/color_menu_icon"
                             android:layout_marginRight="10dp"
+                            android:tint="@color/pure_black"
                             android:src="@drawable/ic_earning"/>
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
                             android:id="@+id/typeFaceTextMonixRegular2"
@@ -207,7 +232,7 @@
                         <ImageView
                             android:layout_width="@dimen/icon_width"
                             android:layout_height="@dimen/icon_height"
-                            android:tint="@color/color_menu_icon"
+
                             android:layout_marginRight="10dp"
                             android:src="@drawable/ic_notifications"/>
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
@@ -234,7 +259,6 @@
                         <ImageView
                             android:layout_width="@dimen/icon_width"
                             android:layout_height="@dimen/icon_height"
-                            android:tint="@color/color_menu_icon"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/report"/>
                         <customviews.typefacesviews.TypeFaceTextMonixRegular
@@ -275,7 +299,6 @@
                     <ImageView
                         android:layout_width="@dimen/icon_width"
                         android:layout_height="@dimen/icon_height"
-                        android:tint="@color/color_menu_icon"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/ic_language"/>
                     <customviews.typefacesviews.TypeFaceTextMonixRegular
@@ -395,7 +418,6 @@
                     <ImageView
                         android:layout_width="@dimen/icon_width"
                         android:layout_height="@dimen/icon_height"
-                        android:tint="@color/color_menu_icon"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/ic_settings_black_24dp"/>
 
@@ -436,7 +458,7 @@
                     <ImageView
                         android:layout_width="@dimen/icon_width"
                         android:layout_height="@dimen/icon_height"
-                        android:tint="@color/color_menu_icon"
+                        android:tint="@color/pure_black"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/ic_logout"/>
 

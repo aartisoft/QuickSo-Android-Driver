@@ -93,7 +93,7 @@
 
                         <com.hbb20.CountryCodePicker
                             android:id="@+id/phone_ccp"
-                            app:defaultCode="91"
+                            app:defaultCode="95"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:hideNameCode="true"
@@ -206,7 +206,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center">
 
-        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+        <com.apporio.billiondriver.typeface.TypefaceTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/LOGIN_ACTIVITY__login"

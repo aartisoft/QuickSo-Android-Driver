@@ -27,7 +27,7 @@
                 android:tint="@color/colorPrimary"/>
         </LinearLayout>
 
-        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+        <com.apporio.billiondriver.typeface.TypefaceTextView
             android:id="@+id/title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

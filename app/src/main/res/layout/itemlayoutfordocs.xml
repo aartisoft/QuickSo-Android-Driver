@@ -11,7 +11,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+        <com.apporio.billiondriver.typeface.TypefaceTextView
             android:id="@+id/tv_docs_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

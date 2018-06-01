@@ -5,8 +5,12 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="**" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="952ba85b-250f-4f2b-8f34-c78b7d2cc80d" name="Default" comment="" />
+    <list default="true" id="f43a2942-d3e6-4286-a521-5ad677732057" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,153 +26,302 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Billion-Driver-Android" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Billion-Driver-Android" type="f1a62948:ProjectNode" />
+                <item name="Billion-Driver-Android" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Billion-Driver-Android" type="f1a62948:ProjectNode" />
+                <item name="Billion-Driver-Android" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="746" column="256" lean-forward="false" selection-start-line="746" selection-start-column="256" selection-end-line="746" selection-end-column="256" />
+            <state relative-caret-position="182">
+              <caret line="998" column="13" lean-forward="false" selection-start-line="998" selection-start-column="13" selection-end-line="998" selection-end-column="13" />
               <folding>
-                <element signature="e#8257#8572#0" expanded="true" />
-                <element signature="e#8571#8572#0" expanded="true" />
-                <element signature="e#11204#11633#0" expanded="true" />
-                <element signature="e#11632#11633#0" expanded="true" />
-                <element signature="e#11705#12179#0" expanded="true" />
-                <element signature="e#12178#12179#0" expanded="true" />
-                <element signature="e#12242#12515#0" expanded="true" />
-                <element signature="e#12514#12515#0" expanded="true" />
-                <element signature="e#12581#13199#0" expanded="true" />
-                <element signature="e#12780#13114#0" expanded="true" />
-                <element signature="e#13113#13114#0" expanded="true" />
-                <element signature="e#13198#13199#0" expanded="true" />
-                <element signature="e#13261#13468#0" expanded="true" />
-                <element signature="e#13467#13468#0" expanded="true" />
-                <element signature="e#13956#14231#0" expanded="true" />
-                <element signature="e#14230#14231#0" expanded="true" />
-                <element signature="e#14811#14981#0" expanded="true" />
-                <element signature="e#14980#14981#0" expanded="true" />
-                <element signature="e#19838#20151#0" expanded="true" />
-                <element signature="e#20150#20151#0" expanded="true" />
-                <element signature="e#21291#21495#0" expanded="true" />
-                <element signature="e#21494#21495#0" expanded="true" />
-                <element signature="e#21567#21769#0" expanded="true" />
-                <element signature="e#21768#21769#0" expanded="true" />
-                <element signature="e#21838#22046#0" expanded="true" />
-                <element signature="e#22045#22046#0" expanded="true" />
-                <element signature="e#22117#22360#0" expanded="true" />
-                <element signature="e#22359#22360#0" expanded="true" />
-                <element signature="e#22437#22649#0" expanded="true" />
-                <element signature="e#22648#22649#0" expanded="true" />
-                <element signature="e#22728#22934#0" expanded="true" />
-                <element signature="e#22933#22934#0" expanded="true" />
-                <element signature="e#22999#23201#0" expanded="true" />
-                <element signature="e#23200#23201#0" expanded="true" />
-                <element signature="e#23273#23479#0" expanded="true" />
-                <element signature="e#23478#23479#0" expanded="true" />
-                <element signature="e#23539#23694#0" expanded="true" />
-                <element signature="e#23693#23694#0" expanded="true" />
-                <element signature="e#23762#23964#0" expanded="true" />
-                <element signature="e#23963#23964#0" expanded="true" />
-                <element signature="e#24027#24664#0" expanded="true" />
-                <element signature="e#24325#24390#0" expanded="true" />
-                <element signature="e#24523#24586#0" expanded="true" />
-                <element signature="e#24663#24664#0" expanded="true" />
-                <element signature="e#24733#25998#0" expanded="true" />
-                <element signature="e#25108#25143#0" expanded="true" />
-                <element signature="e#25190#25940#0" expanded="true" />
-                <element signature="e#25939#25940#0" expanded="true" />
-                <element signature="e#25997#25998#0" expanded="true" />
-                <element signature="e#26068#26304#0" expanded="true" />
-                <element signature="e#26303#26304#0" expanded="true" />
-                <element signature="e#26376#26578#0" expanded="true" />
-                <element signature="e#26577#26578#0" expanded="true" />
-                <element signature="e#27276#27568#0" expanded="true" />
-                <element signature="e#27567#27568#0" expanded="true" />
-                <element signature="e#28090#28707#0" expanded="true" />
-                <element signature="e#28706#28707#0" expanded="true" />
-                <element signature="e#28755#29174#0" expanded="true" />
-                <element signature="e#29173#29174#0" expanded="true" />
-                <element signature="e#30606#31350#0" expanded="true" />
-                <element signature="e#31349#31350#0" expanded="true" />
-                <element signature="e#34802#34863#0" expanded="true" />
-                <element signature="e#35120#35182#0" expanded="true" />
-                <element signature="e#49676#49826#0" expanded="true" />
-                <element signature="e#49825#49826#0" expanded="true" />
-                <element signature="e#50070#50147#0" expanded="true" />
-                <element signature="e#50177#50253#0" expanded="true" />
-                <element signature="e#50282#50359#0" expanded="true" />
-                <element signature="e#50460#50982#0" expanded="true" />
-                <element signature="e#50981#50982#0" expanded="true" />
-                <element signature="e#50994#51074#0" expanded="true" />
-                <element signature="e#51175#51417#0" expanded="true" />
-                <element signature="e#51416#51417#0" expanded="true" />
+                <element signature="e#8221#8536#0" expanded="true" />
+                <element signature="e#8535#8536#0" expanded="true" />
+                <element signature="e#11168#11597#0" expanded="true" />
+                <element signature="e#11596#11597#0" expanded="true" />
+                <element signature="e#11669#12143#0" expanded="true" />
+                <element signature="e#12142#12143#0" expanded="true" />
+                <element signature="e#12206#12479#0" expanded="true" />
+                <element signature="e#12478#12479#0" expanded="true" />
+                <element signature="e#12545#13163#0" expanded="true" />
+                <element signature="e#12744#13078#0" expanded="true" />
+                <element signature="e#13077#13078#0" expanded="true" />
+                <element signature="e#13162#13163#0" expanded="true" />
+                <element signature="e#13225#13432#0" expanded="true" />
+                <element signature="e#13431#13432#0" expanded="true" />
+                <element signature="e#13920#14195#0" expanded="true" />
+                <element signature="e#14194#14195#0" expanded="true" />
+                <element signature="e#14775#14945#0" expanded="true" />
+                <element signature="e#14944#14945#0" expanded="true" />
+                <element signature="e#19802#20115#0" expanded="true" />
+                <element signature="e#20114#20115#0" expanded="true" />
+                <element signature="e#21255#21459#0" expanded="true" />
+                <element signature="e#21458#21459#0" expanded="true" />
+                <element signature="e#21531#21733#0" expanded="true" />
+                <element signature="e#21732#21733#0" expanded="true" />
+                <element signature="e#21802#22010#0" expanded="true" />
+                <element signature="e#22009#22010#0" expanded="true" />
+                <element signature="e#22081#22320#0" expanded="true" />
+                <element signature="e#22319#22320#0" expanded="true" />
+                <element signature="e#22387#22590#0" expanded="true" />
+                <element signature="e#22589#22590#0" expanded="true" />
+                <element signature="e#22667#22879#0" expanded="true" />
+                <element signature="e#22878#22879#0" expanded="true" />
+                <element signature="e#22958#23164#0" expanded="true" />
+                <element signature="e#23163#23164#0" expanded="true" />
+                <element signature="e#23229#23431#0" expanded="true" />
+                <element signature="e#23430#23431#0" expanded="true" />
+                <element signature="e#23503#23709#0" expanded="true" />
+                <element signature="e#23708#23709#0" expanded="true" />
+                <element signature="e#23769#23924#0" expanded="true" />
+                <element signature="e#23923#23924#0" expanded="true" />
+                <element signature="e#23992#24194#0" expanded="true" />
+                <element signature="e#24193#24194#0" expanded="true" />
+                <element signature="e#24257#24894#0" expanded="true" />
+                <element signature="e#24555#24620#0" expanded="true" />
+                <element signature="e#24753#24816#0" expanded="true" />
+                <element signature="e#24893#24894#0" expanded="true" />
+                <element signature="e#24963#26228#0" expanded="true" />
+                <element signature="e#25338#25373#0" expanded="true" />
+                <element signature="e#25420#26170#0" expanded="true" />
+                <element signature="e#26169#26170#0" expanded="true" />
+                <element signature="e#26227#26228#0" expanded="true" />
+                <element signature="e#26298#26534#0" expanded="true" />
+                <element signature="e#26533#26534#0" expanded="true" />
+                <element signature="e#26606#26808#0" expanded="true" />
+                <element signature="e#26807#26808#0" expanded="true" />
+                <element signature="e#27506#27798#0" expanded="true" />
+                <element signature="e#27797#27798#0" expanded="true" />
+                <element signature="e#28320#28937#0" expanded="true" />
+                <element signature="e#28936#28937#0" expanded="true" />
+                <element signature="e#28985#29404#0" expanded="true" />
+                <element signature="e#29403#29404#0" expanded="true" />
+                <element signature="e#30836#31580#0" expanded="true" />
+                <element signature="e#31579#31580#0" expanded="true" />
+                <element signature="e#35032#35093#0" expanded="true" />
+                <element signature="e#35350#35412#0" expanded="true" />
+                <element signature="e#50310#50460#0" expanded="true" />
+                <element signature="e#50459#50460#0" expanded="true" />
+                <element signature="e#50704#50781#0" expanded="true" />
+                <element signature="e#50811#50887#0" expanded="true" />
+                <element signature="e#50916#50993#0" expanded="true" />
+                <element signature="e#51094#51616#0" expanded="true" />
+                <element signature="e#51615#51616#0" expanded="true" />
+                <element signature="e#51628#51708#0" expanded="true" />
+                <element signature="e#51809#52051#0" expanded="true" />
+                <element signature="e#52050#52051#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/LocationEvent.java">
+      <file leaf-file-name="TimeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/TimeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="206">
+              <caret line="104" column="59" lean-forward="false" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
+              <folding>
+                <element signature="e#4156#4435#0" expanded="true" />
+                <element signature="e#4434#4435#0" expanded="true" />
+                <element signature="e#4529#7388#0" expanded="true" />
+                <element signature="e#7387#7388#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Config.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="120" column="24" lean-forward="false" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+            <state relative-caret-position="183">
+              <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Apis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/urls/Apis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="131">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrackRideActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+      <file leaf-file-name="OnlineOfflineActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/OnlineOfflineActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="727" column="80" lean-forward="false" selection-start-line="727" selection-start-column="80" selection-end-line="727" selection-end-column="80" />
+            <state relative-caret-position="68">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="148" column="273" lean-forward="false" selection-start-line="148" selection-start-column="273" selection-end-line="148" selection-end-column="273" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_content.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_content.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneSignalServiceClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/fcmclasses/OneSignalServiceClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="e#11247#11275#0" expanded="true" />
+                <element signature="e#12347#12375#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PriceFareActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/PriceFareActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="162" column="67" lean-forward="false" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
+              <folding>
+                <element signature="e#1950#1997#0" expanded="true" />
+                <element signature="e#3371#3532#0" expanded="true" />
+                <element signature="e#3531#3532#0" expanded="true" />
+                <element signature="e#3602#3986#0" expanded="true" />
+                <element signature="e#3985#3986#0" expanded="true" />
+                <element signature="e#4032#4188#0" expanded="true" />
+                <element signature="e#4187#4188#0" expanded="true" />
+                <element signature="e#5425#5483#0" expanded="true" />
+                <element signature="e#5489#5547#0" expanded="true" />
+                <element signature="e#5682#5740#0" expanded="true" />
+                <element signature="e#5746#5806#0" expanded="true" />
+                <element signature="e#5941#5999#0" expanded="true" />
+                <element signature="e#6005#6063#0" expanded="true" />
+                <element signature="e#6198#6256#0" expanded="true" />
+                <element signature="e#6262#6322#0" expanded="true" />
+                <element signature="e#7029#7089#0" expanded="true" />
+                <element signature="e#11866#11903#0" expanded="true" />
+                <element signature="e#12148#12298#0" expanded="true" />
+                <element signature="e#12297#12298#0" expanded="true" />
+                <element signature="e#13222#14400#0" expanded="true" />
+                <element signature="e#13490#13567#0" expanded="true" />
+                <element signature="e#14399#14400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog_view_receipt.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_view_receipt.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="176" column="56" lean-forward="false" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>o</find>
-      <find>back</find>
+      <find>onesignal_app_id</find>
+      <find>app_name</find>
+      <find>base_url</find>
+      <find>trip</find>
+      <find>iv_profile_pic_upload</find>
+      <find>com.crowdfire.cfalertdialog</find>
+      <find>index</find>
+      <find>execution_method_post</find>
+      <find>PARTIAL_ACCEPT</find>
+      <find>match</find>
+      <find>total_payble_fare_txt_large</find>
+      <find>button_manualDispatch</find>
+      <find>status_tx</find>
+      <find>KEY_Driver_Online_Offline_Status</find>
+      <find>ccp</find>
+      <find>tv_forgot</find>
+      <find>waiting_charge_txt</find>
+      <find>register_btn</find>
+      <find>registerBtn</find>
+      <find>txt_phone_signup</find>
+      <find>driver_image</find>
+      <find>BackGroundAppUpdate</find>
+      <find>execution_method</find>
+      <find>btn_view_receipt</find>
+      <find>status_btn</find>
+      <find>status_txt</find>
+      <find>tv_waiting_time</find>
+      <find>setStatusViewAccordingly</find>
+      <find>driver_backgr</find>
+      <find>execution</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\Android Studio Projects\Billion-Driver-Android\app\src\main\java\com\apporio\billiondriver</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -189,14 +342,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="Apporio-taxi-Driver-OneSignal-version-" />
+              <option name="name" value="Billion-Driver-Android" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="Apporio-taxi-Driver-OneSignal-version-" />
+                <option name="name" value="Billion-Driver-Android" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -218,7 +371,7 @@
                 <option name="name" value="splitsDiscoveryTaskDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'Apporio-taxi-Driver-OneSignal-version-'." />
+                <option name="description" value="Displays the sub-projects of root project 'Billion-Driver-Android'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -256,7 +409,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'Apporio-taxi-Driver-OneSignal-version-'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'Billion-Driver-Android'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -274,7 +427,7 @@
                 <option name="name" value="bundleAppClassesDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'Apporio-taxi-Driver-OneSignal-version-' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'Billion-Driver-Android' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -297,7 +450,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'Apporio-taxi-Driver-OneSignal-version-'." />
+                <option name="description" value="Displays all dependencies declared in root project 'Billion-Driver-Android'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -374,7 +527,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'Apporio-taxi-Driver-OneSignal-version-'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'Billion-Driver-Android'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -487,7 +640,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'Apporio-taxi-Driver-OneSignal-version-'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Billion-Driver-Android'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -772,12 +925,12 @@
                 <option name="name" value="transformDexArchiveWithDexMergerForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'Apporio-taxi-Driver-OneSignal-version-'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'Billion-Driver-Android'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'Apporio-taxi-Driver-OneSignal-version-'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Billion-Driver-Android'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -895,7 +1048,7 @@
                 <option name="name" value="processReleaseGoogleServices" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'Apporio-taxi-Driver-OneSignal-version-'." />
+                <option name="description" value="Displays the properties of root project 'Billion-Driver-Android'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -1890,7 +2043,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="Apporio-taxi-Driver-OneSignal-version-" />
+              <option name="name" value="Billion-Driver-Android" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
@@ -2057,26 +2210,58 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/others/MyBroadcastReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/fcmclasses/OneSignalServiceClass.java" />
+        <option value="$PROJECT_DIR$/app/google-services.json" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_wallet_image.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet_transaction.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/TemporaryWalletModel.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/Config.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/urls/Apis.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wallet.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/ModelWalletTransactionsResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/AdapterWalletFragments.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/WalletTransactionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/HolderWalletTransactions.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_holder_wallet_transaction.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/WalletActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forgotpass_verify_otp.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/settings/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/OnlineOfflineActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_view_receipt.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/PriceFareActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/TimeService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="261" />
+    <option name="x" value="100" />
+    <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages AndroidView="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -2085,29 +2270,233 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="Apporio-taxi-Driver-OneSignal-version-" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Billion-Driver-Android" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="apporio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="sampermissionutils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="apporio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="apporio" type="462c0819:PsiDirectoryNode" />
+              <item name="billiondriver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-hdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-mdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-v21" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xhdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xxhdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xxxhdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-hdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-mdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-xhdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Billion-Driver-Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Billion-Driver-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1526965571670" />
-    <property name="SearchEverywhereHistoryKey" value="APi&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.urls.Apis&#10;Main&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.MainActivity" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="E:/APPORIO/PROJECTS/BILLION/billion_icon.jpg" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
+    <property name="device.picker.selection" value="28c0100a" />
+    <property name="SearchEverywhereHistoryKey" value="Time&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/TimeService.java&#10;Api&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/urls/Apis.java&#10;Main&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/MainActivity.java&#10;Fare&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/PriceFareActivity.java&#10;One&#9;PSI&#9;JAVA://com.apporio.billiondriver.fcmclasses.OneSignalServiceClass&#10;MAin&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/MainActivity.java&#10;Register&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/RegisterActivity.java&#10;LoginA&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/LoginActivity.java&#10;Splash&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/SplashActivity.java&#10;Login&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/res/layout/activity_login.xml&#10;Splas&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/res/layout/activity_splash.xml&#10;Setti&#9;PSI&#9;JAVA://com.apporio.billiondriver.settings.SettingsActivity&#10;Log&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/LoginActivity.java&#10;app_lo&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/res/drawable/app_logo_100.png&#10;colo&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/res/values/colors.xml&#10;Wallet&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/wallet/WalletActivity.java&#10;Trial&#9;PSI&#9;JAVA://com.apporio.billiondriver.TrialReceivePassengerActivity&#10;WalletAct&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/wallet/WalletActivity.java&#10;Price&#9;PSI&#9;JAVA://com.apporio.billiondriver.PriceFareActivity&#10;Profi&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/res/layout/activity_profile.xml&#10;manifes&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/AndroidManifest.xml&#10;Broad&#9;PSI&#9;JAVA://com.apporio.billiondriver.others.MyBroadcastReceiver&#10;Holder&#9;PSI&#9;JAVA://com.apporio.billiondriver.DocumentActivity.HolderDocumentItem&#10;API&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/java/com/apporio/billiondriver/urls/Apis.java&#10;URL&#9;PSI&#9;JAVA://com.apporio.billiondriver.routedrawer.FetchUrl&#10;Android&#9;FILE&#9;file://E:/Android Studio Projects/Billion-Driver-Android/app/src/main/AndroidManifest.xml&#10;SettingsAc&#9;PSI&#9;JAVA://com.apporio.billiondriver.settings.SettingsActivity" />
+    <property name="lastFolderRoot" value="E:/APPORIO/PROJECTS/BILLION/billion_ride.jpg" />
+    <property name="algorithm" value="Scalr" />
+    <property name="method" value="Automatic" />
+    <property name="sourceResolution" value="XHDPI" />
+    <property name="resolutions" value="MDPI&#10;XXHDPI&#10;XHDPI&#10;XXXHDPI&#10;HDPI" />
+    <property name="format" value="PNG" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.apporio.billiondriver.wallet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Android Studio Projects\Billion-Driver-Android\app\src\main\res\drawable" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2145,7 +2534,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2265,11 +2654,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="952ba85b-250f-4f2b-8f34-c78b7d2cc80d" name="Default" comment="" />
-      <created>1526964858330</created>
+      <changelist id="f43a2942-d3e6-4286-a521-5ad677732057" name="Default" comment="" />
+      <created>1527134264055</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526964858330</updated>
+      <updated>1527134264055</updated>
     </task>
     <servers />
   </component>
@@ -2277,27 +2666,29 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25385603" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5080645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09408602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2795699" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40188172" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2305,136 +2696,582 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/PriceFareActivity.java</url>
+          <line>127</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/wallet/WalletActivity.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/LoginActivity.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/OnlineOfflineActivity.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/TimeService.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/MainActivity.java</url>
+          <line>1000</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/MainActivity.java</url>
+          <line>883</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/TimeService.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="23" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>e.</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Config.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/ForgotPass_VerifyOTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="120" column="24" lean-forward="false" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+        <state relative-caret-position="527">
+          <caret line="52" column="56" lean-forward="false" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/LocationEvent.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/settings/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="442">
+          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="83" column="49" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/Verify_OTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/app_logo_100_driver.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/billion_icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/app_logo_100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/app_logo_100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/app_logo_100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-nodpi/app_logo_100.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/billion_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/billion_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-nodpi/flag_colombia.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/billion_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/billion_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/billion_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="111" column="74" lean-forward="false" selection-start-line="111" selection-start-column="74" selection-end-line="111" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/StatusActiity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/parsing/AccountModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/register/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/crowdfire/cfalertdialog/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="771" column="32" lean-forward="false" selection-start-line="771" selection-start-column="32" selection-end-line="771" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="167" column="21" lean-forward="false" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crowdfire.cfalertdialog/cfalertdialog/1.0.1/920fa7bfd69bc2b0a0983893c72a03a7ade4f883/cfalertdialog-1.0.1-sources.jar!/com/crowdfire/cfalertdialog/CFAlertDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="80" column="58" lean-forward="true" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/2b487adef1fdcbed727a93ef91d3b5c0/jars/classes.jar!/com/google/android/gms/gcm/GcmTaskService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/GcmServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/restmodels/NewUpdateLatLongModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_online_offline.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/ModelDeviceOnlineIffline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/deviceid/DeviceId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="746" column="256" lean-forward="false" selection-start-line="746" selection-start-column="256" selection-end-line="746" selection-end-column="256" />
+        <state relative-caret-position="153">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/others/FirebaseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="71" column="101" lean-forward="false" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/models/ResultCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_price_fare.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="87" column="53" lean-forward="false" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_view_receipt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="176" column="56" lean-forward="false" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_content.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/manager/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="263" column="16" lean-forward="false" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/OnlineOfflineActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/fcmclasses/OneSignalServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="e#8257#8572#0" expanded="true" />
-            <element signature="e#8571#8572#0" expanded="true" />
-            <element signature="e#11204#11633#0" expanded="true" />
-            <element signature="e#11632#11633#0" expanded="true" />
-            <element signature="e#11705#12179#0" expanded="true" />
-            <element signature="e#12178#12179#0" expanded="true" />
-            <element signature="e#12242#12515#0" expanded="true" />
-            <element signature="e#12514#12515#0" expanded="true" />
-            <element signature="e#12581#13199#0" expanded="true" />
-            <element signature="e#12780#13114#0" expanded="true" />
-            <element signature="e#13113#13114#0" expanded="true" />
-            <element signature="e#13198#13199#0" expanded="true" />
-            <element signature="e#13261#13468#0" expanded="true" />
-            <element signature="e#13467#13468#0" expanded="true" />
-            <element signature="e#13956#14231#0" expanded="true" />
-            <element signature="e#14230#14231#0" expanded="true" />
-            <element signature="e#14811#14981#0" expanded="true" />
-            <element signature="e#14980#14981#0" expanded="true" />
-            <element signature="e#19838#20151#0" expanded="true" />
-            <element signature="e#20150#20151#0" expanded="true" />
-            <element signature="e#21291#21495#0" expanded="true" />
-            <element signature="e#21494#21495#0" expanded="true" />
-            <element signature="e#21567#21769#0" expanded="true" />
-            <element signature="e#21768#21769#0" expanded="true" />
-            <element signature="e#21838#22046#0" expanded="true" />
-            <element signature="e#22045#22046#0" expanded="true" />
-            <element signature="e#22117#22360#0" expanded="true" />
-            <element signature="e#22359#22360#0" expanded="true" />
-            <element signature="e#22437#22649#0" expanded="true" />
-            <element signature="e#22648#22649#0" expanded="true" />
-            <element signature="e#22728#22934#0" expanded="true" />
-            <element signature="e#22933#22934#0" expanded="true" />
-            <element signature="e#22999#23201#0" expanded="true" />
-            <element signature="e#23200#23201#0" expanded="true" />
-            <element signature="e#23273#23479#0" expanded="true" />
-            <element signature="e#23478#23479#0" expanded="true" />
-            <element signature="e#23539#23694#0" expanded="true" />
-            <element signature="e#23693#23694#0" expanded="true" />
-            <element signature="e#23762#23964#0" expanded="true" />
-            <element signature="e#23963#23964#0" expanded="true" />
-            <element signature="e#24027#24664#0" expanded="true" />
-            <element signature="e#24325#24390#0" expanded="true" />
-            <element signature="e#24523#24586#0" expanded="true" />
-            <element signature="e#24663#24664#0" expanded="true" />
-            <element signature="e#24733#25998#0" expanded="true" />
-            <element signature="e#25108#25143#0" expanded="true" />
-            <element signature="e#25190#25940#0" expanded="true" />
-            <element signature="e#25939#25940#0" expanded="true" />
-            <element signature="e#25997#25998#0" expanded="true" />
-            <element signature="e#26068#26304#0" expanded="true" />
-            <element signature="e#26303#26304#0" expanded="true" />
-            <element signature="e#26376#26578#0" expanded="true" />
-            <element signature="e#26577#26578#0" expanded="true" />
-            <element signature="e#27276#27568#0" expanded="true" />
-            <element signature="e#27567#27568#0" expanded="true" />
-            <element signature="e#28090#28707#0" expanded="true" />
-            <element signature="e#28706#28707#0" expanded="true" />
-            <element signature="e#28755#29174#0" expanded="true" />
-            <element signature="e#29173#29174#0" expanded="true" />
-            <element signature="e#30606#31350#0" expanded="true" />
-            <element signature="e#31349#31350#0" expanded="true" />
-            <element signature="e#34802#34863#0" expanded="true" />
-            <element signature="e#35120#35182#0" expanded="true" />
-            <element signature="e#49676#49826#0" expanded="true" />
-            <element signature="e#49825#49826#0" expanded="true" />
-            <element signature="e#50070#50147#0" expanded="true" />
-            <element signature="e#50177#50253#0" expanded="true" />
-            <element signature="e#50282#50359#0" expanded="true" />
-            <element signature="e#50460#50982#0" expanded="true" />
-            <element signature="e#50981#50982#0" expanded="true" />
-            <element signature="e#50994#51074#0" expanded="true" />
-            <element signature="e#51175#51417#0" expanded="true" />
-            <element signature="e#51416#51417#0" expanded="true" />
+            <element signature="e#11247#11275#0" expanded="true" />
+            <element signature="e#12347#12375#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/PriceFareActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="148" column="273" lean-forward="false" selection-start-line="148" selection-start-column="273" selection-end-line="148" selection-end-column="273" />
+        <state relative-caret-position="136">
+          <caret line="162" column="67" lean-forward="false" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
+          <folding>
+            <element signature="e#1950#1997#0" expanded="true" />
+            <element signature="e#3371#3532#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+            <element signature="e#3602#3986#0" expanded="true" />
+            <element signature="e#3985#3986#0" expanded="true" />
+            <element signature="e#4032#4188#0" expanded="true" />
+            <element signature="e#4187#4188#0" expanded="true" />
+            <element signature="e#5425#5483#0" expanded="true" />
+            <element signature="e#5489#5547#0" expanded="true" />
+            <element signature="e#5682#5740#0" expanded="true" />
+            <element signature="e#5746#5806#0" expanded="true" />
+            <element signature="e#5941#5999#0" expanded="true" />
+            <element signature="e#6005#6063#0" expanded="true" />
+            <element signature="e#6198#6256#0" expanded="true" />
+            <element signature="e#6262#6322#0" expanded="true" />
+            <element signature="e#7029#7089#0" expanded="true" />
+            <element signature="e#11866#11903#0" expanded="true" />
+            <element signature="e#12148#12298#0" expanded="true" />
+            <element signature="e#12297#12298#0" expanded="true" />
+            <element signature="e#13222#14400#0" expanded="true" />
+            <element signature="e#13490#13567#0" expanded="true" />
+            <element signature="e#14399#14400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/urls/Apis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="183">
+          <caret line="117" column="15" lean-forward="false" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/TimeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="727" column="80" lean-forward="false" selection-start-line="727" selection-start-column="80" selection-end-line="727" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="206">
+          <caret line="104" column="59" lean-forward="false" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
+          <folding>
+            <element signature="e#4156#4435#0" expanded="true" />
+            <element signature="e#4434#4435#0" expanded="true" />
+            <element signature="e#4529#7388#0" expanded="true" />
+            <element signature="e#7387#7388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/billiondriver/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="998" column="13" lean-forward="false" selection-start-line="998" selection-start-column="13" selection-end-line="998" selection-end-column="13" />
+          <folding>
+            <element signature="e#8221#8536#0" expanded="true" />
+            <element signature="e#8535#8536#0" expanded="true" />
+            <element signature="e#11168#11597#0" expanded="true" />
+            <element signature="e#11596#11597#0" expanded="true" />
+            <element signature="e#11669#12143#0" expanded="true" />
+            <element signature="e#12142#12143#0" expanded="true" />
+            <element signature="e#12206#12479#0" expanded="true" />
+            <element signature="e#12478#12479#0" expanded="true" />
+            <element signature="e#12545#13163#0" expanded="true" />
+            <element signature="e#12744#13078#0" expanded="true" />
+            <element signature="e#13077#13078#0" expanded="true" />
+            <element signature="e#13162#13163#0" expanded="true" />
+            <element signature="e#13225#13432#0" expanded="true" />
+            <element signature="e#13431#13432#0" expanded="true" />
+            <element signature="e#13920#14195#0" expanded="true" />
+            <element signature="e#14194#14195#0" expanded="true" />
+            <element signature="e#14775#14945#0" expanded="true" />
+            <element signature="e#14944#14945#0" expanded="true" />
+            <element signature="e#19802#20115#0" expanded="true" />
+            <element signature="e#20114#20115#0" expanded="true" />
+            <element signature="e#21255#21459#0" expanded="true" />
+            <element signature="e#21458#21459#0" expanded="true" />
+            <element signature="e#21531#21733#0" expanded="true" />
+            <element signature="e#21732#21733#0" expanded="true" />
+            <element signature="e#21802#22010#0" expanded="true" />
+            <element signature="e#22009#22010#0" expanded="true" />
+            <element signature="e#22081#22320#0" expanded="true" />
+            <element signature="e#22319#22320#0" expanded="true" />
+            <element signature="e#22387#22590#0" expanded="true" />
+            <element signature="e#22589#22590#0" expanded="true" />
+            <element signature="e#22667#22879#0" expanded="true" />
+            <element signature="e#22878#22879#0" expanded="true" />
+            <element signature="e#22958#23164#0" expanded="true" />
+            <element signature="e#23163#23164#0" expanded="true" />
+            <element signature="e#23229#23431#0" expanded="true" />
+            <element signature="e#23430#23431#0" expanded="true" />
+            <element signature="e#23503#23709#0" expanded="true" />
+            <element signature="e#23708#23709#0" expanded="true" />
+            <element signature="e#23769#23924#0" expanded="true" />
+            <element signature="e#23923#23924#0" expanded="true" />
+            <element signature="e#23992#24194#0" expanded="true" />
+            <element signature="e#24193#24194#0" expanded="true" />
+            <element signature="e#24257#24894#0" expanded="true" />
+            <element signature="e#24555#24620#0" expanded="true" />
+            <element signature="e#24753#24816#0" expanded="true" />
+            <element signature="e#24893#24894#0" expanded="true" />
+            <element signature="e#24963#26228#0" expanded="true" />
+            <element signature="e#25338#25373#0" expanded="true" />
+            <element signature="e#25420#26170#0" expanded="true" />
+            <element signature="e#26169#26170#0" expanded="true" />
+            <element signature="e#26227#26228#0" expanded="true" />
+            <element signature="e#26298#26534#0" expanded="true" />
+            <element signature="e#26533#26534#0" expanded="true" />
+            <element signature="e#26606#26808#0" expanded="true" />
+            <element signature="e#26807#26808#0" expanded="true" />
+            <element signature="e#27506#27798#0" expanded="true" />
+            <element signature="e#27797#27798#0" expanded="true" />
+            <element signature="e#28320#28937#0" expanded="true" />
+            <element signature="e#28936#28937#0" expanded="true" />
+            <element signature="e#28985#29404#0" expanded="true" />
+            <element signature="e#29403#29404#0" expanded="true" />
+            <element signature="e#30836#31580#0" expanded="true" />
+            <element signature="e#31579#31580#0" expanded="true" />
+            <element signature="e#35032#35093#0" expanded="true" />
+            <element signature="e#35350#35412#0" expanded="true" />
+            <element signature="e#50310#50460#0" expanded="true" />
+            <element signature="e#50459#50460#0" expanded="true" />
+            <element signature="e#50704#50781#0" expanded="true" />
+            <element signature="e#50811#50887#0" expanded="true" />
+            <element signature="e#50916#50993#0" expanded="true" />
+            <element signature="e#51094#51616#0" expanded="true" />
+            <element signature="e#51615#51616#0" expanded="true" />
+            <element signature="e#51628#51708#0" expanded="true" />
+            <element signature="e#51809#52051#0" expanded="true" />
+            <element signature="e#52050#52051#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

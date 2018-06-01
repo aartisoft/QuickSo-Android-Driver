@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.apporio.demotaxiapp.settings.SettingsActivity">
+    tools:context="com.apporio.billiondriver.settings.SettingsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                     android:background="@color/settings_strip_color"
                     android:gravity="start|center_vertical">
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
@@ -72,7 +72,7 @@
                         android:src="@drawable/ic_language"
                         android:tint="@color/color_menu_icon" />
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center|left"
@@ -88,7 +88,7 @@
                     android:background="@color/settings_strip_color"
                     android:gravity="start|center_vertical">
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
@@ -114,7 +114,7 @@
                         android:src="@drawable/ic_phone"
                         android:tint="@color/color_menu_icon" />
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center|left"
@@ -146,7 +146,7 @@
                         android:src="@drawable/report"
                         android:tint="@color/color_menu_icon" />
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center|left"
@@ -163,7 +163,7 @@
                     android:background="@color/settings_strip_color"
                     android:gravity="start|center_vertical">
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
@@ -190,7 +190,7 @@
                         android:tint="@color/color_menu_icon"
                         android:visibility="gone" />
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center|left"
@@ -223,7 +223,7 @@
                         android:tint="@color/color_menu_icon"
                         android:visibility="gone" />
 
-                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                    <com.apporio.billiondriver.typeface.TypefaceTextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center|left"
@@ -261,7 +261,7 @@
                         android:orientation="horizontal"
                         android:gravity="start|center_vertical">
 
-                        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                        <com.apporio.billiondriver.typeface.TypefaceTextView
                             android:layout_width="wrap_content"
                             android:layout_height="fill_parent"
                             android:gravity="center_vertical"
@@ -269,7 +269,7 @@
                             android:textColor="@color/color_menu_text"
                             android:textSize="@dimen/menu_settings_text_size" />
 
-                        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
+                        <com.apporio.billiondriver.typeface.TypefaceTextView
                            android:id="@+id/textView_version_name"
                             android:layout_width="wrap_content"
                             android:layout_height="fill_parent"

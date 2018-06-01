@@ -8,7 +8,7 @@ android {
         javaMaxHeapSize "4g"
     }
     defaultConfig {
-        applicationId "com.apporio.demotaxiappdriver"
+        applicationId "com.apporio.billiondriver"
 
         minSdkVersion 16
         targetSdkVersion 26
@@ -16,14 +16,14 @@ android {
         versionName "2.19.20180421"
         multiDexEnabled true
 
-        javaCompileOptions{
-            annotationProcessorOptions{
+        javaCompileOptions {
+            annotationProcessorOptions {
                 includeCompileClasspath = true
             }
         }
 
         manifestPlaceholders = [
-                onesignal_app_id: '39691bc9-f588-41ea-9b7f-1a4f16914ed9',
+                onesignal_app_id               : '47334e8b-dbb3-43f1-95f4-731c175dc1cc',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]
@@ -50,7 +50,6 @@ repositories {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
 
     /* compile('com.digits.sdk.android:digits:2.0.6@aar') {
                     transitive = true;

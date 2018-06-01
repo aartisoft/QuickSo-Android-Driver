@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.apporio.demotaxiappdriver.TrialReceivePassengerActivity">
+    tools:context="com.apporio.billiondriver.TrialReceivePassengerActivity">
 
     <include layout="@layout/action_bar_one"/>
 
