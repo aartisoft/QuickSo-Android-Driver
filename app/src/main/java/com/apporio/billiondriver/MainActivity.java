@@ -19,7 +19,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.SwitchCompat;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -27,11 +26,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.GcmServiceClass;
 import com.apporio.apporiologs.ApporioLog;
 
 import com.apporio.billiondriver.location.SamLocationRequestService;
@@ -59,7 +58,6 @@ import com.apporio.billiondriver.wallet.WalletActivity;
 import com.bumptech.glide.Glide;
 import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.google.android.gms.gcm.GcmNetworkManager;
-import com.google.android.gms.gcm.PeriodicTask;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapsInitializer;
@@ -72,7 +70,6 @@ import com.google.android.gms.maps.model.TileOverlay;
 import com.google.android.gms.maps.model.TileOverlayOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.maps.android.heatmaps.HeatmapTileProvider;
@@ -137,6 +134,7 @@ public class MainActivity extends BaseActivity implements Apis,
     private boolean isLatLongUpdateAPIisRunning = false;
 
     Button button_manualDispatch;
+    LinearLayout my_wallet_button;
     String demoStatus="1";
 
     @Override
@@ -161,6 +159,7 @@ public class MainActivity extends BaseActivity implements Apis,
         Constants.is_main_activity_open = true;
 
 
+        my_wallet_button = (LinearLayout) findViewById(R.id.my_wallet_button);
         button_manualDispatch = (Button) findViewById(R.id.button_manualDispatch);
         driver_id = (TextView) findViewById(R.id.driver_id);
         tv_address = (TextView) findViewById(R.id.tv_address);
@@ -349,20 +348,6 @@ public class MainActivity extends BaseActivity implements Apis,
     @Override
     protected void onResumeWithConnectionState(boolean connectivityStatus) {
 
-    }
-
-    public void startPeriodicTask() {
-        Log.d(TAG, "startPeriodicTask");
-
-        // [START start_periodic_task]
-        PeriodicTask task = new PeriodicTask.Builder()
-                .setService(GcmServiceClass.class)
-                .setTag(TASK_TAG_PERIODIC)
-                .setPeriod(30L)
-                .build();
-
-        mGcmNetworkManager.schedule(task);
-        // [END start_periodic_task]
     }
 
     private void startActivityAccordingToSatatus(int val, String donRideId) {
@@ -978,6 +963,13 @@ public class MainActivity extends BaseActivity implements Apis,
                         isLatLongUpdateAPIisRunning = false;
                         NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
                         sessionManager.setCurrencyCode("" + response.getCurrency_iso_code(), "" + response.getCurrency_unicode());
+
+                        if(response.getDriver_wallet_active_status().equals("1")){
+                            my_wallet_button.setVisibility(View.GONE);
+                        }else if(response.getDriver_wallet_active_status().equals("2")){
+                            my_wallet_button.setVisibility(View.VISIBLE);
+                        }
+
                         break;
                     case Config.ApiKeys.KEY_SCHEDULE_AND_UPDATED:
                         ModelScheduleAndunacceptedRide modelScheduleAndunacceptedRide = gson.fromJson("" + script, ModelScheduleAndunacceptedRide.class);

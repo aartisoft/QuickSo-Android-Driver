@@ -9,13 +9,15 @@ public class NewUpdateLatLongModel {
 
     /**
      * result : 1
+     * driver_wallet_active_status : 1
      * msg : Updated Successfully
-     * currency_iso_code : 0
-     * currency_unicode : 20B9
-     * application_accuracy : 134
+     * currency_iso_code : MMK
+     * currency_unicode : 0
+     * application_accuracy : 300
      */
 
     private int result;
+    private String driver_wallet_active_status;
     private String msg;
     private String currency_iso_code;
     private String currency_unicode;
@@ -27,6 +29,14 @@ public class NewUpdateLatLongModel {
 
     public void setResult(int result) {
         this.result = result;
+    }
+
+    public String getDriver_wallet_active_status() {
+        return driver_wallet_active_status;
+    }
+
+    public void setDriver_wallet_active_status(String driver_wallet_active_status) {
+        this.driver_wallet_active_status = driver_wallet_active_status;
     }
 
     public String getMsg() {

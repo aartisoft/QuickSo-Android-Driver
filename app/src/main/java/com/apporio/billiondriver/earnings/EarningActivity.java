@@ -18,6 +18,7 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -29,8 +30,9 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
     SessionManager sessinManager;
     ApiManager apiManager;
     String driver_id;
-    FrameLayout container ;
+    FrameLayout container;
     String date = "NA";
+    LinearLayout ll_outstanding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
         sessinManager = new SessionManager(EarningActivity.this);
         setContentView(R.layout.activity_earning);
 
+        ll_outstanding = (LinearLayout) findViewById(R.id.ll_outstanding);
         driver_id = sessinManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID);
         pd = new ProgressDialog(this);
         pd.setMessage("" + this.getResources().getString(R.string.loading));
@@ -50,7 +53,7 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
         findViewById(R.id.viewFullSummLL).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EarningActivity.this, WeeklyStatementActivity.class).putExtra("date" , ""+date));
+                startActivity(new Intent(EarningActivity.this, WeeklyStatementActivity.class).putExtra("date", "" + date));
             }
         });
 
@@ -61,7 +64,6 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
                 EarningActivity.this.finish();
             }
         });
-
 
 
         findViewById(R.id.another_week_btn).setOnClickListener(new View.OnClickListener() {
@@ -100,7 +102,8 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
 
     @Override
     public void onFetchComplete(Object script, String APINAME) {
-        try{GsonBuilder builder = new GsonBuilder();
+        try {
+            GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
 
             if (APINAME.equals("" + Config.ApiKeys.KEY_WEEKLY_EARNING)) {
@@ -115,26 +118,33 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
                         totalSummaryTV.setText(sessinManager.getCurrencyCode() + weeklyEarningModel.getCompany_payment().toString());
                         for (int i = 0; i < weeklyEarningModel.getDetails().size(); i++) {
 
-                            String current_date = weeklyEarningModel.getDetails().get(0).getDate().toString().replace("2017-" , "");
-                            String next_date = weeklyEarningModel.getDetails().get(weeklyEarningModel.getDetails().size() - 1).getDetail().getDate().toString().replace("2017-" , "");
+                            String current_date = weeklyEarningModel.getDetails().get(0).getDate().toString().replace("2017-", "");
+                            String next_date = weeklyEarningModel.getDetails().get(weeklyEarningModel.getDetails().size() - 1).getDetail().getDate().toString().replace("2017-", "");
                             dateTV.setText(current_date + "     to     " + next_date);
                             dateTV.setTextColor(this.getResources().getColor(R.color.icons_8_muted_yellow));
                         }
 
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .add(R.id.container, FragmentGraph.newInstance("message" , ""+script), "rageComicList")
+                                .add(R.id.container, FragmentGraph.newInstance("message", "" + script), "rageComicList")
                                 .commit();
 
 //                    view_pager.setAdapter(new GraphFragmentAdapter(getSupportFragmentManager(), "" + script));
 
+                        if (weeklyEarningModel.getOut_standing_active_status().equals("2")) {
+                            ll_outstanding.setVisibility(View.GONE);
+                        } else if (weeklyEarningModel.getOut_standing_active_status().equals("1")) {
+                            ll_outstanding.setVisibility(View.VISIBLE);
+                        }
                     } else {
-                    //    Toast.makeText(this, "" + weeklyEarningModel.getMsg(), Toast.LENGTH_SHORT).show();
+                        //    Toast.makeText(this, "" + weeklyEarningModel.getMsg(), Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     Log.e("Exception", "" + e);
                 }
-            }}catch (Exception e){}
+            }
+        } catch (Exception e) {
+        }
 
     }
 
@@ -146,8 +156,8 @@ public class EarningActivity extends FragmentActivity implements ApiManager.APIF
 
     @Override
     public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
-         date = year+"-"+(monthOfYear+1)+"-"+dayOfMonth;
-        Log.d("*****change_week" , ""+date);
-        apiManager.execution_method_get("" + Config.ApiKeys.KEY_WEEKLY_EARNING, "" + Apis.week_amount + driver_id+"&date="+date);
+        date = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
+        Log.d("*****change_week", "" + date);
+        apiManager.execution_method_get("" + Config.ApiKeys.KEY_WEEKLY_EARNING, "" + Apis.week_amount + driver_id + "&date=" + date);
     }
 }

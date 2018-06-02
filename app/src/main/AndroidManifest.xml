@@ -177,14 +177,6 @@
             android:screenOrientation="portrait" />
 
         <service android:name=".TimeService" />
-        <service
-            android:name="com.apporio.GcmServiceClass"
-            android:exported="true"
-            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
-            <intent-filter>
-                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-            </intent-filter>
-        </service>
 
         <activity
             android:name=".earnings.EarningActivity"

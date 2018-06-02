@@ -39,7 +39,7 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
     LanguageManager languageManager;
     String language_id;
     TextView pay_mode, pick_location_txt, drop_location_txt, total_payble_fare_txt_large,tv_payment_status,tv_payment_text;
-    com.apporio.billiondriver.samwork.ApiManager apiManager;
+    ApiManager apiManager;
     DoneRideInfo doneRideInfo;
     EditText comments;
     Button btn_rate_user;
@@ -241,10 +241,10 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
         fare_txt.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getAmount());
 
         tv_ride_fare.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getTotal_amount());
-       // waiting_charge_txt.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getWaiting_price());
+        waiting_charge_txt.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getWaiting_price());
 
         tv_ride_distance.setText("" + doneRideInfo.getMsg().getDistance());
-      //  tv_waiting_time.setText("" + doneRideInfo.getMsg().getWaiting_time());
+        tv_waiting_time.setText("" + doneRideInfo.getMsg().getWaiting_time());
         tv_total_time.setText("" + doneRideInfo.getMsg().getTot_time() + "min");
         ride_time_charges_txt.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getRide_time_price());
         night_charge_txt.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getNight_time_charge());
