@@ -142,7 +142,7 @@
             android:background="@color/colorPrimary"
             android:gravity="center">
 
-            <com.apporio.billiondriver.typeface.TypefaceTextView
+            <com.vemja.driver.typeface.TypefaceTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/REGISTER_ACTIVITY__continue"

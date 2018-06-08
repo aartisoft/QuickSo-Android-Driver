@@ -7,7 +7,7 @@
     android:background="#efefef"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context="com.apporio.billiondriver.RidesActivity">
+    tools:context="com.vemja.driver.RidesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

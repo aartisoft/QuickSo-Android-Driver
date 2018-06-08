@@ -18,7 +18,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 
-import com.apporio.billiondriver.R;
+import com.vemja.driver.R;
 
 /**
  * Dialog to prompt the user to go to the app's settings screen and enable permissions. If the

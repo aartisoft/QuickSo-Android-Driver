@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.apporio.billiondriver.TermsAndCondition">
+    tools:context="com.vemja.driver.TermsAndCondition">
 
     <include
         android:id="@+id/toolbar_include"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.apporio.billiondriver.typeface.TypefaceTextView
+            <com.vemja.driver.typeface.TypefaceTextView
                 android:id="@+id/tc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package com.apporio.billiondriver;
+package com.vemja.driver;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

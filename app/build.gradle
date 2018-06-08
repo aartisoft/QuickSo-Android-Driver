@@ -8,7 +8,7 @@ android {
         javaMaxHeapSize "4g"
     }
     defaultConfig {
-        applicationId "com.apporio.billiondriver"
+        applicationId "com.vemja.driver"
 
         minSdkVersion 16
         targetSdkVersion 26
@@ -23,7 +23,7 @@ android {
         }
 
         manifestPlaceholders = [
-                onesignal_app_id               : '47334e8b-dbb3-43f1-95f4-731c175dc1cc',
+                onesignal_app_id               :'361dd47d-c123-4db8-8e9d-e72ffed298a9',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]

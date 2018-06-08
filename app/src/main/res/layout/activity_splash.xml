@@ -88,7 +88,7 @@
                     android:background="@color/colorPrimary"
                     android:gravity="center">
 
-                    <com.apporio.billiondriver.typeface.TypefaceTextView
+                    <com.vemja.driver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/register"
@@ -111,7 +111,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.apporio.billiondriver.typeface.TypefaceTextView
+                    <com.vemja.driver.typeface.TypefaceTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/login"
@@ -129,7 +129,7 @@
                     android:id="@+id/demo_login"
                     android:visibility="gone"
                     >
-                    <com.apporio.billiondriver.typeface.TypefaceTextView
+                    <com.vemja.driver.typeface.TypefaceTextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="DEMO DRIVER"

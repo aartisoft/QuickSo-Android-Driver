@@ -61,7 +61,7 @@
 
         <com.hbb20.CountryCodePicker
             android:id="@+id/otp_ccp"
-            app:defaultCode="95"
+            app:defaultCode="351"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:hideNameCode="true"
@@ -158,7 +158,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center">
 
-        <com.apporio.billiondriver.typeface.TypefaceTextView
+        <com.vemja.driver.typeface.TypefaceTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/REGISTER_ACTIVITY__continuee"

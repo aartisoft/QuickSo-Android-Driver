@@ -5,8 +5,8 @@
 <!--    <color name="colorPrimary">#34495e</color>
     <color name="colorPrimaryDark">#687576</color>
     <color name="colorAccent">#ffe57f</color>-->
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#6733BB</color>
+    <color name="colorPrimaryDark">#6733BB</color>
     <color name="colorAccent">#ffe57f</color>
 
     <color name="colorHeader">#ffffff</color>

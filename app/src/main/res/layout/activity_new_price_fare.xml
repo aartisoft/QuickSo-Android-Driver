@@ -26,7 +26,7 @@
                 android:tint="@color/colorPrimary" />
         </LinearLayout>
 
-        <com.apporio.billiondriver.typeface.TypefaceTextView
+        <com.vemja.driver.typeface.TypefaceTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -37,7 +37,7 @@
             android:layout_marginRight="30dp"
             android:background="@color/colorView" />
 
-        <com.apporio.billiondriver.typeface.TypefaceTextView
+        <com.vemja.driver.typeface.TypefaceTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -69,7 +69,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <com.apporio.billiondriver.typeface.TypefaceTextView
+                <com.vemja.driver.typeface.TypefaceTextView
                     android:id="@+id/typefaceTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

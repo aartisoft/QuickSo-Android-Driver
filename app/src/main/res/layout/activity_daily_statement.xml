@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context="com.apporio.billiondriver.earnings.WeeklyStatementActivity">
+    tools:context="com.vemja.driver.earnings.WeeklyStatementActivity">
 
 
     <android.support.v7.widget.CardView

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center|top"
     android:id="@+id/root"
-    tools:context="com.apporio.billiondriver.activities.BrowsePlanActivity">
+    tools:context="com.vemja.driver.activities.BrowsePlanActivity">
 
 
 
@@ -33,7 +33,7 @@
                     android:tint="@color/colorPrimary"
                     android:id="@+id/back"
                     android:padding="13dp"/>
-                <com.apporio.billiondriver.typeface.TypefaceTextView
+                <com.vemja.driver.typeface.TypefaceTextView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:text=""

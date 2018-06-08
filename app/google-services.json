@@ -1,35 +1,31 @@
 {
   "project_info": {
-    "project_number": "1032713108",
-    "firebase_url": "https://billionuser-b5a51.firebaseio.com",
-    "project_id": "billionuser-b5a51",
-    "storage_bucket": "billionuser-b5a51.appspot.com"
+    "project_number": "301987529584",
+    "firebase_url": "https://vemja-129ad.firebaseio.com",
+    "project_id": "vemja-129ad",
+    "storage_bucket": "vemja-129ad.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1032713108:android:b1d2183821319bec",
+        "mobilesdk_app_id": "1:301987529584:android:3e88a2d1a9a2b585",
         "android_client_info": {
-          "package_name": "com.apporio.billiondriver"
+          "package_name": "com.vemja.driver"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1032713108-k8rql4s70niojbk9dlmbi50meb6vugrm.apps.googleusercontent.com",
+          "client_id": "301987529584-o4vp0073q6mvlcha3g0cpqrie4l9itm9.apps.googleusercontent.com",
           "client_type": 3
         },
         {
-          "client_id": "1032713108-bk4ndur81s6vff73rf45to5b6vt1pb5u.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "1032713108-bk4ndur81s6vff73rf45to5b6vt1pb5u.apps.googleusercontent.com",
+          "client_id": "301987529584-o4vp0073q6mvlcha3g0cpqrie4l9itm9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCIubz9dA9HCscIpzE2JeO29NQGqBaqe68"
+          "current_key": "AIzaSyAkkqkuGSCe-VoJObPKI736ZdeBaV9mnBU"
         }
       ],
       "services": {
@@ -47,28 +43,24 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1032713108:android:dabe2ddfe8a39aa1",
+        "mobilesdk_app_id": "1:301987529584:android:790605d0713c191e",
         "android_client_info": {
-          "package_name": "com.apporio.billionuser"
+          "package_name": "com.vemja.user"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1032713108-k8rql4s70niojbk9dlmbi50meb6vugrm.apps.googleusercontent.com",
+          "client_id": "301987529584-o4vp0073q6mvlcha3g0cpqrie4l9itm9.apps.googleusercontent.com",
           "client_type": 3
         },
         {
-          "client_id": "1032713108-bk4ndur81s6vff73rf45to5b6vt1pb5u.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "1032713108-bk4ndur81s6vff73rf45to5b6vt1pb5u.apps.googleusercontent.com",
+          "client_id": "301987529584-o4vp0073q6mvlcha3g0cpqrie4l9itm9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCIubz9dA9HCscIpzE2JeO29NQGqBaqe68"
+          "current_key": "AIzaSyAkkqkuGSCe-VoJObPKI736ZdeBaV9mnBU"
         }
       ],
       "services": {
@@ -76,13 +68,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1032713108-k8rql4s70niojbk9dlmbi50meb6vugrm.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
