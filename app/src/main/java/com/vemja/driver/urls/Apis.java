@@ -7,7 +7,7 @@ public interface Apis {
     String imageDomain = BASE + "";
     String restdomain = BASE + "Apporiotaxi/";*/
 
-    String BASE = "http://apporio.info/Vemja/";
+    String BASE = "http://188.93.227.86/";
     String baseDomain = BASE + "api/";
     String imageDomain = BASE + "";
     String restdomain = BASE + "Vemja/";
@@ -48,8 +48,12 @@ public interface Apis {
     String PartialAccept = baseDomain + "ride_later_accept.php";
     String Sos_Request = restdomain + "/Common/SOS_Request";
 
+    String paymentUrl = baseDomain + "driver_card.php";
+
     String Manual_Ride = restdomain + "ManualRide/Book_Manual_Ride";
     String getAddress = baseDomain + "getaddress.php?latitude=";
+
+    String AddMoneyTOWallet = baseDomain + "add_driver_wallet_money.php?";
 
 
     String RideSync = restdomain + "/Rental/Ride_Sync";   //  rental_booking_id      app_id= 2 for demotaxiappdriver and 1 for cutomer
@@ -62,7 +66,7 @@ public interface Apis {
     String Done_Ride_Info = restdomain + "/Rental/Done_Ride_Info"; // rental_booking_id
     String Rating = restdomain + "/Rental/Rating";  // rating_star  rental_booking_id  comment  user_id  driver_id  app_id
     String RideHistory = restdomain + "/Driver/Driver_Ride_History";   //  driver_id
-    String UpcomingRides = restdomain +"Driver/Driver_Upcomming_Ride_History";
+    String UpcomingRides = restdomain + "Driver/Driver_Upcomming_Ride_History";
     String RideDetails = restdomain + "/User/Ride_Details";  //  ride_mode  booking_id
     String RideCancel = restdomain + "/Rental/Rental_Driver_Cancel_Ride";  //   rental_booking_id   user_id
     String CustomerSupport = restdomain + "/Common/Customer_support";  //  application(1 for user and 2 for demotaxiappdriver)  name  email  phone  query  driver_id  user_id

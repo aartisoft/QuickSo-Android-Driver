@@ -117,7 +117,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         switch (view.getId()) {
 
             case R.id.ll_language_btn:
-                final String[] languages = new String[]{"English", "Portugese"};
+                final String[] languages = new String[]{"English", "Portugues"};
                 CFAlertDialog.Builder builder = new CFAlertDialog.Builder(SettingsActivity.this);
                 builder.setDialogStyle(CFAlertDialog.CFAlertStyle.ALERT);
                 builder.setTitle(R.string.select_language);
@@ -128,8 +128,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                             case "English":
                                 languageManager.setLanguage("en");
                                 break;
-                            case "Portugese":
-                                languageManager.setLanguage("en");
+                            case "Portugues":
+                                languageManager.setLanguage("pt");
                                 break;
                         }
                         dialogInterface.dismiss();

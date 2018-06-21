@@ -59,7 +59,7 @@ public class ModelWalletTransactionsResponse implements Serializable {
         this.transactions = transactions;
     }
 
-    public static class TransactionsBean {
+    public static class TransactionsBean implements Serializable{
         /**
          * trans_id : 12
          * driver_id : 1

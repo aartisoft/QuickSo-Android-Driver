@@ -442,6 +442,34 @@
     <string name="RECEIVE_RENTAL_PASSENGER_ACTIVITY__accept">Accept</string>
 
 
+    //WalletActivity
+    <string name="WALLET_ACTIVITY__your_wallet_amount">Your wallet amount</string>
+    <string name="WALLET_ACTIVITY__add_money">Add Money</string>
+    <string name="WALLET_ACTIVITY__redeem_coupon">Redeem Coupon</string>
+    //Vie_Wallet_Money_Activity
+    <string name="VIEW_WALLET_MONEY_ACTIVITY__wallet_money">Wallet Money</string>
+    <string name="VIEW_WALLET_MONEY_ACTIVITY__current_balance">Current balance</string>
+    <string name="VIEW_WALLET_MONEY_ACTIVITY__add_money_to_wallet">Add money To Wallet</string>
+
+    <string name="all_transactions">All Transactions</string>
+    <string name="money_in">Money In</string>
+    <string name="money_out">Money Out</string>
+    <string name="TRANSACTIONS__no_transactions">No Transactions</string>
+    <string name="please_select_or_enter_money">Please Select Or Enter Money !!</string>
+
+
+    //AddMonetToWalletActivity
+
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__add_money_wallet">MY WALLET</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__add_money_to_wallet">Add money to wallet</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__it_s_quick_safe_and_secure">It\'s quick, safe and secure</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__add_money">Add Money</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__view_transactions">View Transactions</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__done">Ok</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__select_a_card_to_proceed_with_payment">Select a card to proceed with payment</string>
+    <string name="ADD_MONEY_TO_WALLET_ACTIVITY__no_card_added">No Card Added</string>
+
+
     //////////////// ProfileActivity
     <string name="PROFILE_ACTIVITY__done">DONE</string>
     <string name="PROFILE_ACTIVITY__email_id_big">EMAIL ID</string>

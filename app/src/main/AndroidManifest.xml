@@ -249,9 +249,11 @@
             android:screenOrientation="portrait" />
         <activity android:name=".ManualUserDetailActivity" />
         <activity android:name=".settings.SettingsActivity" />
-        <activity android:name=".wallet.WalletActivity"
-            android:screenOrientation="portrait"
-            />
+        <activity
+            android:name=".wallet.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".wallet.AddMoneyToWalletActivity" />
+        <activity android:name=".wallet.CreditCardPaymentActivity"></activity>
     </application>
 
 </manifest>

@@ -1,18 +1,22 @@
 package com.vemja.driver.wallet;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
+import com.google.android.gms.wallet.Wallet;
 import com.vemja.driver.BaseActivity;
 import com.vemja.driver.Config;
 import com.vemja.driver.ManualUserDetailActivity;
+import com.vemja.driver.ProfileActivity;
 import com.vemja.driver.R;
 import com.vemja.driver.manager.SessionManager;
 import com.vemja.driver.models.ModelWalletTransactionsResponse;
@@ -28,7 +32,7 @@ import java.util.HashMap;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class WalletActivity extends BaseActivity implements Apis,
+public class WalletActivity extends BaseActivity implements
         ApiManager.APIFETCHER {
 
     @Bind(R.id.tv_toolbar_text)
@@ -48,6 +52,9 @@ public class WalletActivity extends BaseActivity implements Apis,
     TextView tvWalletBalance;
     ProgressDialog pd;
 
+    @Bind(R.id.btn_add_money)
+    CardView btn_add_money;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,11 +65,19 @@ public class WalletActivity extends BaseActivity implements Apis,
         builder = new GsonBuilder();
         gson = builder.create();
         initialization();
-       // setUpViewPager();
+        // setUpViewPager();
+
+        btn_add_money.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddMoneyToWalletActivity.class));
+                // Intent intent = new Intent(this,AddMoneyToWalletActivity.class);
+            }
+        });
     }
 
     private void setUpViewPager(ModelWalletTransactionsResponse model) {
-        viewPagerWallet.setAdapter(new AdapterWalletFragments(getSupportFragmentManager(),model));
+        viewPagerWallet.setAdapter(new AdapterWalletFragments(getSupportFragmentManager(), model));
         tabLayoutWallet.setupWithViewPager(viewPagerWallet);
         tabLayoutWallet.setTabGravity(TabLayout.GRAVITY_FILL);
     }
@@ -79,6 +94,16 @@ public class WalletActivity extends BaseActivity implements Apis,
         tvToolbarText.setText(getResources().getString(R.string.WALLET_ACTIVITY_header_text));
         pd = new ProgressDialog(this);
         pd.setMessage(WalletActivity.this.getResources().getString(R.string.loading));
+
+//        btn_add_money.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getApplicationContext(), AddMoneyToWalletActivity.class));
+//               // Intent intent = new Intent(this,AddMoneyToWalletActivity.class);
+//            }
+//        });
+
+
         apiCalling();
     }
 
@@ -103,6 +128,12 @@ public class WalletActivity extends BaseActivity implements Apis,
         if (a == ApiManager.APIFETCHER.KEY_API_IS_STOPPED) {
             pd.dismiss();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        apiCalling();
     }
 
     @Override

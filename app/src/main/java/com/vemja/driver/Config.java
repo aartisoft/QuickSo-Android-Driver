@@ -56,6 +56,8 @@ public class Config {
         String DRIVER_ACTIVE_RIDES = "DRIVER_ACTIVE_RIDES";
         String SOS_REQUEST_NOTIFIER = "Sos_Request";
 
+        String Key_Add_Money_to_Wallet = "add_money_to_wallet";
+
 
         String KEY_ONLINE_OFFLINE = "KEY_ONLINE_OFFLINE";
         String KEY_UPDATE_DRIVER_LAT_LONG = "KEY_UPDATE_DRIVER_LAT_LONG";

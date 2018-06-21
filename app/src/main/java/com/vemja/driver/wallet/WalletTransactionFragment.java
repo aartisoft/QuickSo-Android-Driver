@@ -24,10 +24,10 @@ import butterknife.ButterKnife;
 public class WalletTransactionFragment extends Fragment {
 
 
-  //  @Bind(R.id.place_holder_wallet)
+    //  @Bind(R.id.place_holder_wallet)
     PlaceHolderView mPlaceHolder;
 
-   // List<TemporaryWalletModel> modelList;
+    // List<TemporaryWalletModel> modelList;
     ModelWalletTransactionsResponse model;
 
     public WalletTransactionFragment() {
@@ -43,31 +43,30 @@ public class WalletTransactionFragment extends Fragment {
 
         mPlaceHolder = view.findViewById(R.id.place_holder_wallet);
 
-       // modelList = provideList();
+        // modelList = provideList();
 
         getArguments().getString("msg");
         model = (ModelWalletTransactionsResponse) getArguments().getSerializable("model");
 
-        if (getArguments().getString("msg").equalsIgnoreCase("instance_one")){
-            for (int i = 0;i<model.getTransactions().size();i++){
-                mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i),getContext()));
+        if (getArguments().getString("msg").equalsIgnoreCase("instance_one")) {
+            for (int i = 0; i < model.getTransactions().size(); i++) {
+                mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i), getContext()));
             }
         }
         if (getArguments().getString("msg").equalsIgnoreCase("instance_two")) {
-            for (int i= 0 ; i<model.getTransactions().size() ; i++){
-                if (model.getTransactions().get(i).getTransaction_type().equalsIgnoreCase("Credit")){
-                    mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i),getContext()));
+            for (int i = 0; i < model.getTransactions().size(); i++) {
+                if (model.getTransactions().get(i).getTransaction_type().equalsIgnoreCase("Credit")) {
+                    mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i), getContext()));
                 }
             }
         }
-        if (getArguments().getString("msg").equalsIgnoreCase("instance_three")){
-            for (int i= 0 ; i<model.getTransactions().size() ; i++){
-                if (model.getTransactions().get(i).getTransaction_type().equalsIgnoreCase("Debit")){
-                    mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i),getContext()));
+        if (getArguments().getString("msg").equalsIgnoreCase("instance_three")) {
+            for (int i = 0; i < model.getTransactions().size(); i++) {
+                if (model.getTransactions().get(i).getTransaction_type().equalsIgnoreCase("Debit")) {
+                    mPlaceHolder.addView(new HolderWalletTransactions(model.getTransactions().get(i), getContext()));
                 }
             }
         }
-
 
 
         ButterKnife.bind(this, view);
@@ -75,12 +74,11 @@ public class WalletTransactionFragment extends Fragment {
     }
 
 
-
     public static WalletTransactionFragment newInstance(String text, ModelWalletTransactionsResponse model) {
         WalletTransactionFragment f = new WalletTransactionFragment();
         Bundle b = new Bundle();
         b.putString("msg", text);
-        b.putSerializable("model",model);
+        b.putSerializable("model", model);
         f.setArguments(b);
         return f;
     }
@@ -91,7 +89,7 @@ public class WalletTransactionFragment extends Fragment {
         ButterKnife.unbind(this);
     }
 
-    public List<TemporaryWalletModel> provideList(){
+    public List<TemporaryWalletModel> provideList() {
 
         List<TemporaryWalletModel> list = new ArrayList<>();
 

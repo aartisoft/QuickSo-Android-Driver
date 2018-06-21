@@ -55,6 +55,7 @@ import com.vemja.driver.samwork.ApiManager;
 import com.vemja.driver.settings.SettingsActivity;
 import com.vemja.driver.trackride.TrackRideActivity;
 import com.vemja.driver.urls.Apis;
+import com.vemja.driver.wallet.AddMoneyToWalletActivity;
 import com.vemja.driver.wallet.WalletActivity;
 import com.bumptech.glide.Glide;
 import com.crowdfire.cfalertdialog.CFAlertDialog;
