@@ -31,15 +31,14 @@ import com.vemja.driver.urls.Apis;
 import java.util.HashMap;
 
 
-
 public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCHER {
 
-    ApiManager apiManager ;
+    ApiManager apiManager;
     GsonBuilder gsonBuilder;
     private TextView otpError_txt;
     private EditText otp_input;
     private LinearLayout submit_otp_layout, back;
-    SessionManager sessionManager ;
+    SessionManager sessionManager;
     RegistrationModel.OTP_Details otp_details;
     Gson gson;
     ProgressDialog pd;
@@ -56,7 +55,7 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
         super.onCreate(savedInstanceState);
         gsonBuilder = new GsonBuilder();
         gson = gsonBuilder.create();
-        apiManager = new ApiManager(this );
+        apiManager = new ApiManager(this);
         sessionManager = new SessionManager(Verify_OTP.this);
         otp_details = new RegistrationModel.OTP_Details();
         setContentView(R.layout.activity_verify__otp);
@@ -67,10 +66,10 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
         pd.setCancelable(false);
         pd.setCanceledOnTouchOutside(false);
 
-        otp_input = (EditText)findViewById(R.id.edit_verify_otp);
-        submit_otp_layout = (LinearLayout)findViewById(R.id.otp_register);
-        back = (LinearLayout)findViewById(R.id.otp_back_signup);
-        phone_number = (EditText)findViewById(R.id.edt_enter_phone);
+        otp_input = (EditText) findViewById(R.id.edit_verify_otp);
+        submit_otp_layout = (LinearLayout) findViewById(R.id.otp_register);
+        back = (LinearLayout) findViewById(R.id.otp_back_signup);
+        phone_number = (EditText) findViewById(R.id.edt_enter_phone);
         countryCodePicker = (CountryCodePicker) findViewById(R.id.otp_ccp);
         generate_otp = (Button) findViewById(R.id.generate_otp);
 
@@ -88,16 +87,16 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
                 input_OTP = otp_input.getText().toString().trim();
 
                 if (input_OTP.equals("")) {
-                     Toast.makeText(Verify_OTP.this, R.string.required_field_empty, Toast.LENGTH_SHORT).show();
-                 }else if (!otp_input.getText().toString().equals(otp)) {
-                     Toast.makeText(Verify_OTP.this, R.string.invalid_otp, Toast.LENGTH_SHORT).show();
-                }else {
+                    Toast.makeText(Verify_OTP.this, R.string.required_field_empty, Toast.LENGTH_SHORT).show();
+                } else if (!otp_input.getText().toString().equals(otp)) {
+                    Toast.makeText(Verify_OTP.this, R.string.invalid_otp, Toast.LENGTH_SHORT).show();
+                } else {
                     Intent intent = new Intent();
-                    intent.putExtra("phone_number", "+"+countryCodePicker.getSelectedCountryCode()+ input_number);
+                    intent.putExtra("phone_number", "+" + countryCodePicker.getSelectedCountryCode() + input_number);
                     setResult(Activity.RESULT_OK, intent);
                     finish();
-                   // apiManager.execution_method_get(Config.ApiKeys.KEY_Driver_register, Apis.register + "?driver_name=" + name + "&driver_email=" + email + "&driver_phone=" + phone + "&driver_password=" + password + "&city_id=" + city_id + "&car_type_id=" + car_id + "&car_model_id=" + car_model_id + "&car_number=" + carNumber + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
-                 }
+                    // apiManager.execution_method_get(Config.ApiKeys.KEY_Driver_register, Apis.register + "?driver_name=" + name + "&driver_email=" + email + "&driver_phone=" + phone + "&driver_password=" + password + "&city_id=" + city_id + "&car_type_id=" + car_id + "&car_model_id=" + car_model_id + "&car_number=" + carNumber + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+                }
 
             }
         });
@@ -110,10 +109,10 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
                 Log.e("input_phone_number====", String.valueOf(input_number));
                 code = countryCodePicker.getSelectedCountryCodeWithPlus();
                 Log.e("COUNTRY_CODE_PICKER===", code);
-                if (input_number.equals("")){
+                if (input_number.equals("")) {
                     Toast.makeText(Verify_OTP.this, R.string.required_field_empty, Toast.LENGTH_SHORT).show();
-                }else {
-                    SignUpAccount(code+input_number);
+                } else {
+                    SignUpAccount(code + input_number);
 
                 }
             }
@@ -124,12 +123,12 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
     private void SignUpAccount(String number) {
         Log.e("**PHONE_NUMBER===", number);
 
-        HashMap<String , String > bodyparameters  = new HashMap<String, String>();
-        bodyparameters.put("phone" , number);
-        bodyparameters.put("flag" , "2");
+        HashMap<String, String> bodyparameters = new HashMap<String, String>();
+        bodyparameters.put("phone", number);
+        bodyparameters.put("flag", "2");
 
         Log.e("**HASHMAP_OTP", String.valueOf(bodyparameters));
-        apiManager.execution_method_post(Config.ApiKeys.KEY_VERIFY_OTP,  Apis.SEND_OTP, bodyparameters);
+        apiManager.execution_method_post(Config.ApiKeys.KEY_VERIFY_OTP, Apis.SEND_OTP, bodyparameters);
     }
 
 
@@ -146,27 +145,27 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
     @Override
     public void onFetchComplete(Object script, String APINAME) {
 
-        if (APINAME.equals(Config.ApiKeys.KEY_VERIFY_OTP)){
+        if (APINAME.equals(Config.ApiKeys.KEY_VERIFY_OTP)) {
             submit_otp_layout.setEnabled(true);
 
                 /*RegistrationModel.OTP_Details register = new RegistrationModel.OTP_Details();
                 register = gson.fromJson(""+script + "", RegistrationModel.OTP_Details.class);*/
             RegistrationModel.OTP_Details otp_response = gson.fromJson("" + script, RegistrationModel.OTP_Details.class);
 
-            ApporioLog.logE("register---model", String.valueOf(otp_response.getStatus()));
-            if (otp_response.getStatus()== 1) {
-                //            Toast.makeText(this, "" + otp_response.getStatus(), Toast.LENGTH_SHORT).show();
-                otp = otp_response.getOtp();
-//                Log.e("OTP_RECEIVED--", String.valueOf(otp));
-                otp_input.requestFocus();
-                if(otp_response.getAuto_otp() == 1){
-//                    otp_input.setText(""+otp);
+            if (otp_response.getStatus() == 1) {
+
+                if (otp_response.getAuto_otp() == 1) {
+                    otp = otp_response.getOtp();
+                    otp_input.requestFocus();
+
+                } else {
+                    Toast.makeText(this, "" + otp_response.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             } else {
                 Toast.makeText(this, "" + otp_response.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
-}
+    }
 
 
     @Override

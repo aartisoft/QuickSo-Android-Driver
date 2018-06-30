@@ -716,19 +716,19 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
             if (result_check.result.equals("1")) {
                 if (APINAME.equals(Config.ApiKeys.KEY_ARRIVED)) {
                     rideSession.setRideStatus("5");
-                    updateFirebaseEvent(Config.Status.NORMAL_ARRIVED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
+                   // updateFirebaseEvent(Config.Status.NORMAL_ARRIVED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_BEGIN_TRIP)) {
                     rideSession.setRideStatus("6");
                     locationSession.clearMeterValue();
                     apiManager.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&current_lat=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT) + "&bearing_factor=" + locationSession.getLocationDetails().get(LocationSession.KEY_BEARING_FACTOR) + "&current_long=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG) + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=1");
-                    updateFirebaseEvent(Config.Status.NORMAL_STARTED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
+                   // updateFirebaseEvent(Config.Status.NORMAL_STARTED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_END_TRIP)) {
                     rideSession.setRideStatus("7");
                     RideArrived rideArrived = new RideArrived();
                     rideArrived = gson.fromJson("" + script, RideArrived.class);
-                    updateFirebaseEventWithDoneRide(Config.Status.NORMAL_RIDE_END, rideArrived.getDetails().getDoneRideId(), rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
+                    //updateFirebaseEventWithDoneRide(Config.Status.NORMAL_RIDE_END, rideArrived.getDetails().getDoneRideId(), rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                     startActivity(new Intent(this, PriceFareActivity.class)
                             .putExtra("amount", rideArrived.getDetails().getAmount())
                             .putExtra("distance", rideArrived.getDetails().getDistance())
@@ -745,7 +745,7 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_CANCEL_TRIP)) {
                     rideSession.setRideStatus("4");
-                    updateFirebaseEvent(Config.Status.NORMAL_CANCEL_BY_DRIVER, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
+                 //   updateFirebaseEvent(Config.Status.NORMAL_CANCEL_BY_DRIVER, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                     rideSession.clearRideSession();
                     finish();
                     startActivity(new Intent(this, TripHistoryActivity.class));
@@ -754,7 +754,7 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
                     NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
                 }
                 if (APINAME.equals("" + Config.ApiKeys.KEY_CHANGE_DESTINATION)) {
-                    updateFirebaseEventWithDestinationChange();
+                    //updateFirebaseEventWithDestinationChange();
                     NewChangeDropLocationModel drop_change_response = gson.fromJson("" + script, NewChangeDropLocationModel.class);
                     rideSession.setDropLocation("" + drop_change_response.getDetails().getDrop_location(), "" + drop_change_response.getDetails().getDrop_lat(), "" + drop_change_response.getDetails().getDrop_long());
                 }
@@ -782,26 +782,26 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
     }
 
 
-    private void updateFirebaseEvent(final String status_value, final String Ride_Id) throws Exception {
-
-        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + Ride_Id).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-                };
-                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-                try {
-                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + Ride_Id).setValue(new RideSessionEvent("" + Ride_Id, "" + status_value, "Not yet generated", "0"));
-                } catch (Exception e) {
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.i("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-            }
-        });
-    }
+//    private void updateFirebaseEvent(final String status_value, final String Ride_Id) throws Exception {
+//
+//        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + Ride_Id).addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
+//                };
+//                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
+//                try {
+//                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + Ride_Id).setValue(new RideSessionEvent("" + Ride_Id, "" + status_value, "Not yet generated", "0"));
+//                } catch (Exception e) {
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//                Log.i("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
+//            }
+//        });
+//    }
 
     private void updateFirebaseEventWithDestinationChange() throws Exception {
 

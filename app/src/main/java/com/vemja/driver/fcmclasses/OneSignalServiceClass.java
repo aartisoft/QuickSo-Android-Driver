@@ -273,6 +273,7 @@ public class OneSignalServiceClass extends NotificationExtenderService {
         }
         if (intent_type == LATER_REASSIGNED) {
             return new Intent(this, ReAcceptpassActivity.class)
+                    .putExtra("ride_id",modelNewRide.ride_id)
                     .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         }
         if (intent_type == RECEIPT_EVENT) {
