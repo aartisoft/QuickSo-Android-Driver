@@ -1,5 +1,6 @@
 package com.vemja.driver;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -93,7 +94,6 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
 
     int PLACE_AUTOCOMPLETE_REQUEST_CODE = 1;
     String manualDropLat = "", manualDropLng = "", manualPickLat = "", manualPickLng = "", manualPickLocation = "", manualDropLocation = "";
-    FirebaseUtils firebaseUtils;
     ApiManager apiManager;
     ProgressDialog pd;
     GsonBuilder builder;
@@ -117,7 +117,6 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
         sessionManager = new SessionManager(this);
         apiManager = new ApiManager(this);
         pd = new ProgressDialog(this);
-        firebaseUtils = new FirebaseUtils(this);
         builder = new GsonBuilder();
         gson = builder.create();
         pd.setMessage(ManualUserDetailActivity.this.getResources().getString(R.string.loading));
@@ -187,6 +186,7 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
         }
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -263,6 +263,7 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
         }
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onFetchComplete(Object script, String APINAME) {
 
@@ -279,7 +280,6 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
                         startActivity(new Intent(this, TrackRideActivity.class)
                                 .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                 .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));
-                        firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                         finish();
                     }
                 } else {

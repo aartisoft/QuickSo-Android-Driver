@@ -60,7 +60,6 @@ public class AcceptPassActivity extends Activity implements ApiManager.APIFETCHE
     String RIDE_ID, RIDE_STATUS, RIDE_TYPE;
     ApiManager apiManager;
     SessionManager sessionManager;
-    FirebaseUtils firebaseUtils;
     Gson gson;
     @Bind(R.id.back)
     RelativeLayout back;
@@ -119,7 +118,7 @@ public class AcceptPassActivity extends Activity implements ApiManager.APIFETCHE
         });
         activityNameTxt.setText(R.string.trip_details);
         apiManager = new ApiManager(this);
-        firebaseUtils = new FirebaseUtils(this);
+
         sessionManager = new SessionManager(this);
         gson = new GsonBuilder().create();
 
@@ -234,7 +233,6 @@ public class AcceptPassActivity extends Activity implements ApiManager.APIFETCHE
                             startActivity(new Intent(this, TrackRideActivity.class)
                                     .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                     .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));
-                            firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                             finish();
                         }
                     } else {

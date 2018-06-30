@@ -62,7 +62,6 @@ public class ReceiveRentalPassengerActivity extends Activity implements ApiManag
     Gson gson;
     ProgressDialog progressDialog;
     CountDownTimer SoundTimer, ProgressTimer;
-    FirebaseUtils firebaseUtils;
 
     LinearLayout cash_layout, card_layout;
     public static MediaPlayer mediaPlayer;
@@ -107,7 +106,6 @@ public class ReceiveRentalPassengerActivity extends Activity implements ApiManag
         progressDialog.setMessage("" + this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
         gson = new GsonBuilder().create();
-        firebaseUtils = new FirebaseUtils(this);
         setContentView(R.layout.activity_receive_rental_passenger);
         ButterKnife.bind(this);
         pulsator.start();
@@ -164,7 +162,6 @@ public class ReceiveRentalPassengerActivity extends Activity implements ApiManag
             long difference_time = (Long.parseLong(TimeDifference) * 1000);
             STARTTIME = MAXTIME - difference_time;
             if (STARTTIME <= 1) {
-                firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                 finish();
             } else {
                 timeTxt.setText("" + (STARTTIME / 1000));

@@ -10,24 +10,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vemja.driver.R;
-import com.vemja.driver.manager.LanguageManager;
-import com.vemja.driver.models.ModelDeviceOnlineIffline;
-import com.vemja.driver.models.ResultCheck;
-import com.vemja.driver.models.deviceid.DeviceId;
-import com.vemja.driver.others.FirebaseUtils;
-import com.vemja.driver.samwork.ApiManager;
-
-import com.vemja.driver.manager.SessionManager;
-import com.vemja.driver.urls.Apis;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.vemja.driver.manager.LanguageManager;
 import com.vemja.driver.manager.SessionManager;
 import com.vemja.driver.models.ModelDeviceOnlineIffline;
-import com.vemja.driver.others.FirebaseUtils;
 import com.vemja.driver.samwork.ApiManager;
 import com.vemja.driver.urls.Apis;
 
@@ -43,14 +30,11 @@ public class OnlineOfflineActivity extends Activity implements ApiManager.APIFET
     @Bind(R.id.status_btn) LinearLayout status_btn;
     @Bind(R.id.btn_txt)
     TextView btn_txt;
-    DatabaseReference mDatabaseReference;
 
 
     LanguageManager languageManager ;
     SessionManager sessionManager ;
     ApiManager apiManager ;
-    FirebaseUtils firebaseutil;
-    FirebaseDatabase database;
     GsonBuilder builder ;
     Gson gson ;
     ProgressDialog progressDialog ;
@@ -63,9 +47,7 @@ public class OnlineOfflineActivity extends Activity implements ApiManager.APIFET
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage(""+this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
-        database = FirebaseDatabase.getInstance();
-        mDatabaseReference = database.getReference("Drivers_A");
-        firebaseutil = new FirebaseUtils(this);
+
         progressDialog = new ProgressDialog(this);
 
         apiManager = new ApiManager(this);
@@ -138,10 +120,8 @@ public class OnlineOfflineActivity extends Activity implements ApiManager.APIFET
                         ModelDeviceOnlineIffline modelDeviceOnlineIffline = gson.fromJson(""+script, ModelDeviceOnlineIffline.class);
                         if(modelDeviceOnlineIffline.getOffline() == 1){
                             sessionManager.setonline_offline(true);
-                            firebaseutil.setDriverOnlineStatus(true);
                         }else {
                             sessionManager.setonline_offline(false);
-                            firebaseutil.setDriverOnlineStatus(false);
                         }
                         break;
                 }

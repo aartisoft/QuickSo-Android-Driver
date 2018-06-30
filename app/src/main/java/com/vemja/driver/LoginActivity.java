@@ -39,13 +39,11 @@ public class LoginActivity extends AppCompatActivity implements ApiManager.APIFE
     LinearLayout tv_forgot;
     LanguageManager languageManager;
     String language_id;
-    FirebaseUtils firebaseUtils;
     CountryCodePicker ccp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        firebaseUtils = new FirebaseUtils(this);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
         loginactivity1 = this;
@@ -167,8 +165,6 @@ public class LoginActivity extends AppCompatActivity implements ApiManager.APIFE
                                 register.getDetails().getDriver_bank_name(), register.getDetails().getDriver_account_number(),
                                 register.getDetails().getDriver_account_name());
 
-                        firebaseUtils.setUpDriver();
-                        firebaseUtils.createRidePool(FirebaseUtils.NO_RIDES, FirebaseUtils.NO_RIDE_STATUS);
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     } else if (detail_status.equals("3")) {
                         startActivity(new Intent(LoginActivity.this, StatusActiity.class)

@@ -157,11 +157,10 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
             if (otp_response.getStatus()== 1) {
                 //            Toast.makeText(this, "" + otp_response.getStatus(), Toast.LENGTH_SHORT).show();
                 otp = otp_response.getOtp();
-                Log.e("OTP_RECEIVED--", String.valueOf(otp));
-                otp_input.setText(""+otp);
+//                Log.e("OTP_RECEIVED--", String.valueOf(otp));
                 otp_input.requestFocus();
                 if(otp_response.getAuto_otp() == 1){
-                    otp_input.setText(""+otp);
+//                    otp_input.setText(""+otp);
                 }
             } else {
                 Toast.makeText(this, "" + otp_response.getMessage(), Toast.LENGTH_SHORT).show();

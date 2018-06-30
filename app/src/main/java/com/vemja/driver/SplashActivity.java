@@ -74,7 +74,6 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
     private boolean is_gps_dialog_shown = false;
     private boolean is_internet_dialog_is_shown = false;
     private boolean is_version_dialog_is_shown = false;
-    FirebaseUtils firebaseUtils ;
     ApiManager apiManager;
     String[] PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
     Gson gson;
@@ -85,12 +84,10 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        FirebaseRemoteConfigSettings remoteConfigSettings = new FirebaseRemoteConfigSettings.Builder().setDeveloperModeEnabled(BuildConfig.DEBUG).build();
         apiManager = new ApiManager(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
-        firebaseUtils = new FirebaseUtils(this);
         gson = new GsonBuilder().create();
         splash = this;
         languageManager = new LanguageManager(this);
@@ -492,8 +489,6 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
                     register.getDetails().getDriver_bank_name(), register.getDetails().getDriver_account_number(),
                     register.getDetails().getDriver_account_name());
 
-            firebaseUtils.setUpDriver();
-            firebaseUtils.createRidePool(FirebaseUtils.NO_RIDES , FirebaseUtils.NO_RIDE_STATUS);
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
         }else if (register.getDetails().getDetail_status().equals("3")){

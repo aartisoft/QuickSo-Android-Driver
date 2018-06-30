@@ -93,7 +93,7 @@
 
                         <com.hbb20.CountryCodePicker
                             android:id="@+id/phone_ccp"
-                            app:defaultCode="95"
+                            app:defaultCode="351"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:hideNameCode="true"

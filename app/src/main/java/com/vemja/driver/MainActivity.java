@@ -32,31 +32,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-
-import com.vemja.driver.R;
-import com.vemja.driver.location.SamLocationRequestService;
-import com.vemja.driver.logger.Logger;
-import com.vemja.driver.manager.DeviceManager;
-import com.vemja.driver.manager.LanguageManager;
-import com.vemja.driver.manager.RideSession;
-import com.vemja.driver.manager.SessionManager;
-import com.vemja.driver.models.ActiveRidesResponse;
-import com.vemja.driver.models.CallSupportResponse;
-import com.vemja.driver.models.ModelReportIssue;
-import com.vemja.driver.models.ModelScheduleAndunacceptedRide;
-import com.vemja.driver.models.ResultCheck;
-import com.vemja.driver.models.deviceid.DeviceId;
-import com.vemja.driver.models.restmodels.NewHeatmapModel;
-import com.vemja.driver.models.restmodels.NewUpdateLatLongModel;
-import com.vemja.driver.others.Constants;
-import com.vemja.driver.others.FirebaseUtils;
-import com.vemja.driver.others.Maputils;
-import com.vemja.driver.samwork.ApiManager;
-import com.vemja.driver.settings.SettingsActivity;
-import com.vemja.driver.trackride.TrackRideActivity;
-import com.vemja.driver.urls.Apis;
-import com.vemja.driver.wallet.AddMoneyToWalletActivity;
-import com.vemja.driver.wallet.WalletActivity;
 import com.bumptech.glide.Glide;
 import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.google.android.gms.gcm.GcmNetworkManager;
@@ -70,8 +45,6 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.TileOverlay;
 import com.google.android.gms.maps.model.TileOverlayOptions;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.maps.android.heatmaps.HeatmapTileProvider;
@@ -92,7 +65,6 @@ import com.vemja.driver.models.deviceid.DeviceId;
 import com.vemja.driver.models.restmodels.NewHeatmapModel;
 import com.vemja.driver.models.restmodels.NewUpdateLatLongModel;
 import com.vemja.driver.others.Constants;
-import com.vemja.driver.others.FirebaseUtils;
 import com.vemja.driver.others.Maputils;
 import com.vemja.driver.samwork.ApiManager;
 import com.vemja.driver.settings.SettingsActivity;
@@ -115,7 +87,6 @@ import customviews.typefacesviews.TypefaceDosisRegular;
 public class MainActivity extends BaseActivity implements Apis,
         OnMapReadyCallback, ApiManager.APIFETCHER {
 
-    DatabaseReference mDatabaseReference;
 
     ApiManager apiManager_new;
     ActiveRidesResponse activeRidesResponse;
@@ -148,8 +119,6 @@ public class MainActivity extends BaseActivity implements Apis,
     Address addressFromLocation;
 
     RideSession rideSession;
-    FirebaseUtils firebaseutil;
-    FirebaseDatabase database;
     ModelReportIssue modelReportIssue;
     GsonBuilder builder;
     Gson gson;
@@ -168,12 +137,9 @@ public class MainActivity extends BaseActivity implements Apis,
         setContentView(R.layout.activity_main);
         builder = new GsonBuilder();
         gson = builder.create();
-        database = FirebaseDatabase.getInstance();
 
         mGcmNetworkManager = GcmNetworkManager.getInstance(this);
-        mDatabaseReference = database.getReference("Drivers_A");
         rideSession = new RideSession(this);
-        firebaseutil = new FirebaseUtils(this);
         apiManager_new = new ApiManager(this);
         locationSession = new LocationSession(this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
@@ -678,19 +644,11 @@ public class MainActivity extends BaseActivity implements Apis,
                 l.setSpeed(0);
                 l.setTime(System.currentTimeMillis() / 1000);
                 app_location_manager.setLocationLatLong(l);
-                firebaseutil.updateLocation_with_text();
             }
         });
 
 
-        mGooglemap.setOnCameraIdleListener(new GoogleMap.OnCameraIdleListener() {
-            @Override
-            public void onCameraIdle() {
-                if (sessionManager.getUserDetails().get(SessionManager.KEY_service_switcher).equals("0")) {
-                    firebaseutil.updateLocationOnCameramove("" + mGooglemap.getCameraPosition().target.latitude, "" + mGooglemap.getCameraPosition().target.longitude);
-                }
-            }
-        });
+
 
 
     }
@@ -899,10 +857,8 @@ public class MainActivity extends BaseActivity implements Apis,
                         DeviceId deviceToken = gson.fromJson("" + script, DeviceId.class);
                         if (deviceToken.getMsg().equals("Online")) {
                             sessionManager.setonline_offline(true);
-                            firebaseutil.setDriverOnlineStatus(true);
                         } else {
                             sessionManager.setonline_offline(false);
-                            firebaseutil.setDriverOnlineStatus(false);
                         }
                         break;
                     case Config.ApiKeys.KEY_CALL_SUPPORT:
@@ -1002,8 +958,6 @@ public class MainActivity extends BaseActivity implements Apis,
                         scheduled_rides.setText("" + modelScheduleAndunacceptedRide.getDetails().getScheduled_ride());
                         break;
                     case Config.ApiKeys.LOGOUT:
-                        firebaseutil.setDriverOnlineStatus(false);
-                        firebaseutil.setDriverLoginLogoutStatus(false);
                         sessionManager.logoutUser();
                         startActivity(new Intent(MainActivity.this, SplashActivity.class));
                         finish();
@@ -1017,7 +971,6 @@ public class MainActivity extends BaseActivity implements Apis,
             else if (resultCheck.result.equals("2")) { // when result is 2, it means wallet balance is low
                 if (APINAME.equals(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND)) {
                     sessionManager.setonline_offline(false);
-                    firebaseutil.setDriverOnlineStatus(false);
                     setStatusViewAccordingly();
                 }
             }

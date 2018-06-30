@@ -1,5 +1,6 @@
 package com.vemja.driver;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -73,7 +74,6 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
     GsonBuilder builder;
     Gson gson;
     ProgressDialog progressDialog;
-    FirebaseUtils firebaseUtils;
     ViewRideInfoDriver viewRideInfoDriver;
 
     CountDownTimer SoundTimer, ProgressTimer;
@@ -131,7 +131,7 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("" + this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
-        firebaseUtils = new FirebaseUtils(this);
+
         builder = new GsonBuilder();
         gson = builder.create();
         apiManager = new ApiManager(this);
@@ -151,7 +151,6 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
             @Override
             public void onClick(View v) {
                 try {
-                    firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                 } catch (Exception e) {
                 }
                 finish();
@@ -311,6 +310,7 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
         }
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onFetchComplete(Object script, String APINAME) {
         try {
@@ -359,7 +359,6 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                 if (deviceId.getResult().toString().equals("1")) {
                     Toast.makeText(this, "" + deviceId.getMsg(), Toast.LENGTH_SHORT).show();
                     finish();
-                    firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                 } else {
                     setViewAccordingToRideStatus("0", "" + deviceId.getMsg());
                 }
@@ -378,7 +377,6 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                         startActivity(new Intent(this, TrackRideActivity.class)
                                 .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                 .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));
-                        firebaseUtils.createRidePool("" + FirebaseUtils.NO_RIDES, "" + FirebaseUtils.NO_RIDE_STATUS);
                         finish();
                     }
                 } else {

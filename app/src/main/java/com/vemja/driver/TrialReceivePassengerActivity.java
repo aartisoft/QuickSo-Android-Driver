@@ -1,5 +1,6 @@
 package com.vemja.driver;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -80,7 +81,6 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
     Gson gson;
     CountDownTimer countDownTimer;
     ProgressDialog progressDialog;
-    FirebaseUtils firebaseUtils ;
     ViewRideInfoDriver viewRideInfoDriver ;
 
 
@@ -90,7 +90,6 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("" + this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
-        firebaseUtils = new FirebaseUtils(this);
         builder = new GsonBuilder();
         gson = builder.create();
         apiManager = new ApiManager(this);
@@ -120,7 +119,9 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
         rideExpireOkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try{firebaseUtils.createRidePool(""+FirebaseUtils.NO_RIDES , ""+FirebaseUtils.NO_RIDE_STATUS);}catch (Exception e){}
+                try{
+
+                }catch (Exception e){}
                 finish();
             }
         });
@@ -194,6 +195,7 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
         }
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onFetchComplete(Object script, String APINAME) {
         try{
@@ -229,7 +231,6 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
                 if (deviceId.getResult().toString().equals("1")) {
                     Toast.makeText(this, "" + deviceId.getMsg(), Toast.LENGTH_SHORT).show();
                     finish();
-                    firebaseUtils.createRidePool(""+FirebaseUtils.NO_RIDES , ""+FirebaseUtils.NO_RIDE_STATUS);
                 } else {
                     setViewAccordingToRideStatus("0", ""+deviceId.getMsg());
                 }
@@ -248,7 +249,6 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
                         startActivity(new Intent(this, TrackRideActivity.class)
                                 .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                 .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));
-                        firebaseUtils.createRidePool(""+FirebaseUtils.NO_RIDES , ""+FirebaseUtils.NO_RIDE_STATUS);
                         finish();
                     }
                 }else{

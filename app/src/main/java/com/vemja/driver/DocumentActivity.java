@@ -1,5 +1,6 @@
 package com.vemja.driver;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -49,14 +50,12 @@ public class DocumentActivity extends Activity implements ApiManager.APIFETCHER 
     ApiManager apiManager;
     ProgressDialog progressDialog;
     DocumentListModel documentListModel;
-    FirebaseUtils firebaseUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_document);
         ButterKnife.bind(this);
-        firebaseUtils = new FirebaseUtils(this);
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage(this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
@@ -114,6 +113,7 @@ public class DocumentActivity extends Activity implements ApiManager.APIFETCHER 
 
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onFetchComplete(Object script, String APINAME) {
         try{ if (APINAME.equals("document_list")) {
@@ -174,8 +174,6 @@ public class DocumentActivity extends Activity implements ApiManager.APIFETCHER 
 
                     Log.d("**driver_account_name==document=", register.getDetails().getDriver_account_name());
 
-                    firebaseUtils.setUpDriver();
-                    firebaseUtils.createRidePool(FirebaseUtils.NO_RIDES, FirebaseUtils.NO_RIDE_STATUS);
                     startActivity(new Intent(DocumentActivity.this, MainActivity.class));
                     try {
                         overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);

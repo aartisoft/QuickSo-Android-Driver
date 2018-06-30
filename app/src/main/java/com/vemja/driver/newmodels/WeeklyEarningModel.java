@@ -12,15 +12,15 @@ public class WeeklyEarningModel {
     /**
      * result : 1
      * msg : Weekly Earning
-     * out_standing_active_status : 1
-     * fare_recevied : 0
-     * company_cut : 0.00
+     * out_standing_active_status : 2
+     * fare_recevied : 3
+     * company_cut : 0.30
      * total_payment_eraned : 0
-     * weekly_amount : 0
+     * weekly_amount : 2.7
      * company_payment : 0
      * driver_payment :
-     * total_rides : 0
-     * details : [{"date":"28-05-2018","day":"Monday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-05-28"}},{"date":"29-05-2018","day":"Tuesday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-05-29"}},{"date":"30-05-2018","day":"Wednesday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-05-30"}},{"date":"31-05-2018","day":"Thursday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-05-31"}},{"date":"01-06-2018","day":"Friday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-06-01"}},{"date":"02-06-2018","day":"Saturday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-06-02"}},{"date":"03-06-2018","day":"Sunday","detail":{"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-06-03"}}]
+     * total_rides : 3
+     * details : [{"date":"18-06-2018","day":"Monday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-18"}},{"date":"19-06-2018","day":"Tuesday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-19"}},{"date":"20-06-2018","day":"Wednesday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-20"}},{"date":"21-06-2018","day":"Thursday","detail":{"driver_earning_id":"8","driver_id":"5","total_amount":"3","rides":"3","amount":"2.7","outstanding_amount":"-1.7","ride_mode":"1","date":"2018-06-21"}},{"date":"22-06-2018","day":"Friday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-22"}},{"date":"23-06-2018","day":"Saturday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-23"}},{"date":"24-06-2018","day":"Sunday","detail":{"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-24"}}]
      */
 
     private int result;
@@ -29,7 +29,7 @@ public class WeeklyEarningModel {
     private String fare_recevied;
     private String company_cut;
     private String total_payment_eraned;
-    private int weekly_amount;
+    private double weekly_amount;
     private String company_payment;
     private String driver_payment;
     private int total_rides;
@@ -83,11 +83,11 @@ public class WeeklyEarningModel {
         this.total_payment_eraned = total_payment_eraned;
     }
 
-    public int getWeekly_amount() {
+    public double getWeekly_amount() {
         return weekly_amount;
     }
 
-    public void setWeekly_amount(int weekly_amount) {
+    public void setWeekly_amount(double weekly_amount) {
         this.weekly_amount = weekly_amount;
     }
 
@@ -125,9 +125,9 @@ public class WeeklyEarningModel {
 
     public static class DetailsBean {
         /**
-         * date : 28-05-2018
+         * date : 18-06-2018
          * day : Monday
-         * detail : {"driver_earning_id":"0","driver_id":"17","total_amount":"0","rides":"0","amount":"0","date":"2018-05-28"}
+         * detail : {"driver_earning_id":"0","driver_id":"5","total_amount":"0","rides":"0","amount":"0","date":"2018-06-18"}
          */
 
         private String date;
@@ -161,11 +161,11 @@ public class WeeklyEarningModel {
         public static class DetailBean {
             /**
              * driver_earning_id : 0
-             * driver_id : 17
+             * driver_id : 5
              * total_amount : 0
              * rides : 0
              * amount : 0
-             * date : 2018-05-28
+             * date : 2018-06-18
              */
 
             private String driver_earning_id;

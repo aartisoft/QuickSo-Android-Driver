@@ -50,7 +50,6 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
     private static final String TAG = "TimeService";
     SamLocationRequestService sam_location ;
     LocationSession app_location_mamanger ;
-    FirebaseUtils firebaseUtils ;
     SessionManager sessionManager ;
     LanguageManager languageManager ;
     RideSession rideSession ;
@@ -74,7 +73,6 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
         app_location_mamanger = new LocationSession(this);
         sam_location = new SamLocationRequestService(this);
         apiManager = new ApiManager(this);
-        firebaseUtils = new FirebaseUtils(this);
         rideSession = new RideSession(this);
         sessionManager = new SessionManager(this);
         languageManager = new LanguageManager(this);
@@ -113,10 +111,8 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
             sessionManager.setAccuracy(""+response.getApplication_accuracy());
             if (response.getResult()==2){ // when result is 2, it means wallet balance is low
                 sessionManager.setonline_offline(false);
-                firebaseUtils.setDriverOnlineStatus(false);
             }else {
                 sessionManager.setonline_offline(true);
-                firebaseUtils.setDriverOnlineStatus(true);
             }
 
 
@@ -170,7 +166,6 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
                             }
                         }
                         if(sessionManager.getUserDetails().get(SessionManager.KEY_service_switcher).equals("1")){
-                            firebaseUtils.updateLocation_with_text();
                         }
 
                     }catch (Exception e){
