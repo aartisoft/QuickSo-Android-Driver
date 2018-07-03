@@ -32,7 +32,7 @@
             android:layout_weight="1"
             android:gravity="left|center_vertical">
 
-            <com.vemja.driver.typeface.TypefaceTextView
+            <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ADD_MONEY_TO_WALLET_ACTIVITY__add_money_wallet"
@@ -66,13 +66,13 @@
             android:visibility="gone"
             android:orientation="vertical">
 
-            <com.vemja.driver.typeface.TypefaceTextView
+            <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/VIEW_WALLET_MONEY_ACTIVITY__current_balance"
                 android:textColor="@color/colorWhite" />
 
-            <com.vemja.driver.typeface.TypefaceTextView
+            <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                 android:id="@+id/text_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,14 +97,14 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/ADD_MONEY_TO_WALLET_ACTIVITY__add_money_to_wallet"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16dp" />
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -320,7 +320,7 @@
                 android:orientation="vertical"
                 android:visibility="gone">
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -344,7 +344,7 @@
                         android:layout_marginTop="5dp"
                         android:scrollbars="none" />
 
-                    <com.vemja.driver.typeface.TypefaceTextView
+                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                         android:id="@+id/tv_card"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

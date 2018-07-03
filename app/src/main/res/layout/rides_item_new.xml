@@ -30,7 +30,7 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical">
 
-                    <com.vemja.driver.typeface.TypefaceTextView
+                    <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                         android:id="@+id/tv_date_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                     android:layout_marginLeft="30dp"
                     android:background="@drawable/dot_green" />
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:id="@+id/tv_pickup_addresss"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:layout_marginLeft="30dp"
                     android:background="@drawable/dot_red" />
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:id="@+id/tv_drop_addresss"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

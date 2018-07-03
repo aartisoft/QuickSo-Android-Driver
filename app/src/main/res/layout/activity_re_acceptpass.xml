@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/icon_8_muted_black"
-    tools:context="com.vemja.driver.TrialReceivePassengerActivity">
+    tools:context="com.apporio.demotaxiappdriver.TrialReceivePassengerActivity">
 
     cancel button
     <LinearLayout

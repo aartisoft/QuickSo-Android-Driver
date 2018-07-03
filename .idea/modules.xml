@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Vamja-Driver-Android-.iml" filepath="$PROJECT_DIR$/Vamja-Driver-Android-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apporiotaxi-Vemja-Driver-Version2.iml" filepath="$PROJECT_DIR$/Apporiotaxi-Vemja-Driver-Version2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

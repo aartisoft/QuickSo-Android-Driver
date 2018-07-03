@@ -18,7 +18,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.RelativeLayout;
 
 
-import com.vemja.driver.R;
+import com.apporio.demotaxiappdriver.R;
 
 import java.util.ArrayList;
 import java.util.List;

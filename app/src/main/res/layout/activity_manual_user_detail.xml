@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vemja.driver.ManualUserDetailActivity">
+    tools:context="com.apporio.demotaxiappdriver.ManualUserDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     android:textColor="@color/icons_8_muted_green_2_dark"
                     android:textSize="12dp" />
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:id="@+id/textView_pickUp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                     android:textSize="12dp" />
 
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:id="@+id/textView_dropPoint"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

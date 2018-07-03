@@ -10,7 +10,7 @@
         android:layout_height="50dp"
         android:gravity="center_vertical">
 
-        <com.vemja.driver.typeface.TypefaceTextView
+        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
             android:id="@+id/tv_car2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

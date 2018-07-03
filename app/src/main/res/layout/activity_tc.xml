@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vemja.driver.TermsAndCondition">
+    tools:context="com.apporio.demotaxiappdriver.TermsAndCondition">
 
     <include
         android:id="@+id/toolbar_include"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.vemja.driver.typeface.TypefaceTextView
+            <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                 android:id="@+id/tc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

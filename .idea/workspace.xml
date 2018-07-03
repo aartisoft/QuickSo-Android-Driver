@@ -6,12 +6,11 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="**" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="NOTI" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ae781c-91b7-4d35-8e1b-ce5fbdeec94a" name="Default" comment="" />
+    <list default="true" id="58ca6fbe-1f62-4e27-a7e1-3e164613b545" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +31,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Vamja-Driver-Android-" type="f1a62948:ProjectNode" />
+                <item name="Apporiotaxi-Vemja-Driver-Version2" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -43,167 +42,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackRideActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/trackride/TrackRideActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5438">
-              <caret line="747" column="19" lean-forward="false" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="175" column="47" lean-forward="false" selection-start-line="175" selection-start-column="47" selection-end-line="175" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Verify_OTP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/Verify_OTP.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="166" column="50" lean-forward="false" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackRideActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18242">
+              <caret line="103" column="13" lean-forward="false" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
               <folding>
-                <element signature="e#2082#2140#0" expanded="true" />
-                <element signature="e#2720#2865#0" expanded="true" />
-                <element signature="e#2864#2865#0" expanded="true" />
-                <element signature="e#2914#4152#0" expanded="true" />
-                <element signature="e#3171#3200#0" expanded="true" />
-                <element signature="e#3356#3376#0" expanded="true" />
-                <element signature="e#4151#4152#0" expanded="true" />
-                <element signature="e#4197#4853#0" expanded="true" />
-                <element signature="e#4671#4700#0" expanded="true" />
-                <element signature="e#4852#4853#0" expanded="true" />
-                <element signature="e#5051#5067#0" expanded="true" />
+                <element signature="e#6409#6456#0" expanded="true" />
+                <element signature="e#8733#9046#0" expanded="true" />
+                <element signature="e#9045#9046#0" expanded="true" />
+                <element signature="e#9114#9478#0" expanded="true" />
+                <element signature="e#9477#9478#0" expanded="true" />
+                <element signature="e#9537#9771#0" expanded="true" />
+                <element signature="e#9770#9771#0" expanded="true" />
+                <element signature="e#9819#16743#0" expanded="true" />
+                <element signature="e#10799#10895#0" expanded="true" />
+                <element signature="e#11047#11095#0" expanded="true" />
+                <element signature="e#11356#11410#0" expanded="true" />
+                <element signature="e#13019#13065#0" expanded="true" />
+                <element signature="e#16742#16743#0" expanded="true" />
+                <element signature="e#16809#18325#0" expanded="true" />
+                <element signature="e#18122#18229#0" expanded="true" />
+                <element signature="e#18324#18325#0" expanded="true" />
+                <element signature="e#18367#18520#0" expanded="true" />
+                <element signature="e#18519#18520#0" expanded="true" />
+                <element signature="e#18562#18873#0" expanded="true" />
+                <element signature="e#18872#18873#0" expanded="true" />
+                <element signature="e#18927#19129#0" expanded="true" />
+                <element signature="e#19128#19129#0" expanded="true" />
+                <element signature="e#19185#19838#0" expanded="true" />
+                <element signature="e#19837#19838#0" expanded="true" />
+                <element signature="e#19885#20538#0" expanded="true" />
+                <element signature="e#20537#20538#0" expanded="true" />
+                <element signature="e#21340#21394#0" expanded="true" />
+                <element signature="e#22353#22899#0" expanded="true" />
+                <element signature="e#22898#22899#0" expanded="true" />
+                <element signature="e#24996#25147#0" expanded="true" />
+                <element signature="e#25146#25147#0" expanded="true" />
+                <element signature="e#27215#27403#0" expanded="true" />
+                <element signature="e#27402#27403#0" expanded="true" />
+                <element signature="e#30861#31069#0" expanded="true" />
+                <element signature="e#31068#31069#0" expanded="true" />
+                <element signature="e#31638#31846#0" expanded="true" />
+                <element signature="e#31845#31846#0" expanded="true" />
+                <element signature="e#32412#32480#0" expanded="true" />
+                <element signature="e#33278#33344#0" expanded="true" />
+                <element signature="e#35303#35367#0" expanded="true" />
+                <element signature="e#46977#47442#0" expanded="true" />
+                <element signature="e#47441#47442#0" expanded="true" />
+                <element signature="e#50188#51422#0" expanded="true" />
+                <element signature="e#51421#51422#0" expanded="true" />
+                <element signature="e#51451#52661#0" expanded="true" />
+                <element signature="e#51620#52567#0" expanded="true" />
+                <element signature="e#52566#52567#0" expanded="true" />
+                <element signature="e#52660#52661#0" expanded="true" />
+                <element signature="e#53735#55109#0" expanded="true" />
+                <element signature="e#54894#55001#0" expanded="true" />
+                <element signature="e#55108#55109#0" expanded="true" />
+                <element signature="e#55175#56064#0" expanded="true" />
+                <element signature="e#56063#56064#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OneSignalServiceClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/fcmclasses/OneSignalServiceClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1052">
-              <caret line="275" column="60" lean-forward="false" selection-start-line="275" selection-start-column="60" selection-end-line="275" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RentalTrackRideActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/RentalTrackRideActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/DocumentActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirebaseUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/others/FirebaseUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/SplashActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="resourceFile" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.apporio.billiondriver</find>
-      <find>MyBr</find>
-      <find>ses</find>
-      <find>call</find>
-      <find>ModelWalletTransactionsResponse</find>
-      <find>btn_add_money</find>
-      <find>addmon</find>
-      <find>strat</find>
-      <find>AppCom</find>
-      <find>model</find>
-      <find>App</find>
-      <find>driver_car</find>
-      <find>driver_wall</find>
-      <find>add_dr</find>
-      <find>onCrea</find>
-      <find>user</find>
-      <find>onRes</find>
-      <find>onFtec</find>
-      <find>oNFtec</find>
-      <find>DataBAsere</find>
-      <find>DataBaseRe</find>
-      <find>FireBaseRe</find>
-      <find>onCRae</find>
-      <find>onFetc</find>
-      <find>ONfETC</find>
-      <find>onCRea</find>
-      <find>onCrae</find>
+      <find>com.</find>
+      <find>com</find>
+      <find>billio</find>
     </findStrings>
-    <replaceStrings>
-      <replace>com.vemja.driver</replace>
-    </replaceStrings>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\Lenovo\Desktop\JKS\VemjaDriver.jks" />
-    <option name="KEY_ALIAS" value="Apporio" />
+    <option name="KEY_STORE_PATH" value="F:\ApporioTaxiVejmaVersion2\Apporiotaxi-Vemja-Driver-Version2\BUILDS_CREDENTIALS\TaxiDriverApp.jks" />
+    <option name="KEY_ALIAS" value="apporio" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
@@ -225,14 +149,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="Vamja-Driver-Android-" />
+              <option name="name" value="Apporiotaxi-Vemja-Driver-Version2" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="Vamja-Driver-Android-" />
+                <option name="name" value="Apporiotaxi-Vemja-Driver-Version2" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -254,7 +178,7 @@
                 <option name="name" value="splitsDiscoveryTaskDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'Vamja-Driver-Android-'." />
+                <option name="description" value="Displays the sub-projects of root project 'Apporiotaxi-Vemja-Driver-Version2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -292,7 +216,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'Vamja-Driver-Android-'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'Apporiotaxi-Vemja-Driver-Version2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -310,7 +234,7 @@
                 <option name="name" value="bundleAppClassesDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'Vamja-Driver-Android-' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'Apporiotaxi-Vemja-Driver-Version2' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -333,7 +257,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'Vamja-Driver-Android-'." />
+                <option name="description" value="Displays all dependencies declared in root project 'Apporiotaxi-Vemja-Driver-Version2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -410,7 +334,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'Vamja-Driver-Android-'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'Apporiotaxi-Vemja-Driver-Version2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -523,7 +447,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'Vamja-Driver-Android-'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Apporiotaxi-Vemja-Driver-Version2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -808,12 +732,12 @@
                 <option name="name" value="transformDexArchiveWithDexMergerForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'Vamja-Driver-Android-'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'Apporiotaxi-Vemja-Driver-Version2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'Vamja-Driver-Android-'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Apporiotaxi-Vemja-Driver-Version2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -931,7 +855,7 @@
                 <option name="name" value="processReleaseGoogleServices" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'Vamja-Driver-Android-'." />
+                <option name="description" value="Displays the properties of root project 'Apporiotaxi-Vemja-Driver-Version2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -1926,7 +1850,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="Vamja-Driver-Android-" />
+              <option name="name" value="Apporiotaxi-Vemja-Driver-Version2" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
@@ -2093,50 +2017,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/others/MyBroadcastReceiver.java" />
-        <option value="$PROJECT_DIR$/app/google-services.json" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/manager/SessionManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/settings/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wallet.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/primary_color_layout_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddWalletMoneyResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/CardSessionEvent.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/Config.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/progressbar_states.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_credit_card_payment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/urls/Apis.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletTransactionFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/models/ModelWalletTransactionsResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money_to_wallet.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/CreditCardPaymentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/newmodels/WeeklyEarningModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ProfileActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/TimeService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/DocumentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ManualUserDetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/AcceptPassActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ReceivePassengerActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ReceiveRentalPassengerActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/TrialReceivePassengerActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/OnlineOfflineActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ForgotPass_VerifyOTP.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
+        <option value="$PROJECT_DIR$/app/google-services.json" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forgotpass_verify_otp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/trackride/TrackRideActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/RentalTrackRideActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/Verify_OTP.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vemja/driver/fcmclasses/OneSignalServiceClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/models/newdriveraccount/RegistrationModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java" />
       </list>
     </option>
   </component>
@@ -2148,7 +2041,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2163,140 +2056,55 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="Vamja-Driver-Android-" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="vemja" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="vemja" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="vemja" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
-              <item name="wallet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vamja-Driver-Android-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vamja-Driver-Android-" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="last_opened_file_path" value="F:/Tuck-In-One-Hour" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1530331810657" />
-    <property name="SearchEverywhereHistoryKey" value="OneSi&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/fcmclasses/OneSignalServiceClass.java&#10;Verify&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/Verify_OTP.java&#10;SPla&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/SplashActivity.java&#10;RentalTra&#9;PSI&#9;JAVA://com.vemja.driver.RentalTrackRideActivity&#10;Main&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/MainActivity.java&#10;Trac&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/trackride/TrackRideActivity.java&#10;Login&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/LoginActivity.java&#10;FireUt&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/others/FirebaseUtils.java&#10;Docume&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/DocumentActivity.java&#10;FOrg&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/ForgotPass_VerifyOTP.java&#10;Veri&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/Verify_OTP.java&#10;lOGI&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/LoginActivity.java&#10;fOR&#9;PSI&#9;JAVA://com.vemja.driver.ForgotPass_ConfirmPass&#10;FOrgo&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/ForgotPass_VerifyOTP.java&#10;Api&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/urls/Apis.java&#10;Regis&#9;PSI&#9;JAVA://com.vemja.driver.RegisterActivity&#10;Earnin&#9;PSI&#9;JAVA://com.vemja.driver.earnings.EarningActivity&#10;Wallet&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java&#10;MAi&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/MainActivity.java&#10;AddMo&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java&#10;APi&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/urls/Apis.java&#10;AddMon&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java&#10;ModelWalletTransactionsResponse&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/models/ModelWalletTransactionsResponse.java&#10;AddMO&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java&#10;AddMOney&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java&#10;str&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/res/values/strings.xml&#10;Mani&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/AndroidManifest.xml&#10;Online&#9;PSI&#9;JAVA://com.vemja.driver.OnlineOfflineActivity&#10;Wall&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java&#10;Setting&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/settings/SettingsActivity.java&#10;Broa&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/others/MyBroadcastReceiver.java&#10;Setti&#9;PSI&#9;JAVA://com.vemja.driver.settings.SettingsActivity&#10;Forg&#9;PSI&#9;JAVA://com.vemja.driver.ForgotPass_VerifyOTP&#10;Verif&#9;PSI&#9;JAVA://com.vemja.driver.Verify_OTP&#10;Broad&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/java/com/vemja/driver/others/MyBroadcastReceiver.java&#10;Sess&#9;PSI&#9;JAVA://com.vemja.driver.manager.SessionManager&#10;color&#9;FILE&#9;file://F:/Vamja-Driver-Android-/app/src/main/res/values/colors.xml" />
-    <property name="device.picker.selection" value="ZX1D63GNGX" />
-    <property name="ExportApk.ApkPath" value="F:\Vamja-Driver-Android-\app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BUILDS_CREDENTIALS/TaxiDriverApp.jks" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1530507515343" />
+    <property name="SearchEverywhereHistoryKey" value="Trac&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.trackride.TrackRideActivity&#10;Veri&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java&#10;Verif&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.Verify_OTP&#10;APi&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.urls.Apis&#10;Broa&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.others.MyBroadcastReceiver&#10;One&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.fcmclasses.OneSignalServiceClass" />
+    <property name="lastFolderRoot" value="$USER_HOME$/Desktop/app_logo_100.png" />
+    <property name="algorithm" value="Scalr" />
+    <property name="method" value="Automatic" />
+    <property name="sourceResolution" value="XHDPI" />
+    <property name="resolutions" value="HDPI&#10;MDPI&#10;XHDPI&#10;XXHDPI&#10;XXXHDPI" />
+    <property name="format" value="PNG" />
+    <property name="ExportApk.ApkPath" value="F:\ApporioTaxiVejmaVersion2\Apporiotaxi-Vemja-Driver-Version2\app" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.vemja.driver.wallet" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.vemja.driver.wallet" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Vamja-Driver-Android-\app\src\main\res\values-pt" />
-    </key>
+    <property name="device.picker.selection" value="ZX1D63GNGX" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2452,17 +2260,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="54ae781c-91b7-4d35-8e1b-ce5fbdeec94a" name="Default" comment="" />
-      <created>1527935573762</created>
+      <changelist id="58ca6fbe-1f62-4e27-a7e1-3e164613b545" name="Default" comment="" />
+      <created>1530339795909</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1527935573762</updated>
+      <updated>1530339795909</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2471,21 +2278,20 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2673522" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7837838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7581081" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.82567567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27972972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62027025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2493,191 +2299,152 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6739766" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27972972" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2673522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java</url>
-          <line>70</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>111</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>161</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="12" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/google-services.json">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/others/MyBroadcastReceiver.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="66">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="107" column="58" lean-forward="false" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/settings/SettingsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2288">
-          <caret line="134" column="49" lean-forward="false" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
+        <state relative-caret-position="968">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/models/ModelDeviceOnlineIffline.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="1386">
+          <caret line="111" column="72" lean-forward="false" selection-start-line="111" selection-start-column="72" selection-end-line="111" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/manager/SessionManager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="924">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_color_layout_border.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="111" column="72" lean-forward="false" selection-start-line="111" selection-start-column="72" selection-end-line="111" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10054">
-          <caret line="457" column="88" lean-forward="false" selection-start-line="457" selection-start-column="88" selection-end-line="457" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/CardSessionEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/progressbar_states.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="968">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2685,10 +2452,60 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_credit_card_payment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="1078">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="111" column="72" lean-forward="false" selection-start-line="111" selection-start-column="72" selection-end-line="111" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2697,348 +2514,228 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="254" column="46" lean-forward="false" selection-start-line="254" selection-start-column="40" selection-end-line="254" selection-end-column="46" />
+        <state relative-caret-position="2574">
+          <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="111" column="72" lean-forward="false" selection-start-line="111" selection-start-column="72" selection-end-line="111" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="111" column="72" lean-forward="false" selection-start-line="111" selection-start-column="72" selection-end-line="111" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddWalletMoneyResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="66">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/Config.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="123" column="20" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/HolderWalletTransactions.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wallet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AdapterWalletFragments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="e#1059#1060#0" expanded="false" />
-            <element signature="e#1083#1084#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletTransactionFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/models/ModelWalletTransactionsResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="61" column="64" lean-forward="false" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_money_to_wallet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3168">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/CreditCardPaymentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5324">
-          <caret line="267" column="14" lean-forward="false" selection-start-line="267" selection-start-column="14" selection-end-line="267" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/AddMoneyToWalletActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5324">
-          <caret line="244" column="13" lean-forward="false" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/wallet/WalletActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2266">
-          <caret line="135" column="21" lean-forward="false" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/earnings/EarningActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="111" column="32" lean-forward="false" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/newmodels/WeeklyEarningModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="141" column="45" lean-forward="false" selection-start-line="141" selection-start-column="45" selection-end-line="141" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="168" column="35" lean-forward="false" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/TimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2662">
-          <caret line="167" column="113" lean-forward="false" selection-start-line="167" selection-start-column="113" selection-end-line="167" selection-end-column="113" />
-          <folding>
-            <element signature="e#4757#7546#0" expanded="false" />
-            <element signature="e#7545#7546#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ManualUserDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="118" column="38" lean-forward="false" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/AcceptPassActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ReceivePassengerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6930">
-          <caret line="371" column="37" lean-forward="false" selection-start-line="371" selection-start-column="37" selection-end-line="371" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ReceiveRentalPassengerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/TrialReceivePassengerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4312">
-          <caret line="243" column="40" lean-forward="false" selection-start-line="243" selection-start-column="40" selection-end-line="243" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/OnlineOfflineActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/urls/Apis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ForgotPass_ConfirmPass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="109" column="34" lean-forward="false" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="96" column="59" lean-forward="false" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/ForgotPass_VerifyOTP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="57" column="49" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forgotpass_verify_otp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/DocumentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/others/FirebaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/trackride/TrackRideActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5438">
-          <caret line="747" column="19" lean-forward="false" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="175" column="47" lean-forward="false" selection-start-line="175" selection-start-column="47" selection-end-line="175" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/RentalTrackRideActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/Verify_OTP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="e#2082#2140#0" expanded="true" />
-            <element signature="e#2720#2865#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#2914#4152#0" expanded="true" />
-            <element signature="e#3171#3200#0" expanded="true" />
-            <element signature="e#3356#3376#0" expanded="true" />
-            <element signature="e#4151#4152#0" expanded="true" />
-            <element signature="e#4197#4853#0" expanded="true" />
-            <element signature="e#4671#4700#0" expanded="true" />
-            <element signature="e#4852#4853#0" expanded="true" />
-            <element signature="e#5051#5067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vemja/driver/fcmclasses/OneSignalServiceClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1052">
-          <caret line="275" column="60" lean-forward="false" selection-start-line="275" selection-start-column="60" selection-end-line="275" selection-end-column="60" />
+        <state relative-caret-position="660">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="264">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/models/newdriveraccount/RegistrationModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="365" column="0" lean-forward="true" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="166" column="50" lean-forward="false" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18242">
+          <caret line="103" column="13" lean-forward="false" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding>
+            <element signature="e#6409#6456#0" expanded="true" />
+            <element signature="e#8733#9046#0" expanded="true" />
+            <element signature="e#9045#9046#0" expanded="true" />
+            <element signature="e#9114#9478#0" expanded="true" />
+            <element signature="e#9477#9478#0" expanded="true" />
+            <element signature="e#9537#9771#0" expanded="true" />
+            <element signature="e#9770#9771#0" expanded="true" />
+            <element signature="e#9819#16743#0" expanded="true" />
+            <element signature="e#10799#10895#0" expanded="true" />
+            <element signature="e#11047#11095#0" expanded="true" />
+            <element signature="e#11356#11410#0" expanded="true" />
+            <element signature="e#13019#13065#0" expanded="true" />
+            <element signature="e#16742#16743#0" expanded="true" />
+            <element signature="e#16809#18325#0" expanded="true" />
+            <element signature="e#18122#18229#0" expanded="true" />
+            <element signature="e#18324#18325#0" expanded="true" />
+            <element signature="e#18367#18520#0" expanded="true" />
+            <element signature="e#18519#18520#0" expanded="true" />
+            <element signature="e#18562#18873#0" expanded="true" />
+            <element signature="e#18872#18873#0" expanded="true" />
+            <element signature="e#18927#19129#0" expanded="true" />
+            <element signature="e#19128#19129#0" expanded="true" />
+            <element signature="e#19185#19838#0" expanded="true" />
+            <element signature="e#19837#19838#0" expanded="true" />
+            <element signature="e#19885#20538#0" expanded="true" />
+            <element signature="e#20537#20538#0" expanded="true" />
+            <element signature="e#21340#21394#0" expanded="true" />
+            <element signature="e#22353#22899#0" expanded="true" />
+            <element signature="e#22898#22899#0" expanded="true" />
+            <element signature="e#24996#25147#0" expanded="true" />
+            <element signature="e#25146#25147#0" expanded="true" />
+            <element signature="e#27215#27403#0" expanded="true" />
+            <element signature="e#27402#27403#0" expanded="true" />
+            <element signature="e#30861#31069#0" expanded="true" />
+            <element signature="e#31068#31069#0" expanded="true" />
+            <element signature="e#31638#31846#0" expanded="true" />
+            <element signature="e#31845#31846#0" expanded="true" />
+            <element signature="e#32412#32480#0" expanded="true" />
+            <element signature="e#33278#33344#0" expanded="true" />
+            <element signature="e#35303#35367#0" expanded="true" />
+            <element signature="e#46977#47442#0" expanded="true" />
+            <element signature="e#47441#47442#0" expanded="true" />
+            <element signature="e#50188#51422#0" expanded="true" />
+            <element signature="e#51421#51422#0" expanded="true" />
+            <element signature="e#51451#52661#0" expanded="true" />
+            <element signature="e#51620#52567#0" expanded="true" />
+            <element signature="e#52566#52567#0" expanded="true" />
+            <element signature="e#52660#52661#0" expanded="true" />
+            <element signature="e#53735#55109#0" expanded="true" />
+            <element signature="e#54894#55001#0" expanded="true" />
+            <element signature="e#55108#55109#0" expanded="true" />
+            <element signature="e#55175#56064#0" expanded="true" />
+            <element signature="e#56063#56064#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

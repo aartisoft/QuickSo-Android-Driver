@@ -1,4 +1,4 @@
-package com.vemja.driver;
+package com.apporio.demotaxiappdriver;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

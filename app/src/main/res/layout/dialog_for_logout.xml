@@ -38,7 +38,7 @@
             android:layout_marginRight="30dp"
             android:background="@color/colorView" />
 
-        <com.vemja.driver.typeface.TypefaceTextView
+        <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -66,7 +66,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/DIALOG_LOGOUT__no"
@@ -87,7 +87,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <com.vemja.driver.typeface.TypefaceTextView
+                <com.apporio.demotaxiappdriver.typeface.TypefaceTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/DIALOG_LOGOUT__yes"

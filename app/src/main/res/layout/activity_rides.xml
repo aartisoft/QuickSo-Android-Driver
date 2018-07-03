@@ -7,7 +7,7 @@
     android:background="#efefef"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context="com.vemja.driver.RidesActivity">
+    tools:context="com.apporio.demotaxiappdriver.RidesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
