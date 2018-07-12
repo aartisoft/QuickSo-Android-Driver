@@ -158,7 +158,7 @@ public class ForgotPass_VerifyOTP extends AppCompatActivity implements ApiManage
             if (otp_response.getResult()== 1) {
                 //            Toast.makeText(this, "" + otp_response.getStatus(), Toast.LENGTH_SHORT).show();
                 otp = otp_response.getOtp();
-//                otp_input.setText(""+otp);
+               otp_input.setText(""+otp);
 //                ApporioLog.logE("OTP_RECEIVED--", String.valueOf(otp));
                 otp_input.requestFocus();
             } else {

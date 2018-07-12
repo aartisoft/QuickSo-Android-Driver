@@ -133,7 +133,10 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                                 break;
                         }
                         dialogInterface.dismiss();
-                        startActivity(new Intent(SettingsActivity.this, SplashActivity.class));
+                        Intent intent =new Intent(SettingsActivity.this, SplashActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
+
                         finish();
                     }
                 });

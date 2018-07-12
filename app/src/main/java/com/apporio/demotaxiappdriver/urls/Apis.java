@@ -7,10 +7,10 @@ public interface Apis {
     String imageDomain = BASE + "";
     String restdomain = BASE + "Apporiotaxi/";*/
 
-    String BASE = "http://apporio.org/sachinapporio/";
+    String BASE = "http://apporiotaxi.com/";
     String baseDomain = BASE + "api/";
     String imageDomain = BASE + "";
-    String restdomain = BASE + "ApporioTaxi/";
+    String restdomain = BASE + "Apporiotaxi/";
 
     String register = baseDomain + "register_driver.php";
     String registerDocs = baseDomain + "register_driver_docs.php";

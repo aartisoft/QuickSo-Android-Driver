@@ -153,7 +153,7 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
             RegistrationModel.OTP_Details otp_response = gson.fromJson("" + script, RegistrationModel.OTP_Details.class);
 
             if (otp_response.getStatus() == 1) {
-
+                otp_input.setText(""+otp_response.getOtp());
                 otp = otp_response.getOtp();
                 otp_input.requestFocus();
             } else {
