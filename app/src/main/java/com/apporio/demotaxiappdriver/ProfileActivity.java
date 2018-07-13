@@ -199,7 +199,7 @@ public class ProfileActivity extends AppCompatActivity implements ApiManager.API
             }
         });
 
-        findViewById(R.id.phone_edit_btn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.iv_edit_phone).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivityForResult(new Intent(ProfileActivity.this, Verify_OTP.class), VERIFY_OTP);
@@ -273,23 +273,23 @@ public class ProfileActivity extends AppCompatActivity implements ApiManager.API
             }
         });
 
-        iv_edit_phone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                mobile.setClickable(true);
-//                mobile.setFocusable(true);
-//                mobile.setCursorVisible(true);
-//                mobile.setFocusableInTouchMode(true);
-
-                mobile.setEnabled(true);
-                mobile.setSelection(mobile.getText().length());
-                mobile.requestFocus();
-
-                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.showSoftInput(mobile, InputMethodManager.SHOW_FORCED);
-
-            }
-        });
+//        iv_edit_phone.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                mobile.setClickable(true);
+////                mobile.setFocusable(true);
+////                mobile.setCursorVisible(true);
+////                mobile.setFocusableInTouchMode(true);
+//
+//                mobile.setEnabled(true);
+//                mobile.setSelection(mobile.getText().length());
+//                mobile.requestFocus();
+//
+//                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//                inputMethodManager.showSoftInput(mobile, InputMethodManager.SHOW_FORCED);
+//
+//            }
+//        });
 
         iv_edit_account_number.setOnClickListener(new View.OnClickListener() {
             @Override

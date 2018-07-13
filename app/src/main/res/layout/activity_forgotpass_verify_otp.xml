@@ -66,7 +66,7 @@ tools:context=".ForgotPass_VerifyOTP">
         app:hideNameCode="true"
         app:keyboardAutoPopOnSearch="false"
         app:showFlag="false"
-        app:defaultCode="351"
+        app:defaultCode="@integer/country_code"
         app:textSize="15dp"
         android:layout_marginLeft="10dp"/>
 
