@@ -2,13 +2,12 @@ package com.apporio.demotaxiappdriver;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.os.CountDownTimer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,36 +16,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.ModelPartialRequestResponse;
-import com.apporio.demotaxiappdriver.models.rideaccept.RideAccept;
 import com.apporio.demotaxiappdriver.models.viewrideinfodriver.ViewRideInfoDriver;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.bumptech.glide.Glide;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.ModelPartialRequestResponse;
-import com.apporio.demotaxiappdriver.models.viewrideinfodriver.ViewRideInfoDriver;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import customviews.PulsatorLayout;
-import customviews.progresswheel.ProgressWheel;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ReAcceptpassActivity extends Activity implements ApiManager.APIFETCHER {
@@ -64,7 +48,6 @@ public class ReAcceptpassActivity extends Activity implements ApiManager.APIFETC
     GsonBuilder builder;
     Gson gson;
     ProgressDialog progressDialog;
-    FirebaseUtils firebaseUtils;
     ViewRideInfoDriver viewRideInfoDriver;
 
     CountDownTimer SoundTimer, ProgressTimer;
@@ -92,14 +75,6 @@ public class ReAcceptpassActivity extends Activity implements ApiManager.APIFETC
     @Bind(R.id.drop_location_txt)
     TextView drop_location_txt;
 
-
-
-
-
-
-
-
-
     private String TAG = "ReceivePassengerActivity";
 
     @Override
@@ -111,7 +86,6 @@ public class ReAcceptpassActivity extends Activity implements ApiManager.APIFETC
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("" + this.getResources().getString(R.string.loading));
         progressDialog.setCancelable(false);
-        firebaseUtils = new FirebaseUtils(this);
         builder = new GsonBuilder();
         gson = builder.create();
         apiManager = new ApiManager(this);

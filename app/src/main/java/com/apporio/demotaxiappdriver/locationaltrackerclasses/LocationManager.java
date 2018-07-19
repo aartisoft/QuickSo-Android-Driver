@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 
-
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.FailType;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.LogType;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.ProviderType;
@@ -19,17 +18,6 @@ import com.apporio.demotaxiappdriver.locationaltrackerclasses.provider.GPService
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.provider.LocationProvider;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.FailType;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.LogType;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.ProviderType;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestCode;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.ContinuousTask;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LocationUtils;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LogUtils;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.PermissionManager;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.provider.DefaultLocationProvider;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.provider.GPServicesLocationProvider;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.provider.LocationProvider;
 
 import java.util.List;
 

@@ -2,6 +2,7 @@ package com.apporio.demotaxiappdriver.manager;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+
 import java.util.HashMap;
 public class DeviceManager {
 

@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.restmodels.NewRidehistoryModel;
 import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
@@ -23,12 +22,6 @@ import com.sam.placer.PlaceHolderView;
 import com.sam.placer.annotations.Click;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.Resolve;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.restmodels.NewRidehistoryModel;
-import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 
@@ -255,11 +248,7 @@ public class RidesActivity extends AppCompatActivity implements ApiManager.APIFE
                     .putExtra("user_image", "" + mRentalRideResponse.getUser_image())
                     .putExtra("pick_up_location", "" + mRentalRideResponse.getPickup_location())
                     .putExtra("drop_off_location", "" + mRentalRideResponse.getEnd_location()));
-//            startActivity(new Intent(RidesActivity.this, SelectedRentalRideActivity.class)
-//                    .putExtra("ride_id", "" + mRentalRideResponse.getRental_booking_id())
-//                    .putExtra("ride_status", "" + mRentalRideResponse.getBooking_status())
-//                    .putExtra("date_time", date_time)
-//                    .putExtra("ride_mode", "2"));
+
             overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
         }
 

@@ -11,33 +11,23 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.logger.Logger;
 import com.apporio.demotaxiappdriver.models.ResultCheck;
-import com.apporio.demotaxiappdriver.others.ImageCompressMode;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.mlsdev.rximagepicker.RxImagePicker;
-import com.mlsdev.rximagepicker.Sources;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.logger.Logger;
-import com.apporio.demotaxiappdriver.models.ResultCheck;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.io.ByteArrayOutputStream;
@@ -50,7 +40,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import customviews.typefacesviews.TypefaceDosisRegular;
 import id.zelory.compressor.Compressor;
-import io.reactivex.functions.Consumer;
 
 public class PhotoUploaderActivity extends Activity implements EasyPermissions.PermissionCallbacks , DatePickerDialog.OnDateSetListener , ApiManager.APIFETCHER {
 

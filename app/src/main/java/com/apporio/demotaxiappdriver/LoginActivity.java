@@ -13,22 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
 import com.apporio.demotaxiappdriver.parsing.AccountModule;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hbb20.CountryCodePicker;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.parsing.AccountModule;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
 
 public class LoginActivity extends AppCompatActivity implements ApiManager.APIFETCHER {
 

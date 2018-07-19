@@ -8,17 +8,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.apporio.demotaxiappdriver.R;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.models.TremsAndConditionResponse;
-import com.apporio.demotaxiappdriver.urls.Apis;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import  com.apporio.demotaxiappdriver.samwork.ApiManager ;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.TremsAndConditionResponse;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class TermsAndCondition extends AppCompatActivity implements ApiManager.APIFETCHER {
 

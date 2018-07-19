@@ -55,12 +55,10 @@ import com.apporio.demotaxiappdriver.models.restmodels.NewChangeDropLocationMode
 import com.apporio.demotaxiappdriver.models.restmodels.NewUpdateLatLongModel;
 import com.apporio.demotaxiappdriver.models.ridearrived.RideArrived;
 import com.apporio.demotaxiappdriver.models.viewrideinfodriver.ViewRideInfoDriver;
-import com.apporio.demotaxiappdriver.others.ChatModel;
 import com.apporio.demotaxiappdriver.others.Constants;
 import com.apporio.demotaxiappdriver.others.FirebaseChatEvent;
 import com.apporio.demotaxiappdriver.others.FirebaseChatUtillistener;
 import com.apporio.demotaxiappdriver.others.Maputils;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
 import com.apporio.demotaxiappdriver.routedrawer.DrawMarker;
 import com.apporio.demotaxiappdriver.routedrawer.DrawRouteMaps;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
@@ -79,17 +77,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
-import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.routedrawer.DrawMarker;
-import com.apporio.demotaxiappdriver.routedrawer.DrawRouteMaps;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -97,7 +88,6 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.List;
 
 import morxander.zaman.ZamanUtil;
 
@@ -258,21 +248,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
 
                         apiManager.execution_method_post("" + Config.ApiKeys.KEY_END_TRIP, "" + Apis.endTripMeter, data);
 
-//                        apiManager.execution_method_get(Config.ApiKeys.KEY_END_TRIP,
-//                                Apis.endTripMeter + "?ride_id=" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID)
-//                                        + "&driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID)
-//                                        + "&begin_lat=" + rideSession.getCurrentRideDetails().get(RideSession.PICK_LATITUDE)
-//                                        + "&begin_long=" + rideSession.getCurrentRideDetails().get(RideSession.PICK_LONGITUDE)
-//                                        + "&begin_location=" +
-//                                        "&end_lat=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT)
-//                                        + "&end_long=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG)
-//                                        + "&end_location=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LOCATION_TEXT)
-//                                        + "&end_time=" + getArrivalTime()
-//                                        + "&distance=" + distance_travel
-//                                        + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) +
-//                                        "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID)
-//                                        + "&lat_long=" + dbHelper.getRideLocationData("" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID)));
-
                     } catch (Exception e) {
                         Toast.makeText(TrackRideActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -426,12 +401,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
     }
 
 
-//    @Subscribe(threadMode = ThreadMode.MAIN)
-//    public void onMessageEvent(ChangeLocationEvent event) {
-//        apiManager.execution_method_get(Config.ApiKeys.KEY_VIEW_RIDE_INFO_DRIVER, Apis.viewRideInfoDriver + "?ride_id=" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID) + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=1");
-//    }
-
-
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(FirebaseChatEvent event) {
         try {
@@ -537,10 +506,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
             ApporioLog.logE("" + TAG, "(a) Exception caught in onMessage Event ==>" + e.getMessage());
         }
 
-
-//        if (!is_location_updation_running) {
-//            apiManager.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG, Apis.updateLatLong + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&current_lat=" + event.getlatitude_string() + "&current_long=" + event.getLongitude_string() + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=1");
-//        }
 
 
         try {
@@ -716,19 +681,16 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
             if (result_check.result.equals("1")) {
                 if (APINAME.equals(Config.ApiKeys.KEY_ARRIVED)) {
                     rideSession.setRideStatus("5");
-                   // updateFirebaseEvent(Config.Status.NORMAL_ARRIVED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_BEGIN_TRIP)) {
                     rideSession.setRideStatus("6");
                     locationSession.clearMeterValue();
                     apiManager.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&current_lat=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT) + "&bearing_factor=" + locationSession.getLocationDetails().get(LocationSession.KEY_BEARING_FACTOR) + "&current_long=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG) + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=1");
-                   // updateFirebaseEvent(Config.Status.NORMAL_STARTED, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_END_TRIP)) {
                     rideSession.setRideStatus("7");
                     RideArrived rideArrived = new RideArrived();
                     rideArrived = gson.fromJson("" + script, RideArrived.class);
-                    //updateFirebaseEventWithDoneRide(Config.Status.NORMAL_RIDE_END, rideArrived.getDetails().getDoneRideId(), rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                     startActivity(new Intent(this, PriceFareActivity.class)
                             .putExtra("amount", rideArrived.getDetails().getAmount())
                             .putExtra("distance", rideArrived.getDetails().getDistance())
@@ -745,7 +707,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
                 }
                 if (APINAME.equals(Config.ApiKeys.KEY_CANCEL_TRIP)) {
                     rideSession.setRideStatus("4");
-                 //   updateFirebaseEvent(Config.Status.NORMAL_CANCEL_BY_DRIVER, "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                     rideSession.clearRideSession();
                     finish();
                     startActivity(new Intent(this, TripHistoryActivity.class));
@@ -754,7 +715,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
                     NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
                 }
                 if (APINAME.equals("" + Config.ApiKeys.KEY_CHANGE_DESTINATION)) {
-                    //updateFirebaseEventWithDestinationChange();
                     NewChangeDropLocationModel drop_change_response = gson.fromJson("" + script, NewChangeDropLocationModel.class);
                     rideSession.setDropLocation("" + drop_change_response.getDetails().getDrop_location(), "" + drop_change_response.getDetails().getDrop_lat(), "" + drop_change_response.getDetails().getDrop_long());
                 }
@@ -779,70 +739,6 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
     @Override
     public void onFetchResultZero(String script) {
 
-    }
-
-
-//    private void updateFirebaseEvent(final String status_value, final String Ride_Id) throws Exception {
-//
-//        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + Ride_Id).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-//                };
-//                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-//                try {
-//                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + Ride_Id).setValue(new RideSessionEvent("" + Ride_Id, "" + status_value, "Not yet generated", "0"));
-//                } catch (Exception e) {
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//                Log.i("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-//            }
-//        });
-//    }
-
-    private void updateFirebaseEventWithDestinationChange() throws Exception {
-
-        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID)).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-                };
-                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-                try {
-                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID)).setValue(new RideSessionEvent("" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID), "" + rideSession.getCurrentRideDetails().get(RideSession.RIDE_STATUS), "Not yet generated", "1"));
-                } catch (Exception e) {
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.i("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-            }
-        });
-    }
-
-    private void updateFirebaseEventWithDoneRide(final String status_value, final String done_ride_id, final String ride_id) throws Exception {
-
-        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + ride_id).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-                };
-                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-                try {
-                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + ride_id).setValue(new RideSessionEvent("" + ride_id, "" + status_value, "" + done_ride_id, "0"));
-                } catch (Exception e) {
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.i("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-            }
-        });
     }
 
 

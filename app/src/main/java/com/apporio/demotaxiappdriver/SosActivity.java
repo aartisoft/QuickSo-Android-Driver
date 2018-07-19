@@ -1,13 +1,10 @@
 package com.apporio.demotaxiappdriver;
 
-import android.*;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -27,15 +24,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.adapter.SosAdapter;
-import com.apporio.demotaxiappdriver.location.SamLocationRequestService;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.NewSosModel;
-import com.apporio.demotaxiappdriver.models.SosRequestModel;
-import com.apporio.demotaxiappdriver.models.newdriveraccount.ResultStatusChecker;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 

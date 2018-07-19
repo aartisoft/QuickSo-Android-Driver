@@ -2,7 +2,6 @@ package com.apporio.demotaxiappdriver;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,9 +9,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.apporio.apporiologs.ApporioLog;
-
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
@@ -20,11 +16,6 @@ import com.apporio.demotaxiappdriver.parsing.AccountModule;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
-import com.apporio.demotaxiappdriver.parsing.AccountModule;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
 
 public class ChangePasswordActivity extends AppCompatActivity implements ApiManager.APIFETCHER {
 

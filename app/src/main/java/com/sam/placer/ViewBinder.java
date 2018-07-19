@@ -1,13 +1,12 @@
 package com.sam.placer;
 
+import com.sam.placer.annotations.Click;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.LongClick;
 import com.sam.placer.annotations.NonReusable;
 import com.sam.placer.annotations.Position;
 import com.sam.placer.annotations.Resolve;
 import com.sam.placer.annotations.View;
-
-import com.sam.placer.annotations.Click;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

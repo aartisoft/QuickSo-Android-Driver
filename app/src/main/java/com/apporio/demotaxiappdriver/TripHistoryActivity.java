@@ -5,10 +5,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -20,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.restmodels.NewRidehistoryModel;
 import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
@@ -35,13 +32,6 @@ import com.sam.placer.PlaceHolderView;
 import com.sam.placer.annotations.Click;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.Resolve;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.restmodels.NewRidehistoryModel;
-import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
-import com.apporio.demotaxiappdriver.typeface.TypefaceTextView;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 
@@ -160,9 +150,6 @@ public class TripHistoryActivity extends BaseActivity implements ApiManager.APIF
                 viewpagertab.setViewPager(container);
                 container.setCurrentItem(OPEN_TAB);
             }
-
-
-
         } catch (Exception e) {
             ApporioLog.logE("" + TAG, "Exception Caught while parsing ==>" + e.getMessage());
         }
@@ -171,9 +158,6 @@ public class TripHistoryActivity extends BaseActivity implements ApiManager.APIF
     @Override
     public void onFetchResultZero(String script) {
     }
-
-
-
 
 
     public static class ActiveRideFragment extends Fragment {
@@ -276,10 +260,6 @@ public class TripHistoryActivity extends BaseActivity implements ApiManager.APIF
                         }
                     }
                 }
-
-
-
-
             }catch (Exception e){}
 
 

@@ -24,31 +24,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.BuildConfig;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.ModelAppVersion;
 import com.apporio.demotaxiappdriver.models.register.Register;
 import com.apporio.demotaxiappdriver.others.AppUtils;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.crowdfire.cfalertdialog.CFAlertDialog;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.vansuita.library.CheckNewAppVersion;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.ModelAppVersion;
-import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.AppUtils;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
-
-import org.json.JSONException;
 
 import java.util.HashMap;
 
@@ -207,9 +192,6 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
         dialog.show();
     }
 
-
-
-
     private void startInternetCheckProcess() {
         ApporioLog.logI(TAG, "Now Checking net Connectivity");
         if (AppUtils.isNetworkConnected(this)) {
@@ -284,7 +266,6 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
         }
     }
 
-
     private void startCheckingLoginProcedure() {
         ApporioLog.logI(TAG, "Checking login status in session");
         if (new SessionManager(this).isLoggedIn()) {
@@ -295,11 +276,9 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
             ApporioLog.logI(TAG, "Driver is not logged in and now launching Login Screen");
             LoginBox.setVisibility(View.VISIBLE);
         }
-
     }
 
     private void setlanguage() {
-
         try {
             if (languageManager.getLanguage().equals("") || languageManager.getLanguage().equals("null")) {
                 languageManager.setLanguage("en");
@@ -308,7 +287,6 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
             }
         }
         catch (Exception e){
-
         }
     }
 

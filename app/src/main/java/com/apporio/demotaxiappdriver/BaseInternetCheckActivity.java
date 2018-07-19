@@ -8,12 +8,9 @@ import android.content.Context;
 import android.location.Location;
 import android.os.Bundle;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.others.EventLocatoin;
 import com.apporio.demotaxiappdriver.others.InternetEvent;
 import com.devspark.appmsg.AppMsg;
-import com.apporio.demotaxiappdriver.others.EventLocatoin;
-import com.apporio.demotaxiappdriver.others.InternetEvent;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

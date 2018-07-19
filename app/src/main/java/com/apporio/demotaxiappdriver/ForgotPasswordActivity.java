@@ -10,17 +10,12 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
 import com.apporio.demotaxiappdriver.parsing.AccountModule;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
-import com.apporio.demotaxiappdriver.parsing.AccountModule;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
 
 public class ForgotPasswordActivity extends AppCompatActivity implements ApiManager.APIFETCHER {
 

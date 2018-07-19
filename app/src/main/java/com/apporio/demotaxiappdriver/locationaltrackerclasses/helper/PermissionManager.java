@@ -27,14 +27,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 
-//import com.apporio.mapaddressgetteractivity.Locational.constants.RequestCode;
-
-
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestCode;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestCode;
 
 import java.util.ArrayList;
 import java.util.List;
+
+//import com.apporio.mapaddressgetteractivity.Locational.constants.RequestCode;
 
 /**
  * Edited by Yahya Bayramoglu on 09/02/16.

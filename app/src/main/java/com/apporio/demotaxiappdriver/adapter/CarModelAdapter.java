@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.carmodels.CarModels;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

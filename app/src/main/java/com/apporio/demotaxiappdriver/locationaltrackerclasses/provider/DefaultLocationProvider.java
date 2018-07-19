@@ -16,11 +16,6 @@ import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestC
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.ContinuousTask;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LocationUtils;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LogUtils;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.FailType;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.LogType;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestCode;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LocationUtils;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.helper.LogUtils;
 
 
 /**

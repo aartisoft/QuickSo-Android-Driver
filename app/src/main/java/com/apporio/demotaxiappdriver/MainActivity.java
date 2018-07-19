@@ -32,23 +32,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.bumptech.glide.Glide;
-import com.crowdfire.cfalertdialog.CFAlertDialog;
-import com.google.android.gms.gcm.GcmNetworkManager;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.android.gms.maps.model.MapStyleOptions;
-import com.google.android.gms.maps.model.TileOverlay;
-import com.google.android.gms.maps.model.TileOverlayOptions;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.maps.android.heatmaps.HeatmapTileProvider;
-import com.onesignal.OneSignal;
 import com.apporio.demotaxiappdriver.earnings.EarningActivity;
 import com.apporio.demotaxiappdriver.location.SamLocationRequestService;
 import com.apporio.demotaxiappdriver.logger.Logger;
@@ -71,6 +54,23 @@ import com.apporio.demotaxiappdriver.settings.SettingsActivity;
 import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.apporio.demotaxiappdriver.wallet.WalletActivity;
+import com.bumptech.glide.Glide;
+import com.crowdfire.cfalertdialog.CFAlertDialog;
+import com.google.android.gms.gcm.GcmNetworkManager;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.MapStyleOptions;
+import com.google.android.gms.maps.model.TileOverlay;
+import com.google.android.gms.maps.model.TileOverlayOptions;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.maps.android.heatmaps.HeatmapTileProvider;
+import com.onesignal.OneSignal;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -116,7 +116,6 @@ public class MainActivity extends BaseActivity implements Apis,
     DeviceManager deviceManager;
 
     LanguageManager languageManager;
-    Address addressFromLocation;
 
     RideSession rideSession;
     ModelReportIssue modelReportIssue;
@@ -694,10 +693,6 @@ public class MainActivity extends BaseActivity implements Apis,
                     lat_txt.setText("" + location.getLatitude());
                     long_txt.setText("" + location.getLongitude());
 
-//                    final Address addressFromLocation = LocationAddress.getAddressFromLocation(location.getLatitude(), location.getLongitude(), MainActivity.this);
-//
-//                    Log.e("Address11",""+ addressFromLocation);
-//                    Log.e("Address",""+ addressFromLocation.getAddressLine(0));
                 }
             });
         } catch (Exception e) {
@@ -736,41 +731,6 @@ public class MainActivity extends BaseActivity implements Apis,
     }
 
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMessageEvent(EventNewRide event) {
-//        try {
-//            if (event.RideStatus.equals("1")) {  //   ride booked for normal type
-//                startActivity(new Intent(MainActivity.this, ReceivePassengerActivity.class).putExtra("" + Config.IntentKeys.RIDE_ID, "" + event.RideId));
-////                Toast.makeText(mainActivity, "Open Activity", Toast.LENGTH_SHORT).show();
-//            } else if (event.RideStatus.equals("10")) {  //  ride booked for rental type
-//                startActivity(new Intent(MainActivity.this, ReceiveRentalPassengerActivity.class).putExtra("" + Config.IntentKeys.RIDE_ID, "" + event.RideId));
-//            }
-//        } catch (Exception e) {
-//        }
-    }
-
-
-//    @Subscribe(threadMode = ThreadMode.MAIN)
-//    public void onMessageEvent(MyFirebaseMessagingService.RideEvent event) {
-//        rideSession.setRideStatus("18");
-//        final Dialog dialog = new Dialog(this, android.R.style.Theme_Translucent_NoTitleBar);
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        Window window = dialog.getWindow();
-//        window.setGravity(Gravity.CENTER);
-//        dialog.setContentView(R.layout.user_ride_cancel_dialog);
-//        dialog.setCancelable(false);
-//
-//        dialog.findViewById(R.id.demo_ok_btn).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this, TripHistoryActivity.class));
-//                dialog.dismiss();
-//            }
-//        });
-//        dialog.show();
-//    }
-
-
     private void setStatusViewAccordingly() {
         if (sessionManager.getUserDetails().get(SessionManager.KEY_Driver_Online_Offline_Status).equals("1")) {
             status_image.setColorFilter(this.getResources().getColor(R.color.icons_8_muted_green_2_dark));
@@ -797,42 +757,6 @@ public class MainActivity extends BaseActivity implements Apis,
             }
         }
     }
-
-
-//    @Override
-//    protected void onNewIntent(Intent intent) {
-//
-//        Bundle extras = intent.getExtras();
-//        if (extras != null) {
-//            ride_status = extras.getString("ride_status");
-//            ride_id = extras.getString("ride_id");
-//
-//            if (ride_status.equals("1")) {
-//                Intent i = new Intent();
-//                i.setClassName("com.apporio.demotaxiappdriver", "com.apporio.demotaxiappdriver.TrialReceivePassengerActivity");
-//                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                i.putExtra(""+Config.IntentKeys.RIDE_ID, ride_id);
-//                startActivity(i);
-//            } else if (ride_status.equals("2")) {
-//                Intent i = new Intent();
-//                i.setClassName("com.apporio.demotaxiappdriver", "com.apporio.demotaxiappdriver.RidesActivity");
-//                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(i);
-//            } else if (ride_status.equals("8")) {
-//                Intent i = new Intent();
-//                i.setClassName("com.apporio.demotaxiappdriver", "com.apporio.demotaxiappdriver.TrialReceivePassengerActivity");
-//                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                i.putExtra(""+Config.IntentKeys.RIDE_ID, ride_id);
-//                startActivity(i);
-//            }else if (ride_status.equals("10")) {
-//                Intent i = new Intent();
-//                i.setClassName("com.apporio.demotaxiappdriver", "com.apporio.demotaxiappdriver.ReceiveRentalPassengerActivity");
-//                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                i.putExtra(""+Config.IntentKeys.RIDE_ID, ride_id);
-//                startActivity(i);
-//            }
-//        }
-//    }
 
 
     /////////////////////////////////////////////////////////////////////////////////

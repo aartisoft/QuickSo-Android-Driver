@@ -10,8 +10,6 @@ import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.apporio.demotaxiappdriver.R;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 

@@ -26,11 +26,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.adapter.CarAdapter;
 import com.apporio.demotaxiappdriver.adapter.CarModelAdapter;
 import com.apporio.demotaxiappdriver.adapter.CityAdapter;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.ResultCheck;
 import com.apporio.demotaxiappdriver.models.carmodels.CarModels;
 import com.apporio.demotaxiappdriver.models.register.Register;
@@ -44,17 +42,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.adapter.CarAdapter;
-import com.apporio.demotaxiappdriver.adapter.CarModelAdapter;
-import com.apporio.demotaxiappdriver.adapter.CityAdapter;
-import com.apporio.demotaxiappdriver.models.ResultCheck;
-import com.apporio.demotaxiappdriver.models.carmodels.CarModels;
-import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.models.viewcartype.ViewCarType;
-import com.apporio.demotaxiappdriver.models.viewcity.ViewCity;
-import com.apporio.demotaxiappdriver.others.ImageCompressMode;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -511,7 +498,6 @@ public class RegisterActivity extends AppCompatActivity implements ApiManager.AP
                     Log.d("**driver_id===", register.getDetails().getDriver_id());
                     Log.d("**phone===", register.getDetails().getDriver_phone().trim());
                     Log.d("**password===", password);
-//                firebaseUtils.setUpDriver(register);
                     overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
                     finish();
                     SplashActivity.splash.finish();
@@ -528,26 +514,6 @@ public class RegisterActivity extends AppCompatActivity implements ApiManager.AP
     public void onFetchResultZero(String script) {
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Override

@@ -4,9 +4,9 @@ import android.os.AsyncTask;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
-import com.apporio.demotaxiappdriver.others.AerialDistance;
 import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
+import com.apporio.demotaxiappdriver.others.AerialDistance;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolylineOptions;

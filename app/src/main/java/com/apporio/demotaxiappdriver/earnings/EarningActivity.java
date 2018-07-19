@@ -3,6 +3,12 @@ package com.apporio.demotaxiappdriver.earnings;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.apporio.demotaxiappdriver.Config;
 import com.apporio.demotaxiappdriver.R;
@@ -12,15 +18,7 @@ import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.newmodels.WeeklyEarningModel;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
-
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
-import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import java.util.Calendar;
 

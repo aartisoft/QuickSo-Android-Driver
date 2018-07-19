@@ -5,13 +5,12 @@ import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-//import com.apporio.mapaddressgetteractivity.Locational.LocationConfiguration;
-
-
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.LocationConfiguration;
 
 import java.util.Date;
 import java.util.List;
+
+//import com.apporio.mapaddressgetteractivity.Locational.LocationConfiguration;
 
 /**
  * Created by Yahya Bayramoglu on 10/02/16.

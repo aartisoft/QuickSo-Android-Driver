@@ -24,8 +24,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.adapter.ReasonAdapter;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.RideSession;
@@ -35,9 +33,7 @@ import com.apporio.demotaxiappdriver.models.newdriveraccount.ResultStatusChecker
 import com.apporio.demotaxiappdriver.models.restmodels.NewEndRideModel;
 import com.apporio.demotaxiappdriver.models.restmodels.NewRideArrivedModel;
 import com.apporio.demotaxiappdriver.models.restmodels.NewbeginTripModel;
-import com.apporio.demotaxiappdriver.others.ChatModel;
 import com.apporio.demotaxiappdriver.others.Constants;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
 import com.apporio.demotaxiappdriver.routedrawer.DrawRouteMaps;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
@@ -48,35 +44,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
-import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.adapter.ReasonAdapter;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.cancelreasoncustomer.CancelReasonCustomer;
-import com.apporio.demotaxiappdriver.models.newdriveraccount.ResultStatusChecker;
-import com.apporio.demotaxiappdriver.models.restmodels.NewEndRideModel;
-import com.apporio.demotaxiappdriver.models.restmodels.NewRideArrivedModel;
-import com.apporio.demotaxiappdriver.models.restmodels.NewbeginTripModel;
-import com.apporio.demotaxiappdriver.others.ChatModel;
-import com.apporio.demotaxiappdriver.others.Constants;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
-import com.apporio.demotaxiappdriver.routedrawer.DrawRouteMaps;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class RentalTrackRideActivity extends AppCompatActivity implements OnMapReadyCallback, ApiManager.APIFETCHER {
 
@@ -238,19 +213,6 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
         }
     }
 
-
-//    @Subscribe(threadMode = ThreadMode.MAIN)
-//    public void onMessageEvent(MyFirebaseMessagingService.RideEvent event){
-//        if(event.getRideStatus().equals(Config.Status.RENTAL_RIDE_CANCEL_BY_USER)){
-//            showDialogForCancelation();
-//        }if(event.getRideStatus().equals(Config.Status.RENTAL_RIDE_CANCEl_BY_ADMIN)){
-//            showDialogForCancelationByAdmin();
-//        }if(event.getRideStatus().equals(Config.Status.RENTAL_RIDE_CANCELLED_BY_DRIVER)){
-//            showDialogForCancelation();
-//        }
-//    }
-
-
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(RideSessionActiveRideEvent event) {
         if (event.getRide_status().equals(Config.Status.RENTAL_RIDE_CANCEL_BY_USER)) {
@@ -370,7 +332,6 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
                     case Config.ApiKeys.KEY_REST_RIDE_ARRIVED:
                         rideSession.setRideStatus("12");
                         NewRideArrivedModel arrived_response = gson.fromJson("" + script, NewRideArrivedModel.class);
-                       // updateFirebaseEvent(Config.Status.RENTAL_ARRIVED, rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                         setviewAccordingToStatus();
                         break;
                     case Config.ApiKeys.KEY_REST_START_RIDE:
@@ -378,7 +339,6 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
                         NewbeginTripModel begin_response = gson.fromJson("" + script, NewbeginTripModel.class);
                         if (begin_response.getStatus() == 1) {
                             rideSession.setRideStatus("13");
-                           // updateFirebaseEvent(Config.Status.RENTAl_RIDE_STARTED, rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                             setviewAccordingToStatus();
                         } else {
                             Toast.makeText(this, "" + begin_response.getMessage(), Toast.LENGTH_SHORT).show();
@@ -387,7 +347,6 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
                     case Config.ApiKeys.KEY_REST_END_RIDE:
                         NewEndRideModel end_ride_response = gson.fromJson("" + script, NewEndRideModel.class);
                         if (end_ride_response.getStatus() == 1) {
-                           // updateFirebaseEventAtRideEnd(Config.Status.RENTAL_RIDE_END, end_ride_response.getDetails().getRental_booking_id(), rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID));
                             rideSession.setRideStatus("16");
                             rideSession.clearRideSession();
                             finish();
@@ -449,13 +408,6 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
         ListView lv_reasons = (ListView) dialog.findViewById(R.id.lv_reasons);
         lv_reasons.setAdapter(new ReasonAdapter(this, cancelReasonCustomer));
 
-//        lv_reasons.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                apiManager.execution_method_get(Config.ApiKeys.KEY_CANCEL_TRIP , Apis.cancelRide+"?ride_id="+rideSession.getCurrentRideDetails().get(RideSession.RIDE_ID)+"&reason_id="+cancelReasonCustomer.getMsg().get(position).getReasonId());
-//                dialog.dismiss();
-//            }
-//        });
         dialog.show();
     }
 
@@ -500,50 +452,5 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
             }
         }
     }
-
-
-//    private void updateFirebaseEvent(final String status_value, final String Ride_id) throws Exception {
-//
-//        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + Ride_id).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-//                };
-//                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-//                try {
-//                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + Ride_id).setValue(new RideSessionEvent("" + Ride_id, "" + status_value, "Not yet generated", "0"));
-//                } catch (Exception e) {
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//                ApporioLog.logI("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-//            }
-//        });
-//    }
-
-
-//    private void updateFirebaseEventAtRideEnd(final String status_value, final String RideEnd_val, final String ride_id) throws Exception {
-//
-//        FirebaseDatabase.getInstance().getReference(Config.RideTableReference).child("" + ride_id).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                GenericTypeIndicator<List<ChatModel>> t = new GenericTypeIndicator<List<ChatModel>>() {
-//                };
-//                List<ChatModel> yourStringArray = dataSnapshot.child("Chat").getValue(t);
-//                try {
-//                    FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + ride_id).setValue(new RideSessionEvent("" + ride_id, "" + status_value, "" + RideEnd_val, "0"));
-//                } catch (Exception e) {
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//                ApporioLog.logI("" + TAG, "Data Fetched from firebase cancelled " + databaseError.getMessage());
-//            }
-//        });
-//    }
-
 
 }

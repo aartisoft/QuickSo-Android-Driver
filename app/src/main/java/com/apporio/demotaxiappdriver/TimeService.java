@@ -16,8 +16,6 @@ import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.restmodels.NewUpdateLatLongModel;
 import com.apporio.demotaxiappdriver.others.AerialDistance;
-
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.trackride.EventytrackAccuracy;
 import com.apporio.demotaxiappdriver.urls.Apis;
@@ -25,17 +23,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.database.DBHelper;
-import com.apporio.demotaxiappdriver.location.SamLocationRequestService;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.restmodels.NewUpdateLatLongModel;
-import com.apporio.demotaxiappdriver.others.AerialDistance;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.EventytrackAccuracy;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import org.greenrobot.eventbus.EventBus;
 

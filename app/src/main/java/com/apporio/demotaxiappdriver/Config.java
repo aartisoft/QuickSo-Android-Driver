@@ -7,7 +7,6 @@ import android.net.NetworkInfo;
 import android.util.DisplayMetrics;
 
 import com.apporio.demotaxiappdriver.others.ChatModel;
-import com.apporio.demotaxiappdriver.others.ChatModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +23,6 @@ public class Config {
     public static String Devicetype = "2";
     public static String GeoFireReference = "geofire";
     public static String ActiveRidesRefrence = "Activeride";
-    public static String RideTableReference = "RideTable";
     public static String ChatReferencetable = "Chat";
     public static boolean ReceiverPassengerActivity = false;
     public static boolean RentalReceivepassengerActivity = false ;

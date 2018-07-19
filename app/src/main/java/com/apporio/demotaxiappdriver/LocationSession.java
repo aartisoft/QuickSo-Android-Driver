@@ -7,10 +7,6 @@ import android.location.Location;
 import android.util.Log;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
-import com.apporio.demotaxiappdriver.database.DBHelper;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.others.AerialDistance;
 import com.apporio.demotaxiappdriver.database.DBHelper;
 import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.others.AerialDistance;

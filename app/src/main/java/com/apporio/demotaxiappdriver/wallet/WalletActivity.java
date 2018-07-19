@@ -12,11 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.google.android.gms.wallet.Wallet;
 import com.apporio.demotaxiappdriver.BaseActivity;
 import com.apporio.demotaxiappdriver.Config;
-import com.apporio.demotaxiappdriver.ManualUserDetailActivity;
-import com.apporio.demotaxiappdriver.ProfileActivity;
 import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.ModelWalletTransactionsResponse;
@@ -24,8 +21,6 @@ import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
 
 import java.util.HashMap;
 

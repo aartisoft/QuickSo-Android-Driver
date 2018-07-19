@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.apporio.demotaxiappdriver.R;
 import com.bumptech.glide.Glide;
 
 import butterknife.Bind;

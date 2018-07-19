@@ -9,7 +9,6 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.restmodels.NewDoneRidemodel;
 import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
@@ -17,11 +16,6 @@ import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.restmodels.NewDoneRidemodel;
-import com.apporio.demotaxiappdriver.models.restmodels.ResultStatusChecker;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 

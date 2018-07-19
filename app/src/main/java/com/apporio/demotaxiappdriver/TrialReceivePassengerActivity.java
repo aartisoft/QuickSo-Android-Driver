@@ -8,12 +8,10 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
@@ -21,28 +19,12 @@ import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
 import com.apporio.demotaxiappdriver.models.newridesync.NewRideSync;
 import com.apporio.demotaxiappdriver.models.rideaccept.RideAccept;
 import com.apporio.demotaxiappdriver.models.viewrideinfodriver.ViewRideInfoDriver;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.MyBroadcastReceiver;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.bumptech.glide.Glide;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
-import com.apporio.demotaxiappdriver.models.newridesync.NewRideSync;
-import com.apporio.demotaxiappdriver.models.rideaccept.RideAccept;
-import com.apporio.demotaxiappdriver.models.viewrideinfodriver.ViewRideInfoDriver;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -245,7 +227,6 @@ public class TrialReceivePassengerActivity extends Activity implements ApiManage
 
                     if (rideAccept.getResult() == 1) {
                         new RideSession(this).setRideSesion(rideAccept.getDetails().getRide_id(),rideAccept.getDetails().getUser_id(),rideAccept.getDetails().getUser_name(),rideAccept.getDetails().getUser_phone(),rideAccept.getDetails().getCoupon_code(),rideAccept.getDetails().getPickup_lat(),rideAccept.getDetails().getPickup_long(),rideAccept.getDetails().getPickup_location(),rideAccept.getDetails().getDrop_lat(),rideAccept.getDetails().getDrop_long(),rideAccept.getDetails().getDrop_location(),rideAccept.getDetails().getRide_date(),rideAccept.getDetails().getRide_time(),rideAccept.getDetails().getLater_date(),rideAccept.getDetails().getLater_time(),rideAccept.getDetails().getDriver_id(),rideAccept.getDetails().getRide_type(),rideAccept.getDetails().getRide_status(),rideAccept.getDetails().getStatus());
-                        FirebaseDatabase.getInstance().getReference(""+Config.RideTableReference).child(""+rideAccept.getDetails().getRide_id()).setValue(new RideSessionEvent(""+rideAccept.getDetails().getRide_id() , ""+Config.Status.NORMAL_ACCEPTED, "Not yet generated" , "0"));
                         startActivity(new Intent(this, TrackRideActivity.class)
                                 .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                 .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));

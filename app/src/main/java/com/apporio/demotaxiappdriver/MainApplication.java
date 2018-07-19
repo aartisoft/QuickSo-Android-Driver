@@ -6,11 +6,7 @@ import android.support.multidex.MultiDex;
 import com.apporio.demotaxiappdriver.analytics.MyApplication;
 import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.bugfender.sdk.Bugfender;
 import com.onesignal.OneSignal;
-import com.apporio.demotaxiappdriver.analytics.MyApplication;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
 
 /**
  * Created by samirgoel3@gmail.com on 6/5/2017.

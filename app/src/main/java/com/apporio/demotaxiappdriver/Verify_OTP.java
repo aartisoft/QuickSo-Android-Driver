@@ -13,20 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.newdriveraccount.RegistrationModel;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hbb20.CountryCodePicker;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.newdriveraccount.RegistrationModel;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 
@@ -95,7 +88,6 @@ public class Verify_OTP extends AppCompatActivity implements ApiManager.APIFETCH
                     intent.putExtra("phone_number", "+" + countryCodePicker.getSelectedCountryCode() + input_number);
                     setResult(Activity.RESULT_OK, intent);
                     finish();
-                    // apiManager.execution_method_get(Config.ApiKeys.KEY_Driver_register, Apis.register + "?driver_name=" + name + "&driver_email=" + email + "&driver_phone=" + phone + "&driver_password=" + password + "&city_id=" + city_id + "&car_type_id=" + car_id + "&car_model_id=" + car_model_id + "&car_number=" + carNumber + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
                 }
 
             }

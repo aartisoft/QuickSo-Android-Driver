@@ -1,5 +1,6 @@
 package com.apporio.demotaxiappdriver;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -19,7 +20,6 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.DoneRideInfo;
@@ -28,12 +28,6 @@ import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.DoneRideInfo;
-import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 public class PriceFareActivity extends AppCompatActivity implements ApiManager.APIFETCHER {
 
@@ -78,14 +72,6 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
         total_payble_fare_txt_large = (TextView) findViewById(R.id.total_payble_fare_txt_large);
         //ride_id = getIntent().getExtras().getString("ride_id");
 
-//        findViewById(R.id.pay_try).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                apiManager.execution_method_get(Config.ApiKeys.KEY_View_done_ride_info, Apis.baseDomain + "?done_ride_id=" + ride_id + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
-//
-//            }
-//        });
-
         findViewById(R.id.btn_view_receipt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -127,6 +113,7 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
         }
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onFetchComplete(Object script, String APINAME) {
         try {
@@ -176,12 +163,7 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
 
                     finalizeOtherActivities();
                 } else if (deviceId.getResult().toString().equals("419")) {
-//                    sessionManager.logoutUser();
-//                    Intent intent = new Intent(this, SplashActivity.class);
-//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                    startActivity(intent);
-//                    overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
-//                    finish();
+
                 } else {
                     Toast.makeText(this, "" + deviceId.getMsg(), Toast.LENGTH_SHORT).show();
                 }
@@ -211,7 +193,6 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
         }
 
     }
-
 
     private void showDialofForViewReceipt() {
         final Dialog dialog = new Dialog(this, android.R.style.Theme_Translucent_NoTitleBar);
@@ -288,11 +269,6 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
         dialog.setContentView(R.layout.dialog_rate_us);
         dialog.setCancelable(true);
 
-
-//        Window window = dialog.getWindow();
-//        dialog.setCancelable(true);
-//        window.setGravity(Gravity.CENTER);
-//        window.setGravity(Gravity.CENTER_VERTICAL);
 
         final RatingBar rating_bar = (RatingBar) dialog.findViewById(R.id.rating_bar);
 

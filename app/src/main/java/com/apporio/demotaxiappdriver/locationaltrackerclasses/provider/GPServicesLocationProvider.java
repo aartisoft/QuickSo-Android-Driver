@@ -21,7 +21,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.RequestCode;
 
 /**
  * Created by Yahya Bayramoglu on 09/02/16.

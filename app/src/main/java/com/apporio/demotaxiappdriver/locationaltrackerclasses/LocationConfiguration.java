@@ -3,8 +3,6 @@ package com.apporio.demotaxiappdriver.locationaltrackerclasses;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.Default;
 import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.ProviderType;
 import com.google.android.gms.location.LocationRequest;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.Default;
-import com.apporio.demotaxiappdriver.locationaltrackerclasses.constants.ProviderType;
 
 /**
  * Created by Yahya Bayramoglu on 09/02/16.

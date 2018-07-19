@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apporio.apporiologs.ApporioLog;
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.RideSession;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
@@ -22,27 +21,12 @@ import com.apporio.demotaxiappdriver.models.ModelCheckTime;
 import com.apporio.demotaxiappdriver.models.ModelPartialRequestResponse;
 import com.apporio.demotaxiappdriver.models.restmodels.NewRideAcceptmodel;
 import com.apporio.demotaxiappdriver.models.rideaccept.RideAccept;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.bumptech.glide.Glide;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.RideSession;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.ModelCheckTime;
-import com.apporio.demotaxiappdriver.models.ModelPartialRequestResponse;
-import com.apporio.demotaxiappdriver.models.restmodels.NewRideAcceptmodel;
-import com.apporio.demotaxiappdriver.models.rideaccept.RideAccept;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.RideSessionEvent;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.trackride.TrackRideActivity;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 
@@ -229,7 +213,6 @@ public class AcceptPassActivity extends Activity implements ApiManager.APIFETCHE
                         RideAccept rideAccept = gson.fromJson("" + script, RideAccept.class);
                         if (rideAccept.getResult() == 1) {
                             new RideSession(this).setRideSesion(rideAccept.getDetails().getRide_id(), rideAccept.getDetails().getUser_id(), rideAccept.getDetails().getUser_name(), rideAccept.getDetails().getUser_phone(), rideAccept.getDetails().getCoupon_code(), rideAccept.getDetails().getPickup_lat(), rideAccept.getDetails().getPickup_long(), rideAccept.getDetails().getPickup_location(), rideAccept.getDetails().getDrop_lat(), rideAccept.getDetails().getDrop_long(), rideAccept.getDetails().getDrop_location(), rideAccept.getDetails().getRide_date(), rideAccept.getDetails().getRide_time(), rideAccept.getDetails().getLater_date(), rideAccept.getDetails().getLater_time(), rideAccept.getDetails().getDriver_id(), rideAccept.getDetails().getRide_type(), rideAccept.getDetails().getRide_status(), rideAccept.getDetails().getStatus());
-                            FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + rideAccept.getDetails().getRide_id()).setValue(new RideSessionEvent("" + rideAccept.getDetails().getRide_id(), "" + Config.Status.NORMAL_ACCEPTED, "Not yet generated", "0"));
                             startActivity(new Intent(this, TrackRideActivity.class)
                                     .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
                                     .putExtra("customer_phone", "" + rideAccept.getDetails().getUser_phone()));
@@ -247,7 +230,6 @@ public class AcceptPassActivity extends Activity implements ApiManager.APIFETCHE
                         finish();
                         startActivity(new Intent(AcceptPassActivity.this, RentalTrackRideActivity.class));
                         Toast.makeText(this, "" + accept_response.getMessage(), Toast.LENGTH_SHORT).show();
-                        FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + accept_response.getDetails().getRental_booking_id()).setValue(new RideSessionEvent("" + accept_response.getDetails().getRental_booking_id(), "" + Config.Status.RENTAL_ACCEPTED, "Not yet generated", "0"));
 
                     } else {
                         finish();

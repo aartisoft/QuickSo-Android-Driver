@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.apporio.demotaxiappdriver.R;
-
 import java.util.ArrayList;
 
 import butterknife.Bind;

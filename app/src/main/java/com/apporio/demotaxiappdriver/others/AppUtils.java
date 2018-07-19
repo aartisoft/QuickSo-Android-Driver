@@ -9,11 +9,8 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
-import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Base64;
-
-import com.apporio.demotaxiappdriver.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

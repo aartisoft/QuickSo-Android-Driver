@@ -11,17 +11,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.apporio.demotaxiappdriver.R;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.models.AboutResponse;
-import com.apporio.demotaxiappdriver.urls.Apis;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import  com.apporio.demotaxiappdriver.samwork.ApiManager ;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.AboutResponse;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class AboutActivity extends AppCompatActivity implements ApiManager.APIFETCHER {
     public static Activity about;

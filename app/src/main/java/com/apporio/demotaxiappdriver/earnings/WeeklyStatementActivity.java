@@ -18,7 +18,6 @@ import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.apporio.demotaxiappdriver.newmodels.WeeklyEarningModel;
 
 import java.util.ArrayList;
 

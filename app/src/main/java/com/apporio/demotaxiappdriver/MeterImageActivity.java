@@ -1,37 +1,30 @@
 package com.apporio.demotaxiappdriver;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.logger.Logger;
 import com.apporio.demotaxiappdriver.others.ImageCompressMode;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.logger.Logger;
-import com.apporio.demotaxiappdriver.others.ImageCompressMode;
+
+import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.util.List;
-import android.Manifest;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class MeterImageActivity extends Activity implements EasyPermissions.PermissionCallbacks{

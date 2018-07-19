@@ -11,9 +11,6 @@ import com.apporio.demotaxiappdriver.models.ModelWalletTransactionsResponse;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.Resolve;
 import com.sam.placer.annotations.View;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-
-import butterknife.Bind;
 
 @Layout(R.layout.layout_holder_wallet_transaction)
 public class HolderWalletTransactions {

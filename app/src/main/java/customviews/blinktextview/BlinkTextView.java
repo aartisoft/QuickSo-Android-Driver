@@ -31,7 +31,11 @@ import com.google.gag.annotation.enforceable.CantTouchThis;
 import com.google.gag.annotation.remark.PleaseDontShowUpOn;
 import com.google.gag.annotation.remark.WTF;
 import com.google.gag.annotation.team.Channeling;
-import com.google.gag.enumeration.*;
+import com.google.gag.enumeration.ChannelingEntity;
+import com.google.gag.enumeration.OpinionOfHumanity;
+import com.google.gag.enumeration.SpeedUnits;
+import com.google.gag.enumeration.Stop;
+import com.google.gag.enumeration.Website;
 
 /**
  * Blink like it's the 90s all over again.

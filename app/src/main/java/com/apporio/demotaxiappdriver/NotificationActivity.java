@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.NotificationResponse;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
@@ -20,10 +19,6 @@ import com.sam.placer.annotations.Click;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.Position;
 import com.sam.placer.annotations.Resolve;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.NotificationResponse;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import java.util.HashMap;
 

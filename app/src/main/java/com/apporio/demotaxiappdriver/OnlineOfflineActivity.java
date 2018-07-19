@@ -10,13 +10,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.ModelDeviceOnlineIffline;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -139,24 +139,6 @@ public class OnlineOfflineActivity extends Activity implements ApiManager.APIFET
     public void onFetchResultZero(String script) {
 
     }
-
-
-
-
-//     switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//        @Override
-//        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//
-//            if (!isChecked) {
-//                switch1 = "0";
-//                apiManager_new.execution_method_get(Config.ApiKeys.KEY_ONLINE_OFFLINE , Apis.onlineOffline+"?driver_id="+sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID)+"&online_offline=2"+"&driver_token="+sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken)+"&language_id="+languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
-//            } else {
-//                switch1 = "1";
-//                apiManager_new.execution_method_get(Config.ApiKeys.KEY_ONLINE_OFFLINE , Apis.onlineOffline+"?driver_id="+sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID)+"&online_offline=1"+"&driver_token="+sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken)+"&language_id="+languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
-//            }
-//        }
-//    });
-
 
     @Override
     public void onBackPressed() {

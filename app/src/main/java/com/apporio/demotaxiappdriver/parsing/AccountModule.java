@@ -8,6 +8,7 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.androidnetworking.interfaces.StringRequestListener;
+import com.apporio.demotaxiappdriver.logger.Logger;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
 
@@ -15,8 +16,6 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Locale;
-
-import com.apporio.demotaxiappdriver.logger.Logger;
 
 /**
  * Created by Bhuvneshwar on 11/2/2016.

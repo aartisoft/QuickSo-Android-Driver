@@ -30,13 +30,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
+import com.apporio.demotaxiappdriver.logger.Logger;
 import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.ResultCheck;
 import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
 import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
 import com.apporio.demotaxiappdriver.others.ImageCompressMode;
 import com.apporio.demotaxiappdriver.parsing.AccountModule;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
@@ -45,21 +44,8 @@ import com.bumptech.glide.Glide;
 import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import com.apporio.demotaxiappdriver.logger.Logger;
 import com.sampermissionutils.AfterPermissionGranted;
 import com.sampermissionutils.EasyPermissions;
-import com.apporio.demotaxiappdriver.logger.Logger;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.ResultCheck;
-import com.apporio.demotaxiappdriver.models.deviceid.DeviceId;
-import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.others.ImageCompressMode;
-import com.apporio.demotaxiappdriver.parsing.AccountModule;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -273,23 +259,6 @@ public class ProfileActivity extends AppCompatActivity implements ApiManager.API
             }
         });
 
-//        iv_edit_phone.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                mobile.setClickable(true);
-////                mobile.setFocusable(true);
-////                mobile.setCursorVisible(true);
-////                mobile.setFocusableInTouchMode(true);
-//
-//                mobile.setEnabled(true);
-//                mobile.setSelection(mobile.getText().length());
-//                mobile.requestFocus();
-//
-//                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//                inputMethodManager.showSoftInput(mobile, InputMethodManager.SHOW_FORCED);
-//
-//            }
-//        });
 
         iv_edit_account_number.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -441,12 +410,6 @@ public class ProfileActivity extends AppCompatActivity implements ApiManager.API
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         try{cameraTask();}catch (Exception e){}
     }
-
-
-
-
-
-
 
     @Override
     protected void onDestroy() {
@@ -631,12 +594,7 @@ public class ProfileActivity extends AppCompatActivity implements ApiManager.API
                 sessionManager.logoutUser();
                 dialog.dismiss();
             } else if (deviceId.getResult().toString().equals("419")) {
-//                sessionManager.logoutUser();
-//                Intent intent = new Intent(this, SplashActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                startActivity(intent);
-//                overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
-//                finish();
+
             } else {
                 Toast.makeText(this, "" + deviceId.getMsg(), Toast.LENGTH_LONG).show();
             }

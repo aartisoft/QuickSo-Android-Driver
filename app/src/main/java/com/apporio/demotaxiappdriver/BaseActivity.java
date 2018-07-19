@@ -4,20 +4,18 @@ package com.apporio.demotaxiappdriver;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.content.Context;
-import android.net.ConnectivityManager;
 import android.provider.Settings;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AlertDialog;
 import android.telephony.TelephonyManager;
 
-import com.apporio.demotaxiappdriver.R;
-import com.apporio.demotaxiappdriver.others.NoInterNetDialogFragment;
 import com.apporio.demotaxiappdriver.others.NoInterNetDialogFragment;
 
 

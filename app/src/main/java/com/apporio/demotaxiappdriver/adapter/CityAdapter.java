@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.apporio.demotaxiappdriver.R;
-import com.apporio.demotaxiappdriver.manager.LanguageManager;
 import com.apporio.demotaxiappdriver.models.viewcity.ViewCity;
 
 import butterknife.Bind;

@@ -12,12 +12,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apporio.demotaxiappdriver.R;
 import com.apporio.demotaxiappdriver.manager.SessionManager;
 import com.apporio.demotaxiappdriver.models.DocumentListModel;
 import com.apporio.demotaxiappdriver.models.ResultCheck;
 import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
 import com.apporio.demotaxiappdriver.parsing.AccountModule;
 import com.apporio.demotaxiappdriver.samwork.ApiManager;
 import com.apporio.demotaxiappdriver.urls.Apis;
@@ -28,14 +26,6 @@ import com.sam.placer.annotations.Click;
 import com.sam.placer.annotations.Layout;
 import com.sam.placer.annotations.Position;
 import com.sam.placer.annotations.Resolve;
-import com.apporio.demotaxiappdriver.manager.SessionManager;
-import com.apporio.demotaxiappdriver.models.DocumentListModel;
-import com.apporio.demotaxiappdriver.models.ResultCheck;
-import com.apporio.demotaxiappdriver.models.register.Register;
-import com.apporio.demotaxiappdriver.others.FirebaseUtils;
-import com.apporio.demotaxiappdriver.parsing.AccountModule;
-import com.apporio.demotaxiappdriver.samwork.ApiManager;
-import com.apporio.demotaxiappdriver.urls.Apis;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -66,11 +56,7 @@ public class DocumentActivity extends Activity implements ApiManager.APIFETCHER 
                 finish();
             }
         });
-/*
-        String numbr = getIntent().getExtras().getString("email");
-        String password = getIntent().getExtras().getString("password");
-        Log.d("**phone_number=document=", numbr);
-        Log.d("**password==", password);*/
+
 
         findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
