@@ -39,7 +39,7 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
     String driver_token;
     LanguageManager languageManager;
     String language_id;
-    TextView pay_mode, pick_location_txt, drop_location_txt, total_payble_fare_txt_large,tv_payment_status,tv_payment_text;
+    TextView pay_mode, pick_location_txt, drop_location_txt, total_payble_fare_txt_large, tv_payment_status, tv_payment_text;
     ApiManager apiManager;
     DoneRideInfo doneRideInfo;
     EditText comments;
@@ -127,19 +127,18 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
                 if (doneRideInfo.getResult() == 1) {
 
                     if (doneRideInfo.getMsg().getPayment_option_id().equals("1")) {
-                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode)+" "+ getResources().getString(R.string.PRICE_FARE_payment_cash));
+                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode) + " " + getResources().getString(R.string.PRICE_FARE_payment_cash));
                     } else if (doneRideInfo.getMsg().getPayment_option_id().equals("2")) {
-                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode)+" "+ getResources().getString(R.string.PRICE_FARE_payment_paypal));
+                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode) + " " + getResources().getString(R.string.PRICE_FARE_payment_paypal));
                     } else if (doneRideInfo.getMsg().getPayment_option_id().equals("3")) {
-                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode)+" "+ getResources().getString(R.string.PRICE_FARE_payment_card));
+                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode) + " " + getResources().getString(R.string.PRICE_FARE_payment_card));
                     } else if (doneRideInfo.getMsg().getPayment_option_id().equals("4")) {
-                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode)+" "+ getResources().getString(R.string.PRICE_FARE_payment_wallet));
+                        pay_mode.setText(getResources().getString(R.string.PRICE_FARE_payment_mode) + " " + getResources().getString(R.string.PRICE_FARE_payment_wallet));
                     }
 
-                    if(doneRideInfo.getMsg().getPayment_status().equals("0")){
+                    if (doneRideInfo.getMsg().getPayment_status().equals("0")) {
                         btn_rate_user.setVisibility(View.GONE);
-                    }
-                    else if(doneRideInfo.getMsg().getPayment_status().equals("1")){
+                    } else if (doneRideInfo.getMsg().getPayment_status().equals("1")) {
                         btn_rate_user.setVisibility(View.VISIBLE);
                     }
 
@@ -147,9 +146,14 @@ public class PriceFareActivity extends AppCompatActivity implements ApiManager.A
                     drop_location_txt.setText("" + doneRideInfo.getMsg().getEnd_location());
 
                     tv_payment_text.setText(doneRideInfo.getMsg().getPayment_status_message().toString());
-                    tv_payment_status.setText(getResources().getString(R.string.PRICE_FARE_payment_status)+ " "+doneRideInfo.getMsg().getPayment_status_show());
-                    total_payble_fare_txt_large.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getAmount_show());
+                    tv_payment_status.setText(getResources().getString(R.string.PRICE_FARE_payment_status) + " " + doneRideInfo.getMsg().getPayment_status_show());
 
+                    if (doneRideInfo.getMsg().getAmount_show().equals("")) {
+                        total_payble_fare_txt_large.setVisibility(View.GONE);
+                    } else {
+                        total_payble_fare_txt_large.setVisibility(View.VISIBLE);
+                        total_payble_fare_txt_large.setText("" + sessionManager.getCurrencyCode() + doneRideInfo.getMsg().getAmount_show());
+                    }
                 } else {
                     Toast.makeText(PriceFareActivity.this, "" + doneRideInfo.getMsg().toString(), Toast.LENGTH_SHORT).show();
                 }

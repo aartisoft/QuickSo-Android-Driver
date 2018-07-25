@@ -1,6 +1,7 @@
 package com.apporio.demotaxiappdriver.fcmclasses;
 
 import android.app.KeyguardManager;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -180,8 +181,7 @@ public class OneSignalServiceClass extends NotificationExtenderService {
         if (ride_status.equals("15")) {
             generateNotification("" + message, TRIP_HISTORY);
             return true;
-        }
-        else {
+        } else {
             if ((System.currentTimeMillis() / 1000) - Long.parseLong("" + notification_timestamp) <= NOTIFICATION_BYPASS_TIME) {
                 if (ride_status.equals("" + Config.Status.NORMAL_CANCEL_BY_USER) || ride_status.equals("" + Config.Status.NORMAL_RIDE_CANCEl_BY_ADMIN)) {
                     if (!Constants.is_track_ride_activity_is_open) {
@@ -199,7 +199,7 @@ public class OneSignalServiceClass extends NotificationExtenderService {
 
         Intent intent = getIntent(IntentType);
 
-        if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
 
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -218,7 +218,18 @@ public class OneSignalServiceClass extends NotificationExtenderService {
                     .setContentIntent(pendingIntent);
             notificationManager.notify(0, notificationBuilder.build());
         } else {
+            NotificationChannel channel = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                channel = new NotificationChannel("my_channel_01",
+                        "Channel human readable title",
+                        NotificationManager.IMPORTANCE_DEFAULT);
+            }
+
+            String mChannel = "Message";
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                notificationManager.createNotificationChannel(channel);
+            }
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
             long[] pattern = {500, 500, 500, 500, 500, 500, 500, 500, 500};
             Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
@@ -233,7 +244,8 @@ public class OneSignalServiceClass extends NotificationExtenderService {
 //                    .setColor(Color.parseColor("#0x008000"))
                     .setSound(alarmSound)
                     .setVibrate(pattern)
-                    .setContentIntent(pendingIntent);
+                    .setContentIntent(pendingIntent)
+                    .setChannelId("my_channel_01");
             notificationManager.notify(0, notificationBuilder.build());
         }
     }
@@ -273,7 +285,7 @@ public class OneSignalServiceClass extends NotificationExtenderService {
         }
         if (intent_type == LATER_REASSIGNED) {
             return new Intent(this, ReAcceptpassActivity.class)
-                    .putExtra("ride_id",modelNewRide.ride_id)
+                    .putExtra("ride_id", modelNewRide.ride_id)
                     .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         }
         if (intent_type == RECEIPT_EVENT) {
