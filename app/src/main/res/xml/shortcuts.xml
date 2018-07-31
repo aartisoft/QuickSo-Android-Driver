@@ -1,0 +1,23 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="home"
+        android:enabled="true"
+        android:icon="@drawable/ic_earning"
+        android:shortcutShortLabel="@string/MAIN_ACTIVITY__earnings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.apporio.demotaxiappdriver"
+            android:targetClass="com.apporio.demotaxiappdriver.earnings.EarningActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:shortcutShortLabel="@string/settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.apporio.demotaxiappdriver"
+            android:targetClass="com.apporio.demotaxiappdriver.settings.SettingsActivity" />
+    </shortcut>
+</shortcuts>
+
