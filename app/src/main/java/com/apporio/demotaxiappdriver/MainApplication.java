@@ -29,9 +29,6 @@ public class MainApplication extends MyApplication {
                 .unsubscribeWhenNotificationsAreDisabled(true)
                 .init();
 
-
-        OneSignal.sendTag("driver_id" , ""+getSessionManager().getUserDetails().get(SessionManager.KEY_DRIVER_ID));
-
     }
 
     public static RideSession getRideSession(){

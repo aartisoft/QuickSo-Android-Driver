@@ -128,7 +128,7 @@ public class MainActivity extends BaseActivity implements Apis,
 
     Button button_manualDispatch;
     LinearLayout my_wallet_button;
-    String demoStatus="1";
+    String demoStatus = "1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -180,24 +180,25 @@ public class MainActivity extends BaseActivity implements Apis,
         OneSignal.idsAvailable(new OneSignal.IdsAvailableHandler() {
             @Override
             public void idsAvailable(String userId, String registrationId) {
-                deviceId = userId ;
-                OneSignal.sendTag("driver_id" , ""+sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
+                deviceId = userId;
+                OneSignal.sendTag("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
             }
         });
 
-        if(demoStatus.equals("1")){
+        OneSignal.sendTag("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
+
+        if (demoStatus.equals("1")) {
             demoStatus = "2";
             try {
                 String demoDialog = sessionManager.getDemoDialog();
 
-                if(demoDialog.equals("Demo")){
+                if (demoDialog.equals("Demo")) {
                     showDialogForDemo();
                 }
-            }catch (Exception e){
+            } catch (Exception e) {
 
             }
         }
-
 
 
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -229,7 +230,7 @@ public class MainActivity extends BaseActivity implements Apis,
         data.put("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
         apiManager_new.execution_method_post(Config.ApiKeys.DRIVER_ACTIVE_RIDES, "" + Apis.Driver_Active_Rides, data);
 
-       // startPeriodicTask();
+        // startPeriodicTask();
 
         startService(new Intent(this, TimeService.class));
 
@@ -382,7 +383,7 @@ public class MainActivity extends BaseActivity implements Apis,
 
         setScrocabilityOnmap();
         setLocationonBoxex();
-        apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&bearing_factor="+locationSession.getLocationDetails().get(LocationSession.KEY_BEARING_FACTOR)+ "&current_lat=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT) + "&current_long=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG) + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+        apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&bearing_factor=" + locationSession.getLocationDetails().get(LocationSession.KEY_BEARING_FACTOR) + "&current_lat=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT) + "&current_long=" + locationSession.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG) + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
 
 
         HashMap<String, String> data = new HashMap<>();
@@ -647,9 +648,6 @@ public class MainActivity extends BaseActivity implements Apis,
         });
 
 
-
-
-
     }
 
     private void setheatmap(NewHeatmapModel heatMapResponse) {
@@ -715,7 +713,7 @@ public class MainActivity extends BaseActivity implements Apis,
         setStatusViewAccordingly();
 
         if (!isLatLongUpdateAPIisRunning) {
-            apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&bearing_factor="+event.getBearingfactor()+ "&current_lat=" + event.getlatitude_string() + "&current_long=" + event.getLongitude_string() + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+            apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&bearing_factor=" + event.getBearingfactor() + "&current_lat=" + event.getlatitude_string() + "&current_long=" + event.getLongitude_string() + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
             is_location_updation_running = true;
         }
 
@@ -869,9 +867,9 @@ public class MainActivity extends BaseActivity implements Apis,
                         NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
                         sessionManager.setCurrencyCode("" + response.getCurrency_iso_code(), "" + response.getCurrency_unicode());
 
-                        if(response.getDriver_wallet_active_status().equals("1")){
+                        if (response.getDriver_wallet_active_status().equals("1")) {
                             my_wallet_button.setVisibility(View.GONE);
-                        }else if(response.getDriver_wallet_active_status().equals("2")){
+                        } else if (response.getDriver_wallet_active_status().equals("2")) {
                             my_wallet_button.setVisibility(View.VISIBLE);
                         }
 
@@ -891,8 +889,7 @@ public class MainActivity extends BaseActivity implements Apis,
                 if (APINAME.equals(Config.ApiKeys.DRIVER_ACTIVE_RIDES)) {
                     rideSession.clearRideSession();
                 }
-            }
-            else if (resultCheck.result.equals("2")) { // when result is 2, it means wallet balance is low
+            } else if (resultCheck.result.equals("2")) { // when result is 2, it means wallet balance is low
                 if (APINAME.equals(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND)) {
                     sessionManager.setonline_offline(false);
                     setStatusViewAccordingly();
