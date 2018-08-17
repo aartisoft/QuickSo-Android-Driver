@@ -41,7 +41,90 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TimeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackRideActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="164" column="60" lean-forward="false" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apis.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/samwork/ApiManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="92" column="2" lean-forward="false" selection-start-line="92" selection-start-column="2" selection-end-line="123" selection-end-column="5" />
+              <folding>
+                <element signature="method#execution_method_get#0;class#ApiManager#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3366">
+              <caret line="234" column="46" lean-forward="false" selection-start-line="234" selection-start-column="46" selection-end-line="234" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SamLocationRequestService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/location/SamLocationRequestService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1975,7 +2058,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-tr/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/wallet/AddMoneyToWalletActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/ForgotPass_VerifyOTP.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/settings/SettingsActivity.java" />
@@ -1997,7 +2079,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/OnlineOfflineActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/DocumentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/PriceFareActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/shortucts.xml" />
@@ -2010,6 +2091,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forgotpass_verify_otp.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/samwork/ApiManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java" />
       </list>
     </option>
   </component>
@@ -2035,19 +2120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Apporiotaxi-Vemja-Driver-Version2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2094,7 +2166,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Apporiotaxi-Vemja-Driver-Version2" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2102,7 +2187,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/BUILDS_CREDENTIALS/TaxiDriverApp.jks" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1530763561599" />
-    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java&#10;Appl&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainApplication.java&#10;MyApp&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.analytics.MyApplication&#10;OneS&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java&#10;For&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ForgotPass_VerifyOTP.java&#10;Veri&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.Verify_OTP&#10;MAi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java&#10;App&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainApplication.java&#10;OneSi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java&#10;PriceFa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/PriceFareActivity.java&#10;Confi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/Config.java&#10;FireBase&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/others/FirebaseUtils.java&#10;ReceivePa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ReceivePassengerActivity.java&#10;Receive&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ReceiveRentalPassengerActivity.java&#10;spLA&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/SplashActivity.java&#10;Docume&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.DocumentActivity&#10;Login&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/LoginActivity.java&#10;Track&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java&#10;FireBaseU&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.others.FirebaseUtils&#10;RentalTra&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.RentalTrackRideActivity&#10;Rental&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/SelectedRentalRideActivity.java&#10;Sele&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.SelectedRidesActivity&#10;MAin&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.MainActivity&#10;Trac&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java&#10;Broa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java&#10;One&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.fcmclasses.OneSignalServiceClass&#10;Forgo&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/res/layout/activity_forgotpass_verify_otp.xml&#10;dime&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/res/values/dimens.xml&#10;Profile&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.ProfileActivity&#10;Settings&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.settings.SettingsActivity&#10;for&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.ForgotPass_VerifyOTP&#10;Ver&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java&#10;Apis&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java&#10;SPla&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.SplashActivity&#10;AddMo&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.wallet.AddMoneyToWalletActivity&#10;Verif&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.Verify_OTP&#10;APi&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.urls.Apis" />
+    <property name="SearchEverywhereHistoryKey" value="APi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java&#10;Api&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.urls.Apis&#10;Trac&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java&#10;TimeSe&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.TimeService&#10;Main&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java&#10;Appl&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainApplication.java&#10;MyApp&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.analytics.MyApplication&#10;OneS&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java&#10;For&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ForgotPass_VerifyOTP.java&#10;Veri&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.Verify_OTP&#10;MAi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java&#10;App&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/MainApplication.java&#10;OneSi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java&#10;PriceFa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/PriceFareActivity.java&#10;Confi&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/Config.java&#10;FireBase&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/others/FirebaseUtils.java&#10;ReceivePa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ReceivePassengerActivity.java&#10;Receive&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/ReceiveRentalPassengerActivity.java&#10;spLA&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/SplashActivity.java&#10;Docume&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.DocumentActivity&#10;Login&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/LoginActivity.java&#10;Track&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java&#10;FireBaseU&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.others.FirebaseUtils&#10;RentalTra&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.RentalTrackRideActivity&#10;Rental&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/SelectedRentalRideActivity.java&#10;Sele&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.SelectedRidesActivity&#10;MAin&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.MainActivity&#10;Broa&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/others/MyBroadcastReceiver.java&#10;One&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.fcmclasses.OneSignalServiceClass&#10;Forgo&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/res/layout/activity_forgotpass_verify_otp.xml&#10;dime&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/res/values/dimens.xml&#10;Profile&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.ProfileActivity&#10;Settings&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.settings.SettingsActivity&#10;for&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.ForgotPass_VerifyOTP&#10;Ver&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/Verify_OTP.java&#10;Apis&#9;FILE&#9;file://F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java&#10;SPla&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.SplashActivity&#10;AddMo&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.wallet.AddMoneyToWalletActivity&#10;Verif&#9;PSI&#9;JAVA://com.apporio.demotaxiappdriver.Verify_OTP" />
     <property name="lastFolderRoot" value="$USER_HOME$/Desktop/app_logo_100.png" />
     <property name="algorithm" value="Scalr" />
     <property name="method" value="Automatic" />
@@ -2114,7 +2199,7 @@
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
-    <property name="device.picker.selection" value="XUV3Y18608026418" />
+    <property name="device.picker.selection" value="ZX1D63GNGX" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
     <property name="KEY_COMPOSED_FOLDERS" value="{&quot;DecomposedFolders&quot;:[&quot;F:/ApporioTaxiVejmaVersion2/Apporiotaxi-Vemja-Driver-Version2/app/src/main/res/layout&quot;]}" />
   </component>
@@ -2287,15 +2372,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2744216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6621622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2303,7 +2388,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6851351" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2317,6 +2402,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2744216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2360,41 +2446,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/PhotoUploaderActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/OnlineOfflineActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2486">
-          <caret line="140" column="5" lean-forward="false" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/NotificationWebViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/NotificationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1236">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MeterImageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MeterEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -2497,7 +2548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1364">
           <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2543,14 +2593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="249" column="24" lean-forward="false" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/settings/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1782">
@@ -2580,7 +2622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2594,33 +2635,33 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/shortucts.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/shortucts.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_content.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="215" column="73" lean-forward="false" selection-start-line="215" selection-start-column="50" selection-end-line="215" selection-end-column="73" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/earnings/EarningActivity.java">
@@ -2638,32 +2679,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1320">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="42" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forgotpass_verify_otp.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/ForgotPass_VerifyOTP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="163" column="13" lean-forward="false" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2671,34 +2710,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_verify__otp.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/fcmclasses/OneSignalServiceClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4158">
           <caret line="238" column="32" lean-forward="false" selection-start-line="238" selection-start-column="32" selection-end-line="238" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2706,7 +2734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2714,14 +2741,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/location/SamLocationRequestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="195" column="40" lean-forward="false" selection-start-line="195" selection-start-column="40" selection-end-line="195" selection-end-column="40" />
+        <state relative-caret-position="3366">
+          <caret line="234" column="46" lean-forward="false" selection-start-line="234" selection-start-column="46" selection-end-line="234" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/samwork/ApiManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="92" column="2" lean-forward="false" selection-start-line="92" selection-start-column="2" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="method#execution_method_get#0;class#ApiManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/TimeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/trackride/TrackRideActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="164" column="60" lean-forward="false" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apporio/demotaxiappdriver/urls/Apis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding />
         </state>
       </provider>

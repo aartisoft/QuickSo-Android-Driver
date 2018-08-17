@@ -28,6 +28,7 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
 /**
  * Created by samirgoel3@gmail.com on 4/28/2017.
  */
@@ -35,17 +36,17 @@ import java.util.TimerTask;
 public class TimeService extends Service implements ApiManager.APIFETCHER {
 
     private static final String TAG = "TimeService";
-    SamLocationRequestService sam_location ;
-    LocationSession app_location_mamanger ;
-    SessionManager sessionManager ;
-    LanguageManager languageManager ;
-    RideSession rideSession ;
-    DBHelper dbHelper ;
-    StorageReference storageReference ;
-    ApiManager apiManager ;
-    GsonBuilder builder ;
-    Gson gson ;
-    private boolean isApiRunnign = false ;
+    SamLocationRequestService sam_location;
+    LocationSession app_location_mamanger;
+    SessionManager sessionManager;
+    LanguageManager languageManager;
+    RideSession rideSession;
+    DBHelper dbHelper;
+    StorageReference storageReference;
+    ApiManager apiManager;
+    GsonBuilder builder;
+    Gson gson;
+    private boolean isApiRunnign = false;
 
     private Handler mHandler = new Handler();
     private Timer mTimer = null;
@@ -71,47 +72,48 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
 
 
         // cancel if already existed
-        if(mTimer != null) {
+        if (mTimer != null) {
             mTimer.cancel();
         } else {
             // recreate new
             mTimer = new Timer();
         }
         // schedule task
-        mTimer.scheduleAtFixedRate(new TimeDisplayTimerTask(), 0,Config.LocationUpdateTimeinterval );
+        mTimer.scheduleAtFixedRate(new TimeDisplayTimerTask(), 0, Config.LocationUpdateTimeinterval);
     }
 
     @Override
     public void onAPIRunningState(int a, String APINAME) {
-        if(a == ApiManager.APIFETCHER.KEY_API_IS_STARTED){
-            isApiRunnign = true ;
-        }else{
-            isApiRunnign = false ;
+        if (a == ApiManager.APIFETCHER.KEY_API_IS_STARTED) {
+            isApiRunnign = true;
+        } else {
+            isApiRunnign = false;
         }
     }
 
     @Override
     public void onFetchComplete(Object script, String APINAME) {
 
-        try{NewUpdateLatLongModel response = gson.fromJson(""+script , NewUpdateLatLongModel.class);
-            sessionManager.setCurrencyCode(""+response.getCurrency_iso_code() , ""+response.getCurrency_unicode());
-            sessionManager.setAccuracy(""+response.getApplication_accuracy());
-            if (response.getResult()==2){ // when result is 2, it means wallet balance is low
+        try {
+            NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
+            sessionManager.setCurrencyCode("" + response.getCurrency_iso_code(), "" + response.getCurrency_unicode());
+            sessionManager.setAccuracy("" + response.getApplication_accuracy());
+            if (response.getResult() == 2) { // when result is 2, it means wallet balance is low
                 sessionManager.setonline_offline(false);
-            }else {
+            } else {
                 sessionManager.setonline_offline(true);
             }
 
 
-        } catch (Exception e){
-            ApporioLog.logE(""+TAG , "Exxception caught while parsing ==>"+e.getMessage());}
+        } catch (Exception e) {
+            ApporioLog.logE("" + TAG, "Exxception caught while parsing ==>" + e.getMessage());
+        }
     }
 
     @Override
     public void onFetchResultZero(String script) {
 
     }
-
 
 
     class TimeDisplayTimerTask extends TimerTask {
@@ -123,7 +125,7 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
 
                 @Override
                 public void run() {
-                    if(!sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID).equals("")){
+                    if (!sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID).equals("")) {
                         updateLocation();
                     }
                 }
@@ -135,28 +137,28 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
             sam_location.executeService(new SamLocationRequestService.SamLocationListener() {
                 @Override
                 public void onLocationUpdate(Location location) {
-                    EventBus.getDefault().post(new AccuracyEvent(""+location.getAccuracy()));
-                    EventBus.getDefault().post(new EventytrackAccuracy(""+location.getAccuracy()));
-                    try{
-                        if(app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT).equals("")){
+                    EventBus.getDefault().post(new AccuracyEvent("" + location.getAccuracy()));
+                    EventBus.getDefault().post(new EventytrackAccuracy("" + location.getAccuracy()));
+                    try {
+                        if (app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT).equals("")) {
                             updateLocationToSession(location);
-                        }else{
-                            if(location.getAccuracy()<Float.parseFloat(""+sessionManager.getUserDetails().get(SessionManager.KEY_accuracy))){
-                                Double distance =Double.parseDouble(""+ AerialDistance.aerialDistanceFunctionInMeters(Double.parseDouble(app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT)),Double.parseDouble(app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG)), location.getLatitude(),location.getLongitude()) ) ;
-                                if( distance > Double.parseDouble(""+sessionManager.getUserDetails().get(SessionManager.KEY_meter_range))){
+                        } else {
+                            if (location.getAccuracy() < Float.parseFloat("" + sessionManager.getUserDetails().get(SessionManager.KEY_accuracy))) {
+                                Double distance = Double.parseDouble("" + AerialDistance.aerialDistanceFunctionInMeters(Double.parseDouble(app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LAT)), Double.parseDouble(app_location_mamanger.getLocationDetails().get(LocationSession.KEY_CURRENT_LONG)), location.getLatitude(), location.getLongitude()));
+                                if (distance > Double.parseDouble("" + sessionManager.getUserDetails().get(SessionManager.KEY_meter_range))) {
                                     // if distance between two lat long is greater than 100 then only update on firebase and location session
-                                    updateLocationToSession(location );
-                                    if(!isApiRunnign){
-                                        apiManager.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND , Apis.BackGroundAppUpdate+"?driver_id="+sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID)+ "&bearing_factor="+location.getBearing()+"&current_lat="+ location.getLatitude()+"&current_long="+location.getLongitude()+"&current_location="+"&driver_token="+sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken)+"&language_id="+languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+                                    updateLocationToSession(location);
+                                    if (!isApiRunnign) {
+                                        apiManager.execution_method_get(Config.ApiKeys.KEY_UPDATE_DRIVER_LAT_LONG_BACKGROUND, Apis.BackGroundAppUpdate + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&bearing_factor=" + location.getBearing() + "&current_lat=" + location.getLatitude() + "&current_long=" + location.getLongitude() + "&current_location=" + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
                                     }
                                 }
                             }
                         }
-                        if(sessionManager.getUserDetails().get(SessionManager.KEY_service_switcher).equals("1")){
+                        if (sessionManager.getUserDetails().get(SessionManager.KEY_service_switcher).equals("1")) {
                         }
 
-                    }catch (Exception e){
-                        app_location_mamanger.setLocationAddress(""+e.getMessage());
+                    } catch (Exception e) {
+                        app_location_mamanger.setLocationAddress("" + e.getMessage());
                     }
 //                    LocationEvent location_event = new LocationEvent();
 //                    location_event.setCurrent_speed(location.getSpeed());
@@ -168,9 +170,9 @@ public class TimeService extends Service implements ApiManager.APIFETCHER {
 
 
         private void updateLocationToSession(Location location) {
-            Log.d("****"+TAG , "UpdatingLocationToSession");
-            if(location.getBearing() != 0.0){
-                app_location_mamanger.setBearingFactor(""+location.getBearing());
+            Log.d("****" + TAG, "UpdatingLocationToSession");
+            if (location.getBearing() != 0.0) {
+                app_location_mamanger.setBearingFactor("" + location.getBearing());
             }
             app_location_mamanger.setLocationLatLong(location);
         }

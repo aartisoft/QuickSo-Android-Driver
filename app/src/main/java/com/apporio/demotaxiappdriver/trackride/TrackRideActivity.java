@@ -500,7 +500,7 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
 
         try {
             if (rideSession.getCurrentRideDetails().get(RideSession.RIDE_STATUS).equals("6") && event.getMeter_value() >= Double.parseDouble("" + sessionManager.getUserDetails().get(SessionManager.KEY_TAIL))) { // update route
-                DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(new LatLng(Double.parseDouble(event.getlatitude_string()), Double.parseDouble(event.getLongitude_string())), new LatLng(Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LATITUDE)), Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LONGITUDE))), mGooglemap, sessionManager);
+               // DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(new LatLng(Double.parseDouble(event.getlatitude_string()), Double.parseDouble(event.getLongitude_string())), new LatLng(Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LATITUDE)), Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LONGITUDE))), mGooglemap, sessionManager);
             }
         } catch (Exception e) {
             ApporioLog.logE("" + TAG, "(a) Exception caught in onMessage Event ==>" + e.getMessage());
@@ -622,7 +622,9 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
     public void drawRoute(LatLng origin, LatLng destination, GoogleMap mMap, int origin_icon, int destination_icon) {
         mGooglemap.clear();
         try {
-            DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(origin, destination, mMap, sessionManager);
+            // comment draw path
+
+          //  DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(origin, destination, mMap, sessionManager);
             DrawMarker.getInstance(this).draw(mMap, origin, origin_icon, "" + rideSession.getCurrentRideDetails().get(RideSession.PICK_LOCATION));
             DrawMarker.getInstance(this).draw(mMap, destination, destination_icon, "" + rideSession.getCurrentRideDetails().get(RideSession.DROP_LOCATION));
 
@@ -844,7 +846,11 @@ public class TrackRideActivity extends AppCompatActivity implements OnMapReadyCa
                     try {
                         end_lat = location.getLatitude();
                         end_lng = location.getLongitude();
-                        DrawRouteMaps.getInstance(TrackRideActivity.this, 9, R.color.icons_8_muted_green_1).draw(new LatLng(end_lat, end_lng), new LatLng(Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LATITUDE)), Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LONGITUDE))), mGooglemap, sessionManager);
+
+                        // comment draw path
+                      //  DrawRouteMaps.getInstance(TrackRideActivity.this, 9, R.color.icons_8_muted_green_1).draw(new LatLng(end_lat, end_lng), new LatLng(Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LATITUDE)), Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LONGITUDE))), mGooglemap, sessionManager);
+
+
                         //  DrawRouteMaps.getInstance(TrackRideActivity.this , 9 ,R.color.icons_8_muted_green_1).draw(new LatLng(location.getLatitude() , location.getLongitude()), new LatLng(Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LATITUDE)) , Double.parseDouble(rideSession.getCurrentRideDetails().get(RideSession.DROP_LONGITUDE))), mGooglemap , sessionManager);
 
                     } catch (Exception e) {

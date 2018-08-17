@@ -7,7 +7,9 @@ public interface Apis {
     String imageDomain = BASE + "";
     String restdomain = BASE + "Apporiotaxi/";*/
 
-    String BASE = "http://apporiotaxi.com/";
+//    String BASE = "http://apporiotaxi.com/";
+
+    String BASE = "http://apporio.org/ApporiotaxiOneSignal/";
     String baseDomain = BASE + "api/";
     String imageDomain = BASE + "";
     String restdomain = BASE + "Apporiotaxi/";
