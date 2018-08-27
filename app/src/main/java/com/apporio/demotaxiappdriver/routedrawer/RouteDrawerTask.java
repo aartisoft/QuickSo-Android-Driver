@@ -65,8 +65,10 @@ public class RouteDrawerTask extends AsyncTask<String, Integer, List<List<HashMa
 
     @Override
     protected void onPostExecute(List<List<HashMap<String, String>>> result) {
-        if (result != null)
-            try {drawPolyLine(result);}catch (Exception e){ }
+//        if (result != null)
+//            try {
+//            drawPolyLine(result);}
+//            catch (Exception e){ }
 
     }
 

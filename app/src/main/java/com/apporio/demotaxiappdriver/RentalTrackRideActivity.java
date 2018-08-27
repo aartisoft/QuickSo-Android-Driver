@@ -298,7 +298,7 @@ public class RentalTrackRideActivity extends AppCompatActivity implements OnMapR
     @SuppressLint("NewApi")
     public void drawRoute(LatLng origin, LatLng destination, GoogleMap mMap, int origin_icon, int destination_icon) {
         mGooglemap.clear();
-        DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(origin, destination, mMap, sessionManager);
+        //DrawRouteMaps.getInstance(this, 6, R.color.icons_8_muted_green_1).draw(origin, destination, mMap, sessionManager);
 //        DrawMarker.getInstance(this).draw(mMap, origin, origin_icon, ""+rideSession.getCurrentRideDetails().get(RideSession.PICK_LOCATION));
 //        DrawMarker.getInstance(this).draw(mMap, destination, destination_icon, ""+rideSession.getCurrentRideDetails().get(RideSession.DROP_LOCATION));
 
