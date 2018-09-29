@@ -867,11 +867,12 @@ public class MainActivity extends BaseActivity implements Apis,
                         NewUpdateLatLongModel response = gson.fromJson("" + script, NewUpdateLatLongModel.class);
                         sessionManager.setCurrencyCode("" + response.getCurrency_iso_code(), "" + response.getCurrency_unicode());
 
-                        if (response.getDriver_wallet_active_status().equals("1")) {
-                            my_wallet_button.setVisibility(View.GONE);
-                        } else if (response.getDriver_wallet_active_status().equals("2")) {
+                        if (response.getDriver_wallet_active_status().equals("2")) {
                             my_wallet_button.setVisibility(View.VISIBLE);
+                        } else {
+                            my_wallet_button.setVisibility(View.GONE);
                         }
+
 
                         break;
                     case Config.ApiKeys.KEY_SCHEDULE_AND_UPDATED:

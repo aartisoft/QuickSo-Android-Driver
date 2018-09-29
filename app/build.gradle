@@ -93,7 +93,7 @@ dependencies {
     implementation 'com.google.maps.android:android-maps-utils:0.5+'
     implementation 'morxander.zaman:Zaman:1.0.0'
     implementation 'com.mlsdev.rximagepicker:library:2.0.2'
-    implementation 'com.onesignal:OneSignal:[3.8.3, 3.99.99]'
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
     implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
     implementation 'com.github.ApporioInfolabs:apporiolibraries:0.1.5'
     implementation 'id.zelory:compressor:2.1.0'

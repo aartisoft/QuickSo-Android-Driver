@@ -253,7 +253,14 @@ public class ManualUserDetailActivity extends AppCompatActivity implements ApiMa
                     Log.e("**script--trialreceivepassener", String.valueOf(script));
 
                     if (rideAccept.getResult() == 1) {
-                        new RideSession(this).setRideSesion(rideAccept.getDetails().getRide_id(), rideAccept.getDetails().getUser_id(), rideAccept.getDetails().getUser_name(), rideAccept.getDetails().getUser_phone(), rideAccept.getDetails().getCoupon_code(), rideAccept.getDetails().getPickup_lat(), rideAccept.getDetails().getPickup_long(), rideAccept.getDetails().getPickup_location(), rideAccept.getDetails().getDrop_lat(), rideAccept.getDetails().getDrop_long(), rideAccept.getDetails().getDrop_location(), rideAccept.getDetails().getRide_date(), rideAccept.getDetails().getRide_time(), rideAccept.getDetails().getLater_date(), rideAccept.getDetails().getLater_time(), rideAccept.getDetails().getDriver_id(), rideAccept.getDetails().getRide_type(), rideAccept.getDetails().getRide_status(), rideAccept.getDetails().getStatus());
+                        new RideSession(this).setRideSesion(rideAccept.getDetails().getRide_id(),
+                                rideAccept.getDetails().getUser_id(),
+                                rideAccept.getDetails().getUser_name(),
+                                rideAccept.getDetails().getUser_phone(),
+                                rideAccept.getDetails().getCoupon_code(),
+                                rideAccept.getDetails().getPickup_lat(),
+
+                                rideAccept.getDetails().getPickup_long(), rideAccept.getDetails().getPickup_location(), rideAccept.getDetails().getDrop_lat(), rideAccept.getDetails().getDrop_long(), rideAccept.getDetails().getDrop_location(), rideAccept.getDetails().getRide_date(), rideAccept.getDetails().getRide_time(), rideAccept.getDetails().getLater_date(), rideAccept.getDetails().getLater_time(), rideAccept.getDetails().getDriver_id(), rideAccept.getDetails().getRide_type(), rideAccept.getDetails().getRide_status(), rideAccept.getDetails().getStatus());
                         //FirebaseDatabase.getInstance().getReference("" + Config.RideTableReference).child("" + rideAccept.getDetails().getRide_id()).setValue(new RideSessionEvent("" + rideAccept.getDetails().getRide_id(), "" + Config.Status.NORMAL_STARTED, "Not yet generated", "0"));
                         startActivity(new Intent(this, TrackRideActivity.class)
                                 .putExtra("customer_name", "" + rideAccept.getDetails().getUser_name())
