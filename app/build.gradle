@@ -12,8 +12,8 @@ android {
 
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 91
-        versionName "2.20.20180804"
+        versionCode 92
+        versionName "3.0"
         multiDexEnabled true
 
         javaCompileOptions {

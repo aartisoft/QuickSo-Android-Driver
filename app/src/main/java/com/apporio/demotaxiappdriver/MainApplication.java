@@ -23,7 +23,7 @@ public class MainApplication extends MyApplication {
     public void onCreate() {
         super.onCreate();
         context = this ;
-        OneSignal.startInit(this)
+        OneSignal.startInit(getApplicationContext())
                 .autoPromptLocation(true)
                 .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
                 .unsubscribeWhenNotificationsAreDisabled(true)

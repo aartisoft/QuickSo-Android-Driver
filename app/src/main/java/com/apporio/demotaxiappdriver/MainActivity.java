@@ -182,10 +182,25 @@ public class MainActivity extends BaseActivity implements Apis,
             public void idsAvailable(String userId, String registrationId) {
                 deviceId = userId;
                 OneSignal.sendTag("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
+
+                HashMap<String, String> data1 = new HashMap<>();
+                data1.put("device_id",deviceId);
+                data1.put("flag",Config.Devicetype);
+                data1.put("driver_token",sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken));
+                data1.put("language_id",languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+                data1.put("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
+                apiManager_new.execution_method_post(Config.ApiKeys.KEY_UPDATE_DEVICE_ID, "" + Apis.deviceid, data1);
+
             }
         });
 
         OneSignal.sendTag("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));
+
+        if(deviceId==null|| deviceId.equals("")){
+            sessionManager.logoutUser();
+            startActivity(new Intent(MainActivity.this, SplashActivity.class));
+            finish();
+        }
 
         if (demoStatus.equals("1")) {
             demoStatus = "2";
@@ -222,9 +237,10 @@ public class MainActivity extends BaseActivity implements Apis,
         tv_profile_email.setText(driverEmail);
 
 
-        apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DEVICE_ID, Apis.deviceid + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&device_id=" + deviceId + "&flag=" + Config.Devicetype + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+       // apiManager_new.execution_method_get(Config.ApiKeys.KEY_UPDATE_DEVICE_ID, Apis.deviceid + "?driver_id=" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID) + "&device_id=" + deviceId + "&flag=" + Config.Devicetype + "&driver_token=" + sessionManager.getUserDetails().get(SessionManager.KEY_DriverToken) + "&language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
 
         //  apiManager_new.execution_method_get(Config.ApiKeys.KEY_CALL_SUPPORT, Apis.Callsupport + "?language_id=" + languageManager.getLanguageDetail().get(LanguageManager.LANGUAGE_ID));
+
 
         HashMap<String, String> data = new HashMap<>();
         data.put("driver_id", "" + sessionManager.getUserDetails().get(SessionManager.KEY_DRIVER_ID));

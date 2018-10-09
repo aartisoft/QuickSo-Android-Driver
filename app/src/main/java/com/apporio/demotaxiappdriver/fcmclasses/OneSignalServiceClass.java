@@ -102,7 +102,7 @@ public class OneSignalServiceClass extends NotificationExtenderService {
     private void handleNotificationResponse(String ride_id, String ride_status) throws Exception {
 
         EventBus.getDefault().post(new RideSessionActiveRideEvent(ride_status, ride_id));
-        if (ride_status.equals("1") && !Config.ReceiverPassengerActivity && MainApplication.getRideSession().getCurrentRideDetails().get(RideSession.RIDE_ID).equals("")) {
+        if (ride_status.equals("1") && !Config.ReceiverPassengerActivity) {
 
 
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
@@ -120,11 +120,10 @@ public class OneSignalServiceClass extends NotificationExtenderService {
                 KeyguardManager.KeyguardLock lock = keyguardManager.newKeyguardLock(Context.KEYGUARD_SERVICE);
                 lock.disableKeyguard();
                 OneSignalServiceClass.this.startActivity(new Intent(OneSignalServiceClass.this, ReceivePassengerActivity.class).putExtra("" + Config.IntentKeys.RIDE_ID, ride_id).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-
             }
 
 
-        } else if (ride_status.equals("10") && !Config.RentalReceivepassengerActivity && MainApplication.getRideSession().getCurrentRideDetails().get(RideSession.RIDE_ID).equals("")) {
+        } else if (ride_status.equals("10") && !Config.RentalReceivepassengerActivity) {
 
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
                 Config.RentalReceivepassengerActivity = true;
