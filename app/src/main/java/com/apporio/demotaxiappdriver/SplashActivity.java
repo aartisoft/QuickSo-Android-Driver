@@ -60,7 +60,7 @@ public class SplashActivity extends BaseInternetCheckActivity implements ApiMana
     private boolean is_internet_dialog_is_shown = false;
     private boolean is_version_dialog_is_shown = false;
     ApiManager apiManager;
-    String[] PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+    String[] PERMISSIONS = {Manifest.permission.CAMERA,Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
     Gson gson;
     ModelAppVersion modelAppVersion;
     public static Activity splash;

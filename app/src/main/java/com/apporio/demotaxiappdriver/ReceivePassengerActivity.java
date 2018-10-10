@@ -308,6 +308,10 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                 String value = viewRideInfoDriver.getDetails().getPayment_option_name();
                 Log.d("**value==", viewRideInfoDriver.getDetails().getPayment_option_name());
 
+                if(viewRideInfoDriver.getResult()==1){
+                    setViewAccordingToRideStatus(viewRideInfoDriver.getDetails().getRide_status(), "" + viewRideInfoDriver.getMsg());
+                }
+
                 if (viewRideInfoDriver.getDetails().getPayment_option_id().toString().equals("1")) {
                     mainLayoutPayment.setText(getResources().getString(R.string.WEEKLY_STATEMENT_ACTIVITY__cash));
                 } else if (viewRideInfoDriver.getDetails().getPayment_option_id().toString().equals("2")) {
@@ -333,7 +337,7 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                     NewRideSync newRideSync = gson.fromJson("" + script, NewRideSync.class);
                     setViewAccordingToRideStatus(newRideSync.getResult().toString(), "" + newRideSync.getMsg());
                 } else {
-                    setViewAccordingToRideStatus("0", "" + ac_one.getMsg());
+                   // setViewAccordingToRideStatus("0", "" + ac_one.getMsg());
                 }
             }
 
@@ -344,7 +348,7 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                     Toast.makeText(this, "" + deviceId.getMsg(), Toast.LENGTH_SHORT).show();
                     finish();
                 } else {
-                    setViewAccordingToRideStatus("0", "" + deviceId.getMsg());
+                  //  setViewAccordingToRideStatus("0", "" + deviceId.getMsg());
                 }
             }
 
@@ -363,7 +367,8 @@ public class ReceivePassengerActivity extends Activity implements ApiManager.API
                         finish();
                     }
                 } else {
-                    setViewAccordingToRideStatus("0", "" + ac.getMsg());
+                    Toast.makeText(ReceivePassengerActivity.this, ""+ac.getMsg(), Toast.LENGTH_SHORT).show();
+                   // setViewAccordingToRideStatus("0", "" + ac.getMsg());
                 }
             }
         } catch (Exception e) {

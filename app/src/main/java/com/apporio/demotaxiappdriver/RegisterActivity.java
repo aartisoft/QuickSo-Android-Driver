@@ -392,20 +392,16 @@ public class RegisterActivity extends AppCompatActivity implements ApiManager.AP
 
     @AfterPermissionGranted(RC_CAMERA_PERM)
     public void cameraTask()throws Exception {
-        if (EasyPermissions.hasPermissions(this, android.Manifest.permission.CAMERA)) {
-            try{ // Have permission, do the thing!
-                values = new ContentValues();
-                values.put(MediaStore.Images.Media.TITLE, "New Picture");
-                values.put(MediaStore.Images.Media.DESCRIPTION, "From your Camera");
-                imageUri = getContentResolver().insert(
-                        MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-                startActivityForResult(intent, CAMERS_PICKER);
-            }catch (Exception e){}
-        } else {
-            EasyPermissions.requestPermissions(this, getString(R.string.rationale_camera), RC_CAMERA_PERM, android.Manifest.permission.CAMERA);
-        }
+        try{ // Have permission, do the thing!
+            values = new ContentValues();
+            values.put(MediaStore.Images.Media.TITLE, "New Picture");
+            values.put(MediaStore.Images.Media.DESCRIPTION, "From your Camera");
+            imageUri = getContentResolver().insert(
+                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+            startActivityForResult(intent, CAMERS_PICKER);
+        }catch (Exception e){}
     }
 
 

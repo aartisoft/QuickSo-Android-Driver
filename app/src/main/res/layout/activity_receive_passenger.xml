@@ -288,7 +288,7 @@
         android:layout_height="49dp"
         android:orientation="vertical"
         android:gravity="center"
-        android:visibility="visible"
+        android:visibility="gone"
         android:id="@+id/accept_ride_btn"
         android:background="@color/icons_8_muted_green_1">
         <TextView
